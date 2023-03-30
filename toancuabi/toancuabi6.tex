@@ -206,7 +206,7 @@
 \blfootnote{$^1$\color{toancuabi}Ottawa, Canada.}
 \AddToShipoutPicture*{\put(60,733){\includegraphics[width=17.2cm]{../mathc.pdf}}}
 %\AddToShipoutPicture*{\put(-2,733){\includegraphics[width=17.2cm]{../mathl.pdf}}} 
-\AddToShipoutPicture*{\put(125,675){\includegraphics[scale=1]{../tieude6.pdf}}} 
+\AddToShipoutPicture*{\put(140,675){\includegraphics[scale=1]{../tieude6.pdf}}} 
 \centering
 \endgroup
 \graphicspath{{../toancuabi/pic/}}
@@ -216,151 +216,208 @@
 	In this article, we discuss a few games and principles associated with solutions to the problems posed by the games.
 	\vskip 0.2cm
 	\PIbox{{\color{toancuabi}\textbf{Example} (Pigeons share a hole)\textbf{.}}
-		Each square of a $3 \times 3$ board is filled with one of the numbers $-1, 0, $+1$.$ See the figure below for an example.
+		Each square of a $3 \times 3$ board is filled with one of the numbers $-1, 0, +1$. See the figure below for an example.
 		Viet calculates the sums of the rows, columns, and two main diagonals. He found that there are at least two equal sums.
 		For example, in the example below, both the sums of the second and third rows are $0$.
 		Is it always true that there are at least two equal sums?}
 	\vskip 0.1cm
-	\begin{figure}[h]
+	\begin{figure}[H]
+		\vspace*{-5pt}
 		\centering
-		\begin{tabular}{|c|c|c|}
-			\hline
-			$-1$ & $$+1$$ & $$+1$$ \\ \hline
-			$0$  & $-1$ & $$+1$$ \\ \hline
-			$-1$ & $$+1$$ & $0$  \\ \hline
-		\end{tabular}
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tikzpicture}[scale=0.78]
+			\draw (0,0) grid (3,3);
+			\draw (0.5,0.5) node {$-1$};
+			\draw (1.5,0.5) node {$+1$};
+			\draw (2.5,0.5) node {$0$};
+			\draw (0.5,1.5) node {$0$};
+			\draw (1.5,1.5) node {$-1$};
+			\draw (2.5,1.5) node {$+1$};
+			\draw (0.5,2.5) node {$-1$};
+			\draw (1.5,2.5) node {$+1$};
+			\draw (2.5,2.5) node {$+1$};
+		\end{tikzpicture}
+		\vspace*{-10pt}
 	\end{figure}
-	
-	\begin{soln}
-		The answer is yes. The largest possible sum is $3$ and the smallest is $-3.$
-		So there are0 $7$ possible values $-3,-2,\ldots,2,3$ for $8$ sums, so two of them should be the same and therefore equal.
-		
-		In above we applied the \textit{Pigeonhole principle: if $n+1$ or more pigeons are placed in $n$ holes,
-			then one hole must contain two or more pigeons.} 
-	\end{soln}
-	
-	\begin{example*}[Nothing ever changes]
-		
-		Each square of the  board contains a $+$ or $-$ signs, see the board the left,
-		which contains a single $-$ at the square intersection of the first row and second column.
-		
-		At each step, you can change all the signs in a row, a column, or a diagonal to their opposite ones, i.e. $+$ to $-$, and $-$  to $+$.
-		An example of how a column is changed shown as below in the board on the right.
-	\end{example*}
-	
-	\begin{figure}[h]
-		\centering
-		\begin{tabular}{|c|
-				>{\columncolor[HTML]{EFEFEF}}c |c|c|l|c|
-				>{\columncolor[HTML]{EFEFEF}}c |c|c|}
-			\cline{1-4} \cline{6-9}
-			$+$ & $-$ & $+$ & $+$ &  & $+$ & $+$ & $+$ & $+$ \\ \cline{1-4} \cline{6-9}
-			$+$ & $+$ & $+$ & $+$ &  & $+$ & $-$ & $+$ & $+$ \\ \cline{1-4} \cline{6-9}
-			$+$ & $+$ & $+$ & $+$ &  & $+$ & $-$ & $+$ & $+$ \\ \cline{1-4} \cline{6-9}
-			$+$ & $+$ & $+$ & $+$ &  & $+$ & $-$ & $+$ & $+$ \\ \cline{1-4} \cline{6-9}
-		\end{tabular}
-	\end{figure}
-	
-	\begin{soln}
-		Take a look at the squares colored \textcolor{red}{red}.
-		
-		\begin{figure}[h]
-			\centering
-			\begin{tabular}{|c|
-					>{\columncolor[HTML]{FD6864}}c |c|c|l|c|
-					>{\columncolor[HTML]{EFEFEF}}c |c|c|}
-				\cline{1-4} \cline{6-9}
-				$+1$                         & $-1$                         & \cellcolor[HTML]{FD6864}$+1$ & $+1$                         &  & $+1$ & \cellcolor[HTML]{EFEFEF}$+1$ & $+1$ & $+1$ \\ \cline{1-4} \cline{6-9} 
-				\cellcolor[HTML]{FD6864}$+1$ & \cellcolor[HTML]{EFEFEF}$+1$ & $+1$                         & \cellcolor[HTML]{FD6864}$+1$ &  & $+1$ & $-1$                         & $+1$ & $+1$ \\ \cline{1-4} \cline{6-9} 
-				\cellcolor[HTML]{FD6864}$+1$ & \cellcolor[HTML]{EFEFEF}$+1$ & $+1$                         & \cellcolor[HTML]{FD6864}$+1$ &  & $+1$ & $-1$                         & $+1$ & $+1$ \\ \cline{1-4} \cline{6-9} 
-				$+1$                         & $+1$                         & \cellcolor[HTML]{FD6864}$+1$ & $+1$                         &  & $+1$ & $-1$                         & $+1$ & $+1$ \\ \cline{1-4} \cline{6-9} 
-			\end{tabular}
-		\end{figure}
-		
-		If we replace the $+$ sign by $+1$ and the $-$ sign by $-1$, then at the beginning the product of all numbers in these red square is $-1.$ 
-		Easy to see that each operation to change all the signs in a row, a column or a diagonal shall change exactly two red squares.
-		Whatever the numbers in the two red squares, the product of their negates remain same.
-		Since the product of the red squares at the beginning is $-1,$ so it cannot be changed at all.
-		
-		In above we applied the \textit{Invariant Principle: In mathematics, an invariant is a property of a mathematical object
-			(or a class of mathematical objects) which remains unchanged after operations or transformations of a certain type are applied to the objects.} 
-	\end{soln}
-	
-	\begin{example*}[Integers are well-ordered]
-		
-		On a stormy night, ten students from the \textit{Math, Chess, and Coding Club in Ottawa} went to a party.
-		They left their shoes in the foyer in order to keep the carpet clean. After the dinner, there was a power outage.
-		So the students, leaving one by one, put on, at random, any pair of shoes big enough for their feet (each pair of shoes stay together).
-		Any student who couldn't find a pair of shoes big enough spent the night at the place of the party.
-		
-		What is the largest number of students who might have had to spend the night? Show an example for this number.
-		\textit{Note that no two students wear the same size shoes.}
-	\end{example*}
-	
-	\begin{soln}
-		Easy to see that if the five students with smallest feet left first wearing all five largest pairs of shoes
-		then none of the remaining student can find a pair of shoes to leave.
-		Now let assume that there were 6 students who would have to spent the night and there were 6 pairs of shoes left,
-		then because $6 + 6 > 10,$ so there is a student with his pair of shoes is still at the place of the party. This is not possible!
-		
-		In above we applied the \textit{Well-Ordering Principle: the positive integers are well-ordered.
-			An ordered set is said to be well-ordered if each and every nonempty subset has a smallest or least element.} 
-	\end{soln}
-	
-	\begin{example*}[Invariant to reach end-state with desired outcomes]
-		
-		In a darkroom there are two tables. The first one is empty and the second one is cover by a layer of nickels
-		(one nickel thick, so no coin is on top of another), in which $31$ coins are tails up and the rest are heads up.
-		Minh enters the room with the task of transferring some coins from the second table to the first table
-		(he wears gloves, so he cannot feel the faces of the coins). He can flip over any number of coins when transferring them.
-		
-		Is that possible when he leaves the room the number of nickels that are tails up is the same on both tables?
-	\end{example*}
-	
-	\begin{soln}
-		If Minh turns a coin on the second table during transfer to the first one,
-		then the number of coins $tails-up$ on the second table will be reduce by one if it was a $tails-$p coin,
-		or the number of coins $tails-up$ on the first table is increased by one if it was a $heads-up$ coin.
-		In any case, the difference between the $tails-up$ coins on the second and first tables will be reduced by one
-		(this is an \textit{invariant}.) Hence, after $31$ moves, they will be the same.
-		
-		In above we again applied the \textit{Invariant Principle} with a twist.
-		Note that in every turn the difference between the $tails-up$ coins on the second and first tables will be reduced by one,
-		since at the beginning, in other words, at the \textit{start state} this difference is $31,$
-		thus after $31$ turns the game reaches the \textit{end-state} where the difference is $0.$
-	\end{soln}
-	
-	\begin{example*}[Winning positions]
-		
-		Berry and Cherry take alternate turns in playing a two-player game removing marbles from a pile as follows:
-		\begin{itemize}[topsep=0pt, partopsep=0pt, itemsep=0pt]
-			\ii Berry always goes first.
-			\ii The player whose turn it is, must remove exactly $2$, $4$, or $5$ marbles from the pile.
-			\ii The player who at some point is unable to make a move (cannot remove $2$, $4$, or $5$ marbles from the pile) loses the game.
-		\end{itemize}
-		They play $14$ games with $\{8, 9, \ldots, 21\}$ as the initial number of marbles in the pile.
-		What games does Cherry win, regardless of what Berry does?
-	\end{example*}
-	
-	\begin{soln}
-		The positive integers from $0$ to $21$ can be divided into 7 groups of numbers based on their remainders when divided by $7$,
-		\[
-		\begin{aligned}
-			&G_0=\{0,7,14,21\},\ G_1=\{1,8,15\},\ G_2=\{2,9,16\},\\
-			&G_3=\{3,10,17\},\ G_4=\{4,11,18\},\ G_5=\{5,12,19\},\ G_6=\{6,13,20\}
-		\end{aligned}
-		\]
-		It is easy to verify that,
-		\begin{claim*}
-			If $n$ is a number in $G_0$ and $G_1$ then $n-2$, $n-4$, and $n-5$ are in $G_2,G_3,G_4,G_5,$ or $G_6$.
-		\end{claim*}
-		Now, by the rules of the game, it is obvious that $\{0, 1\}$ are \textit{losing} positions and $\{2,4,5\}$ are \textit{winning} positions.
-		Furthermore, because $3-2=6-5=1$, so $\{3,6\}$ are also \textit{winning} positions, too.
-		
-		Therefore $G_0$ and $G_1$ contain all \textit{losing} positions, while $G_2,G_3,G_4,G_5,$ and $G_6$ containing all \textit{winning} positions.
-		A player, who is in a \textit{winning} position, can always force the game into a \textit{losing} position.
-		Thus, Cherry will win the game if the game starts with a \textit{losing} position.
-		Thus, the games that Cherry wins are \framebox{$\{8,14,15,21\}$.}
-	\end{soln}
-	
+	\textit{Solution.}
+	The answer is yes. The largest possible sum is $3$ and the smallest is $-3.$
+	So there are0 $7$ possible values $-3,-2,\ldots,2,3$ for $8$ sums, so two of them should be the same and therefore equal.
+	\vskip 0.1cm	
+	In above we applied the \textit{Pigeonhole principle: if $n+1$ or more pigeons are placed in $n$ holes, then one hole must contain two or more pigeons.} 
+	\vskip 0.2cm
+	\PIbox{{\color{toancuabi}\textbf{Example} (Nothing ever changes)\textbf{.}}
+	Each square of the  board contains a $+$ or $-$ signs, see the board the left,
+	which contains a single $-$ at the square intersection of the first row and second column.}
+	\vskip 0.1cm
+	\vspace*{0.1pt}
+	\vspace*{-8pt}
+	\PIbox{
+	At each step, you can change all the signs in a row, a column, or a diagonal to their opposite ones, i.e. $+$ to $-$, and $-$  to $+$.
+	An example of how a column is changed shown as below in the board on the right.}
+	\begin{center}
+		\begin{tikzpicture}[scale=0.78]
+			\draw [fill=cackithi!50] (1,0) rectangle (2,4);
+			\draw [fill=cackithi!50] (6,0) rectangle (7,4);
+			\draw (0,0) grid (4,4);
+			\draw (0.5,0.5) node {$+$};
+			\draw (1.5,0.5) node {$+$};
+			\draw (2.5,0.5) node {$+$};
+			\draw (3.5,0.5) node {$+$};
+			\draw (0.5,1.5) node {$+$};
+			\draw (1.5,1.5) node {$+$};
+			\draw (2.5,1.5) node {$+$};
+			\draw (3.5,1.5) node {$+$};
+			\draw (0.5,2.5) node {$+$};
+			\draw (1.5,2.5) node {$+$};
+			\draw (2.5,2.5) node {$+$};
+			\draw (3.5,2.5) node {$+$};
+			\draw (0.5,3.5) node {$+$};
+			\draw (1.5,3.5) node {$-$};
+			\draw (2.5,3.5) node {$+$};
+			\draw (3.5,3.5) node {$+$};
+			\draw (5,0) grid (9,4);
+			\draw (5.5,0.5) node {$+$};
+			\draw (6.5,0.5) node {$-$};
+			\draw (7.5,0.5) node {$+$};
+			\draw (8.5,0.5) node {$+$};
+			\draw (5.5,1.5) node {$+$};
+			\draw (6.5,1.5) node {$-$};
+			\draw (7.5,1.5) node {$+$};
+			\draw (8.5,1.5) node {$+$};
+			\draw (5.5,2.5) node {$+$};
+			\draw (6.5,2.5) node {$-$};
+			\draw (7.5,2.5) node {$+$};
+			\draw (8.5,2.5) node {$+$};
+			\draw (5.5,3.5) node {$+$};
+			\draw (6.5,3.5) node {$+$};
+			\draw (7.5,3.5) node {$+$};
+			\draw (8.5,3.5) node {$+$};
+		\end{tikzpicture}
+	\end{center}
+	\textit{Solution.}
+	Take a look at the squares colored \textcolor{red!50}{red}.
+	\begin{center}
+		\begin{tikzpicture}[scale=0.78]
+			\draw [fill=cackithi!50] (1,0) rectangle (2,4);
+			\draw [fill=cackithi!50] (6,0) rectangle (7,4);
+			\draw [fill=red!50] (0,1) rectangle (1,3);
+			\draw [fill=red!50] (1,3) rectangle (3,4);
+			\draw [fill=red!50] (3,3) rectangle (4,1);
+			\draw [fill=red!50] (3,1) rectangle (1,0);
+			\draw (0,0) grid (4,4);
+			\draw (0.5,0.5) node {$+1$};
+			\draw (1.5,0.5) node {$+1$};
+			\draw (2.5,0.5) node {$+1$};
+			\draw (3.5,0.5) node {$+1$};
+			\draw (0.5,1.5) node {$+1$};
+			\draw (1.5,1.5) node {$+1$};
+			\draw (2.5,1.5) node {$+1$};
+			\draw (3.5,1.5) node {$+1$};
+			\draw (0.5,2.5) node {$+1$};
+			\draw (1.5,2.5) node {$+1$};
+			\draw (2.5,2.5) node {$+1$};
+			\draw (3.5,2.5) node {$+1$};
+			\draw (0.5,3.5) node {$+1$};
+			\draw (1.5,3.5) node {$-1$};
+			\draw (2.5,3.5) node {$+1$};
+			\draw (3.5,3.5) node {$+1$};
+			\draw (5,0) grid (9,4);
+			\draw (5.5,0.5) node {$+1$};
+			\draw (6.5,0.5) node {$-1$};
+			\draw (7.5,0.5) node {$+1$};
+			\draw (8.5,0.5) node {$+1$};
+			\draw (5.5,1.5) node {$+1$};
+			\draw (6.5,1.5) node {$-1$};
+			\draw (7.5,1.5) node {$+1$};
+			\draw (8.5,1.5) node {$+1$};
+			\draw (5.5,2.5) node {$+1$};
+			\draw (6.5,2.5) node {$-1$};
+			\draw (7.5,2.5) node {$+1$};
+			\draw (8.5,2.5) node {$+1$};
+			\draw (5.5,3.5) node {$+1$};
+			\draw (6.5,3.5) node {$+1$};
+			\draw (7.5,3.5) node {$+$};
+			\draw (8.5,3.5) node {$+1$};
+		\end{tikzpicture}
+	\end{center}	
+	If we replace the $+$ sign by $+1$ and the $-$ sign by $-1$, then at the beginning the product of all numbers in these red square is $-1.$ 
+	Easy to see that each operation to change all the signs in a row, a column or a diagonal shall change exactly two red squares.
+	Whatever the numbers in the two red squares, the product of their negates remain same.
+	Since the product of the red squares at the beginning is $-1,$ so it cannot be changed at all.
+	\vskip 0.1cm
+	In above we applied the \textit{Invariant Principle: In mathematics, an invariant is a property of a mathematical object
+	(or a class of mathematical objects) which remains unchanged after operations or transformations of a certain type are applied to the objects.} 
+	\vskip 0.2cm
+	\PIbox{{\color{toancuabi}\textbf{Example} (Integers are well--ordered)\textbf{.}}
+	On a stormy night, ten students from the \textit{Math, Chess, and Coding Club in Ottawa} went to a party.
+	They left their shoes in the foyer in order to keep the carpet clean. After the dinner, there was a power outage.
+	So the students, leaving one by one, put on, at random, any pair of shoes big enough for their feet (each pair of shoes stay together).
+	Any student who couldn't find a pair of shoes big enough spent the night at the place of the party.
+	\vskip 0.1cm	
+	What is the largest number of students who might have had to spend the night? Show an example for this number.
+	\textit{Note that no two students wear the same size shoes.}}
+	\vskip 0.2cm
+	\textit{Solution.}
+	Easy to see that if the five students with smallest feet left first wearing all five largest pairs of shoes
+	then none of the remaining student can find a pair of shoes to leave.
+	Now let assume that there were $6$ students who would have to spent the night and there were $6$ pairs of shoes left,
+	then because $6 + 6 > 10,$ so there is a student with his pair of shoes is still at the place of the party. This is not possible!
+	\vskip 0.1cm
+	In above we applied the \textit{Well--Ordering Principle: the positive integers are well--ordered.
+	An ordered set is said to be well--ordered if each and every nonempty subset has a smallest or least element.} 
+	\vskip 0.2cm
+	\PIbox{{\color{toancuabi}\textbf{Example} (Invariant to reach end--state with desired outcomes)\textbf{.}}
+	In a darkroom there are two tables. The first one is empty and the second one is cover by a layer of nickels
+	(one nickel thick, so no coin is on top of another), in which $31$ coins are tails up and the rest are heads up.}
+	\vskip 0.1cm
+	\PIbox{
+	Minh enters the room with the task of transferring some coins from the second table to the first table
+	(he wears gloves, so he cannot feel the faces of the coins). He can flip over any number of coins when transferring them.
+	\vskip 0.1cm
+	Is that possible when he leaves the room the number of nickels that are tails up is the same on both tables?}
+	\vskip 0.2cm
+	\textit{Solution.}
+	If Minh turns a coin on the second table during transfer to the first one,
+	then the number of coins \textit{tails--up} on the second table will be reduce by one if it was a \textit{tails--p} coin,
+	or the number of coins \textit{tails--up} on the first table is increased by one if it was a \textit{heads--up} coin.
+	In any case, the difference between the \textit{tails--up} coins on the second and first tables will be reduced by one
+	(this is an \textit{invariant}.) Hence, after $31$ moves, they will be the same.
+	\vskip 0.1cm
+	In above we again applied the \textit{Invariant Principle} with a twist.
+	Note that in every turn the difference between the \textit{tails--up} coins on the second and first tables will be reduced by one,
+	since at the beginning, in other words, at the \textit{start state} this difference is $31,$
+	thus after $31$ turns the game reaches the \textit{end--state} where the difference is $0.$
+	\vskip 0.2cm
+	\PIbox{{\color{toancuabi}\textbf{Example} (Winning positions)\textbf{.}}
+	Berry and Cherry take alternate turns in playing a two--player game removing marbles from a pile as follows:
+	\vskip 0.1cm
+	$\bullet$ Berry always goes first.
+	\vskip 0.1cm
+	$\bullet$ The player whose turn it is, must remove exactly $2$, $4$, or $5$ marbles from the pile.
+	\vskip 0.1cm
+	$\bullet$ The player who at some point is unable to make a move (cannot remove $2$, $4$, or $5$ marbles from the pile) loses the game.
+	\vskip 0.1cm
+	They play $14$ games with $\{8, 9, \ldots, 21\}$ as the initial number of marbles in the pile.
+	What games does Cherry win, regardless of what Berry does?}
+	\vskip 0.2cm
+	\textit{Solution.}
+	The positive integers from $0$ to $21$ can be divided into 7 groups of numbers based on their remainders when divided by $7$,
+	\begin{align*}
+		&G_0=\{0,7,14,21\}, &&G_1=\{1,8,15\},\\
+		& G_2=\{2,9,16\}, &&G_3=\{3,10,17\},\\
+		& G_4=\{4,11,18\},&&G_5=\{5,12,19\},\\
+		& G_6=\{6,13,20\}
+	\end{align*}
+	It is easy to verify that,
+	\vskip 0.2cm
+	\PIbox{\textbf{\color{toancuabi}Claim.}
+		If $n$ is a number in $G_0$ and $G_1$ then $n-2$, $n-4$, and $n-5$ are in $G_2,G_3,G_4,G_5,$ or $G_6$.}
+	\vskip 0.2cm
+	Now, by the rules of the game, it is obvious that $\{0, 1\}$ are \textit{losing} positions and $\{2,4,5\}$ are \textit{winning} positions.
+	Furthermore, because $3-2=6-5=1$, so $\{3,6\}$ are also \textit{winning} positions, too.
+	\vskip 0.1cm
+	Therefore $G_0$ and $G_1$ contain all \textit{losing} positions, while $G_2,G_3,G_4,G_5,$ and $G_6$ containing all \textit{winning} positions.
+	A player, who is in a \textit{winning} position, can always force the game into a \textit{losing} position.
+	Thus, Cherry will win the game if the game starts with a \textit{losing} position.
+	Thus, the games that Cherry wins are $\{8,14,15,21\}$.
 \end{multicols}
