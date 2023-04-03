@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2023.4.2)  3 APR 2023 00:16
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2023.4.4)  4 APR 2023 05:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3020,9 +3020,9 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 80.
 
-(../toancuabi/toancuabi6.tex
+(../lichsutoanhoc/lichsutoanhoc.tex
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 16.
+ 5.
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm
 .fd
@@ -3033,44 +3033,44 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 16.
+ 5.
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm
 .fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 16.
+ 5.
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm
 .fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 16.
+ 5.
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm
 .fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-6.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
+.
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.f
 d
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-pt
 m.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ms
 a.cfg
@@ -3081,22 +3081,108 @@ b.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 
-16.
+5.
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/yhmath\omxyhex.
 fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 16
-.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 5.
+
 
 (C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.
 fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-File: ../toancuabi/pic//xuanphong.png Graphic file (type bmp)
-<../toancuabi/pic//xuanphong.png>
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 5.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/9'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 5.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 7.4pt on input line 5.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/7.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/7.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/7.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/7.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/7.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/7.4'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 10.0pt on input line 5.
+Package microtype Info: Character `156' is missing
+(microtype)             in font `\TU/EBGaramond(0)/m/it/10'.
+(microtype)             Ignoring protrusion settings for this character.
+File: ../lichsutoanhoc/pic//1.png Graphic file (type bmp)
+<../lichsutoanhoc/pic//1.png>
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 22.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 24.
+Package microtype Info: Character `156' is missing
+(microtype)             in font `\TU/EBGaramond(0)/m/it/12'.
+(microtype)             Ignoring protrusion settings for this character.
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 1 might be wrong on input line 32.
+
+
+Overfull \vbox (11.62634pt too high) has occurred while \output is active []
+
 
 
 Package xeCJK Warning: Unknown CJK family `\CJKsfdefault' is being ignored.
@@ -3108,60 +3194,238 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-File: ../toancuabi/pic//../bannertoancuabi.jpg Graphic file (type bmp)
-<../toancuabi/pic//../bannertoancuabi.jpg>
-File: ../toancuabi/pic//../tieude.pdf Graphic file (type pdf)
-<use ../toancuabi/pic//../tieude.pdf>
-File: ftoancuabi2.pdf Graphic file (type pdf)
-<use ftoancuabi2.pdf>
-File: ftoancuabi2.pdf Graphic file (type pdf)
-<use ftoancuabi2.pdf>
-File: ftoancuabi2.pdf Graphic file (type pdf)
-<use ftoancuabi2.pdf>
+File: ../lichsutoanhoc/pic//../bannerlichsu.jpg Graphic file (type bmp)
+<../lichsutoanhoc/pic//../bannerlichsu.jpg>
+File: ../lichsutoanhoc/pic//../tieude.pdf Graphic file (type pdf)
+<use ../lichsutoanhoc/pic//../tieude.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
 [1
 
 ]
-File: ../toancuabi/pic//Pi5_bai1.png Graphic file (type bmp)
-<../toancuabi/pic//Pi5_bai1.png>
-File: ../toancuabi/pic//Pi5_bai2.png Graphic file (type bmp)
-<../toancuabi/pic//Pi5_bai2.png>
-File: ../toancuabi/pic//Pi5_bai3.png Graphic file (type bmp)
-<../toancuabi/pic//Pi5_bai3.png>
-File: ../toancuabi/pic//Pi5_bai4.png Graphic file (type bmp)
-<../toancuabi/pic//Pi5_bai4.png>
-File: ../toancuabi/pic//Pi5_bai5.png Graphic file (type bmp)
-<../toancuabi/pic//Pi5_bai5.png>
-File: ../toancuabi/pic//../tieude11.pdf Graphic file (type pdf)
-<use ../toancuabi/pic//../tieude11.pdf>
-File: toancuabi1.pdf Graphic file (type pdf)
-<use toancuabi1.pdf>
-File: ftoancuabi1.pdf Graphic file (type pdf)
-<use ftoancuabi1.pdf>
-File: toancuabi1.pdf Graphic file (type pdf)
-<use toancuabi1.pdf>
-File: ftoancuabi1.pdf Graphic file (type pdf)
-<use ftoancuabi1.pdf>
-File: toancuabi1.pdf Graphic file (type pdf)
-<use toancuabi1.pdf>
-File: ftoancuabi1.pdf Graphic file (type pdf)
-<use ftoancuabi1.pdf>
- [2]
-File: ../toancuabi/pic//Pi5_bai6.png Graphic file (type bmp)
-<../toancuabi/pic//Pi5_bai6.png>
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+\TU/EBGaramond(0)/m/n/12 trong những vị tướng hàng đầu của
+ []
+
+File: ../lichsutoanhoc/pic//2.png Graphic file (type bmp)
+<../lichsutoanhoc/pic//2.png>
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 49.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/EBGaramond(0)/m/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 10.95pt on input line 49.
+Package microtype Info: Character `156' is missing
+(microtype)             in font `\TU/EBGaramond(0)/m/it/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+[2]
+File: ../lichsutoanhoc/pic//3.jpg Graphic file (type bmp)
+<../lichsutoanhoc/pic//3.jpg>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+ [3]
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+ [4]
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+ [5]
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+ [6]
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+ [7]
+Overfull \hbox (43.7902pt too wide) detected at line 157
+[]
+ []
+
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 1$[]\TU/EBGaramond(0)/m/n/12 ]
+ David M. Burton, T\TU/EBGaramond(0)/m/it/12 he History of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+\TU/EBGaramond(0)/m/it/12 Mathematics, An Introduction\TU/EBGaramond(0)/m/n/12 
+, Seventh
+ []
+
+
+Underfull \hbox (badness 7907) in paragraph at lines 182--183
+\TU/EBGaramond(0)/m/n/12 translation from the Greek text of J.L.
+ []
+
+
+Underfull \hbox (badness 6910) in paragraph at lines 186--188
+\TU/EBGaramond(0)/m/n/12 Wiley & Sons, $[]\OT1/ztmcm/m/n/12 2011$[]\TU/EBGaramo
+nd(0)/m/n/12 , Ch. $[]\OT1/ztmcm/m/n/12 5$[]\TU/EBGaramond(0)/m/n/12 : \TU/EBGa
+ramond(0)/m/it/12 Euclid of
+ []
+
+
+LaTeX Font Warning: Font shape `TU/SimSun(0)/m/it' undefined
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 189.
+
+
+Underfull \hbox (badness 5939) in paragraph at lines 189--190
+\TU/EBGaramond(0)/m/it/12 Euclid\TU/SimSun(0)/m/n/12 ’| \TU/EBGaramond(0)/m/it/
+12 s Elements\TU/EBGaramond(0)/m/n/12 , Translated from the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+\TU/EBGaramond(0)/m/n/12 text of Heiberg with introduction and
+ []
+
+
+Underfull \hbox (badness 5802) in paragraph at lines 193--194
+[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 5$[]\TU/EBGaramond(0)/m/n/12 ]
+ Thomas Heath, \TU/EBGaramond(0)/m/it/12 A History of Greek
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
+\TU/EBGaramond(0)/m/it/12 Mathematics\TU/EBGaramond(0)/m/n/12 , Oxford at the C
+larendon
+ []
+
+
+Underfull \hbox (badness 7504) in paragraph at lines 195--196
+[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 6$[]\TU/EBGaramond(0)/m/n/12 ]
+ Stephen Hawking, \TU/EBGaramond(0)/m/it/12 God Created the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 8$[]\TU/EBGaramond(0)/m/n/12 ]
+ Proclus, \TU/EBGaramond(0)/m/it/12 The Philosophical and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+\TU/EBGaramond(0)/m/it/12 Mathematical Commentaries of Proclus\TU/EBGaramond(0)
+/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+\TU/EBGaramond(0)/m/n/12 Translated from the Greek by Thomas
+ []
+
 )
-File: toancuabi2.pdf Graphic file (type pdf)
-<use toancuabi2.pdf>
-File: ftoancuabi2.pdf Graphic file (type pdf)
-<use ftoancuabi2.pdf>
-File: toancuabi2.pdf Graphic file (type pdf)
-<use toancuabi2.pdf>
-File: ftoancuabi2.pdf Graphic file (type pdf)
-<use ftoancuabi2.pdf>
-File: toancuabi2.pdf Graphic file (type pdf)
-<use toancuabi2.pdf>
-File: ftoancuabi2.pdf Graphic file (type pdf)
-<use ftoancuabi2.pdf>
- [3] (_main.aux)
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+ [9] (_main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3172,12 +3436,12 @@ Package logreq Info: Writing requests to '_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 70093 strings out of 410532
- 1603851 string characters out of 2811676
- 2692379 words of memory out of 3000000
- 90006 multiletter control sequences out of 15000+600000
- 489780 words of font info for 82 fonts, out of 8000000 for 9000
+ 70168 strings out of 410532
+ 1605548 string characters out of 2811676
+ 2701380 words of memory out of 3000000
+ 90068 multiletter control sequences out of 15000+600000
+ 508086 words of font info for 140 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 104i,11n,120p,1205b,499s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 104i,12n,120p,1372b,711s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on _main.pdf (3 pages).
+Output written on _main.pdf (9 pages).
