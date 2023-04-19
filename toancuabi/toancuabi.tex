@@ -5,317 +5,536 @@
 \graphicspath{{../toancuabi/pic/}}
 \begingroup
 \AddToShipoutPicture*{\put(0,616){\includegraphics[width=19.3cm]{../bannertoancuabi}}}  
-\AddToShipoutPicture*{\put(130,555){\includegraphics[scale=1]{../tieude.pdf}}} 
+\AddToShipoutPicture*{\put(128,555){\includegraphics[scale=1]{../tieude1.pdf}}} 
 \centering
 \endgroup
-\vspace*{150pt}
+\vspace*{155pt} 
 
 \begin{multicols}{2}
-	Lần này thì Thám tử Xuân Phong phải vào tận hang ổ của một băng đảng để điều tra manh mối về một vụ án. Khác với những lần bị lạc lên đảo, ở đó có những thổ dân nói thật hoặc nói dối, trong ba người thuộc  băng đảng mà Xuân Phong tiếp cận, không có ai nói thật mà lại có tới ba kiểu người. Loại thứ nhất, tất nhiên rồi, đó là người Nói dối -- chuyên nói sai sự thật. Tiếp theo mới phức tạp cho Xuân Phong, lại có kẻ Ranh mãnh: hắn sẽ nói thật hoặc nói dối bất cứ khi nào hắn muốn. Thế chưa hết, loại cuối cùng mới rầy rà, đó là người Thay đổi, cứ nói thật và nói dối luân phiên nhau. Nhiệm vụ của Thám tử là xác định  từng người thuộc kiểu gì. Vừa được miêu tả về ba kiểu người như vậy, thanh tra Lê Kính đã ôm đầu kêu rên: ``Thôi, thà cho tôi lên hoang đảo với thổ dân nói Thật và nói Dối rõ ràng còn hơn. Ở đây phức tạp tờ mờ quá, không biết đường nào mà lần!"
+	Trò chơi ``Tháp Hà Nội", xếp những miếng gỗ trên ba chiếc cọc, đã rất quen thuộc với các bạn nhỏ Việt Nam cũng như nhiều bạn nhỏ trên thế giới. Thật là tuyệt vời khi một trò chơi nổi tiếng trên thế giới lại có tên liên quan đến thủ đô của nước ta đúng không. Các bạn đã biết về xuất xứ cùng với nhiều điều thú vị xung quanh bài toán ``Tháp Hà Nội" chưa? Chúng ta hãy cùng ngược dòng thời gian để tìm hiểu qua bài viết dưới đây nhé.
 	\vskip 0.1cm
-	Xuân Phong đưa tay trấn an sự bực tức nóng nảy của thanh tra Lê Kính, thì thầm nói: ``Anh cứ yên tâm. Thế giới của băng đảng này phức tạp như vậy, nhưng tôi quả quyết chỉ sau không quá ba câu hỏi, ta sẽ biết ngay ai là thuộc loại người nào?"
+	Năm $1883$, Eduard Lucas (Claus) công bố  bức tranh quảng cáo ``Tháp Hà Nội --  trò chơi thực sự nát óc xứ Annnam":
+	\begin{figure}[H]
+		\centering
+		\vspace*{-5pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=1\linewidth]{1.1}
+		%	\caption{\textit{\color{toancuabi}Hình $1$.}}
+		\vspace*{-15pt}
+	\end{figure}
+	Một năm sau, Lucas viết bài ``Tháp Hà Nội , trò chơi toán học" đăng ở tạp chí ``Science et Nature", số $1$ ($1884$) tr. $127-128$. Có thể xem đó ngày khai sinh của ``Bài toán Tháp Hà Nội", một trong những bài toán nổi tiếng của toán học. Cho đến ngày nay, vẫn còn rất nhiều công trình nghiên cứu về bài toán tháp Hà Nội và những mở rộng của nó, vẫn còn nhiều giả thuyết đang chờ câu trả lời.
 	\vskip 0.1cm
-	Làm thế nào mà Xuân Phong lại tự tin như thế nhỉ? Em có thể tìm thấy cách Thám tử đặt câu hỏi để xác định ai là ai, và giúp Lê Kính lấy lại bình tĩnh hay không?
+	Hình sau đây là bức ảnh chụp từ hiện vật trưng bày trong ``Musée des arts et métiers--Cnam Paris" (Bảo tàng nghệ thuật và thủ công Paris). 
+	\begin{figure}[H]
+		\centering
+		\vspace*{-5pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=1\linewidth]{2.1}
+		%	\caption{\textit{\color{toancuabi}Hình $1$.}}
+		\vspace*{-15pt} 
+	\end{figure}
+	Ta có ba cái cọc, và  $8$ cái đĩa với kích thước khác nhau đôi một. Bài toán đặt ra là di chuyển toàn bộ $8$ cái đĩa sang một cọc khác, sao cho vẫn giữ được thứ tự các đĩa với bán kính lớn dần từ trên xuống dưới. Quy tắc di chuyển: mỗi lần chỉ được chuyển một đĩa, và không bao giờ được đặt một đĩa lên đĩa khác có bán kính nhỏ hơn. Điều này có thể làm được nhờ sử dụng cọc ``trung gian".
+	\vskip 0.1cm
+	Các bạn thử hình dung xem ta sẽ cần làm bao nhiêu phép chuyển đĩa?
+	\vskip 0.1cm
+	Trước hết, ta thử làm bài toán dễ hơn: trên cọc chỉ có $2$ đĩa. Rõ ràng chỉ cần chuyển đĩa nhỏ sang cọc trung gian, đĩa lớn sang cọc còn lại, rồi chuyển đĩa nhỏ lên cọc đó. Số bước chuyển là $3$.
+	\vskip 0.1cm
+	Nếu có $3$ đĩa trên cọc thì sao? Giả sử các đĩa đang ở cọc $A$, và ta cần chuyển sang cọc $C$. Ta chuyển hai đĩa trên cùng sang cọc  trung gian $B$, rồi chuyển đĩa to nhất sang cọc $C$. Sau đó chỉ cần chuyển hai đĩa từ cọc $B$ sang cọc $C$. Phương pháp chuyển $2$ đĩa từ cọc này sang cọc khác thì ta đã biết. Như vậy, số phép chuyển phải làm khi có $3$ đĩa bằng $2$ lần số phép chuyên khi có $2$ đĩa, cộng thêm $1$ phép chuyển (đĩa to nhất). 
+	\vskip 0.1cm
+	Như vậy, số bước chuyển cần thiết của $3$ đĩa là: $2\times 3 + 1 = 7$. Bằng quy nạp, dễ chứng minh nếu $N$ là số phép chuyển khi có $n$ đĩa thì với $(n+1)$ đĩa, ta có thể thực hiện nhiệm vụ với $(2N+1)$ phép chuyển. Từ đó, dễ suy ra, nhiệm vụ đặt ra trong bài toán Tháp Hà Nội với $n$ đĩa có thể thực hiện với $2^n- 1$  phép chuyển.
+	\vskip 0.1cm
+	Có thể chứng minh $2^n - 1$  là số phép dịch chuyển tối thiểu cần thiết, nghĩa là không có cách gì thực hiện nhiệm vụ với số phép dịch chuyển ít hơn.
+	\vskip 0.1cm
+	Người ta cho rằng, bài toán Tháp Hà Nội lấy ý tưởng từ câu chuyển cổ Ấn Độ sau đây.
+	\vskip 0.1cm
+	``Trong ngôi đền vĩ đại ở Benares, bên dưới mái vòm đánh dấu trung tâm thế giới, người ta đặt một chiếc đĩa bằng đồng, trên đó gắn cố định ba chiếc cọc kim cương, mỗi chiếc cao một mét và dày như thân của một con ong. Trên một trong những chiếc cọc  kim cương đó, vào buổi sáng tạo, Thượng Đế đặt $64$ chiếc đĩa bằng vàng nguyên chất, theo thứ tự to dần từ trên xuống dưới.  Ngày đêm không ngừng, những con quỷ chuyển các đĩa từ cọc kim cương này sang cọc kim cương khác theo nguyên tắc không được di chuyển nhiều hơn một đĩa cùng một lúc, và không được đặt đĩa nào lên trên cái nhỏ hơn nó. Khi $64$ chiếc  đĩa  được chuyển xong thì tiếng sét sẽ nổ ra, và thế giới tan biến".
+	\vskip 0.1cm
+	Những suy luận trên đây chỉ ra rằng, số phép dịch chuyển mà lũ quỷ phải làm ít nhất là
+	\begin{align*}
+		2^{64} - 1= 18{.}446{.}744{.}073{.}709{.}551{.}615.
+	\end{align*}
+	Giả sử lũ quỷ rất thạo ``thuật toán dịch chuyển", và mỗi giây chúng chuyển được một đĩa, thì phải mất khoảng $585$ tỷ năm. Có lẽ dù không có lũ quỷ, trái đất của chúng ta cũng không tồn tại được lâu đến thế!
+	\vskip 0.1cm
+	Từ sau khi ra đời, bài toán Tháp Hà Nội nhận được sự quan tâm lớn của các nhà toán học và những người làm ... đồ chơi. Rất nhiều phiên bản của bài toán Tháp Hà Nội xuất hiện, chẳng hạn như số cọc lớn hơn $3$, hoặc cách chơi có thay đổi. Cho đến ngày nay, Tháp Hà Nội và những biến thể của nó vẫn là bài toán quan trọng trong toán học rời rạc, lý thuyết đồ thị, khoa học máy tính, và tô pô (chẳng hạn, bài toán về đường cong tự cắt tại mọi điểm của nó!). Thậm chí, Tháp Hà Nội còn có ứng dụng rộng rãi trong nghiên cứu tâm lý học!
+	\vskip 0.1cm
+	Người ta cho rằng, sở dĩ bài toán Tháp Hà Nội lôi cuốn được nhiều thế hệ các nhà toán học vì nó chứa đựng những yếu tố làm nên sức hấp dẫn của Toán học: đẹp, thú vị, hữu ích, và bất ngờ.
 \end{multicols}
-\begin{figure}[H]
-	\centering
-	\vspace*{-5pt}
-	\captionsetup{labelformat= empty, justification=centering}
-	\includegraphics[width=0.98\linewidth]{xuanphong}
-	\vspace*{-10pt}
-\end{figure}
 \newpage
 \begingroup
-\AddToShipoutPicture*{\put(115,670){\includegraphics[scale=1]{../tieude11.pdf}}} 
+\AddToShipoutPicture*{\put(56,678){\includegraphics[scale=0.95]{../tieude10.pdf}}} 
 \centering
 \endgroup
-\vspace*{33pt}
+\vspace*{30pt}
 
 \begin{multicols}{2}
-	$\pmb{1.}$	Pinocchio và Pierrot thi chạy với nhau. Pierrot chạy suốt cả quãng đường với cùng một tốc độ, còn Pinocchio chạy nhanh gấp đôi Pierrot trong nửa đầu quãng đường, và nửa sau lại chậm bằng nửa Pierrot. Hỏi ai đã thắng?
+	\textbf{\color{toancuabi}Ayatori} (hay trò chơi dây) là một trò chơi mà khi nhắc đến chắc chắn những người hâm mộ bộ truyện tranh Doraemon đều biết đến và nhớ ngay tới nhân vật Nobita. Trò chơi Ayatori là một trò chơi rất thú vị, người chơi sẽ sử dụng một sợi dây được buộc thành hình tròn, sau đó dùng những ngón tay của mình đan xen các sợi dây để tạo ra nhiều hình dạng khác nhau từ đơn giản đến phức tạp. Hôm nay, em hãy thử xếp hình ngôi sao thông qua trò chơi Ayatori nhé!
+	\vskip 0.1cm
+	\textit{Bước} $1$: Cách cầm dây khi mới bắt đầu chơi trò chơi Ayatori là giữ sợi dây trong ngón cái và ngón út bằng hai tay, rồi kéo ngang để chuẩn bị chơi.
 	\begin{figure}[H]
-		\centering
-		\vspace*{-5pt}
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{Pi4_bai1}
-		\vspace*{-15pt}
-	\end{figure}
-	$\pmb{2.}$ ``Còn quá sớm để các em nhìn thấy điều thần kỳ sau đây của thế giới pháp sư," cô giáo McGonagall  nói với $33$ học trò của mình ở ngôi trường Hogwarts đào tạo Phù thủy, và vung cây đũa thần ra lệnh: ``Nào, các em hãy nhắm mắt lại!" Tất cả học trò nam và một phần ba học trò nữ đều nhắm mắt phải. Tất cả học trò nữ và một phần ba các học trò nam đều nhắm mắt trái. Hỏi có bao nhiêu học trò đã nhìn thấy những gì còn quá sớm để nhìn thấy?
-	\begin{figure}[H]
-		\centering
 		\vspace*{-10pt}
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{Pi4_bai2}
-		\vspace*{-15pt}
-	\end{figure}
-	$\pmb{3.}$ 	Bác Tư múc ra ba thìa sữa từ một ly sữa đầy và đổ chúng vào một ly đựng cà phê nguyên chất và khuấy đều. Sau đó bác múc ba thìa hỗn hợp thu được và đổ lại vào ly sữa. Hỏi bây giờ thứ gì nhiều hơn: cà phê trong ly đựng sữa hay sữa trong ly đựng cà phê?
-	\begin{figure}[H]
 		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=0.85\linewidth]{1a}
+		
+		\vspace*{1.8pt}
+		\includegraphics[width=0.85\linewidth]{1b}
+		
+		\vspace*{1.5pt}
+		\hspace*{3pt}\includegraphics[width=0.85\linewidth]{1c}
+		\vspace*{-10pt}
+	\end{figure}
+	\textit{Bước} $2$: Thả dây ở hai ngón tay út. Sau đó dùng hai ngón tay út luồn phía dưới sợi dây ở hai ngón cái để kéo sợi dây ra như hình vẽ.
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=0.85\linewidth]{2a}
+%		\vspace*{-5pt}
+	\end{figure}
+	\begin{figure}[H]
 		\vspace*{5pt}
+		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{Pi4_bai3}
+		\includegraphics[width=0.85\linewidth]{2b}
+		\vspace*{-5pt}
+	\end{figure}
+	\textit{Bước} $3$: Lấy ngón trỏ tay phải móc vào phần dây giữa ngón cái và ngón út của tay trái. Thực hiện tương tự với ngón trỏ tay trái.
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=0.85\linewidth]{3a}
+		
+		\vspace*{1.8pt}
+		\includegraphics[width=0.85\linewidth]{3b}
+		
+		\vspace*{2pt}
+		\includegraphics[width=0.85\linewidth]{3c}
+		
+		\vspace*{1.8pt}
+		\hspace*{2pt}\includegraphics[width=0.852\linewidth]{3d}
+		\vspace*{-10pt}
+	\end{figure}
+	\textit{Bước} $4$: Thả dây ở hai ngón tay út.
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width= 0.85\linewidth]{4}
+%		\caption{\small\textit{\color{}}}
+		\vspace*{-10pt}
+	\end{figure}
+	\textit{Bước} $5$: Dùng ngón út để kéo sợi dây ở dưới cùng lên và chúng ta sẽ hoàn hành ngôi sao năm cánh.
+	\begin{figure}[H]
+		\vspace*{5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width= 0.85\linewidth]{5}
+%		\caption{\small\textit{\color{}}}
+		\vspace*{-5pt}
+	\end{figure}
+	Hãy thử suy ngẫm xem hình ngôi sao năm cánh em vừa tạo ra có bao nhiêu trục đối xứng?
+	\vskip 0.1cm
+	\textbf{\color{toancuabi}Làm cây thông Noel}
+	\vskip 0.1cm
+	\textit{Bước} $1$: Xếp hai tờ giấy màu cứng chồng lên nhau rồi gấp đôi lại cho đều nhau. Sau đó lấy bút vẽ phác họa hình cây thông lên mặt ngoài của tờ giấy rồi dùng kéo cắt theo các đường đã vẽ sẵn. Lúc mở ra, em sẽ có hai cây thông với kích thước giống nhau.
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width= 1\linewidth]{6}
+%		\caption{\small\textit{\color{}}}
 		\vspace*{-15pt}
 	\end{figure}
-	$\pmb{4.}$ Ma xó Brownie là một nhân vật trong văn hóa dân gian Anh và một số quốc gia khác. Đó là một dạng Phúc thần (ma thiện), tiểu yêu nghịch ngợm, thường mô tả là bé tí hon, có da nâu, ăn mặc tuềnh toàng, sinh sống gần gũi với con người, và là thần hộ mệnh cho các gia đình. Các Brownies có một xã hội thu nhỏ riêng và thường tổ chức những cuộc họp bí mật tại một tảng đá nào đó để con người không để ý tới. 
-	\vskip 0.1cm
-	Trong một tòa nhà bảy tầng nọ cũng có rất nhiều ma xó Brownies sinh sống. Thang máy chạy giữa tầng một và tầng cuối, dừng lại ở mỗi tầng. Ở mỗi tầng, bắt đầu từ tầng đầu tiên, có một chú Brownie bước vào thang máy, nhưng không có chú nào bước ra ngoài. Thang máy cứ di chuyển liên tục như vậy cho đến khi chú Brownie thứ một nghìn bước vào thang máy thì thang máy dừng lại. Hỏi điều này đã xảy ra ở tầng nào?
+	\textit{Bước} $2$: Gấp đôi cây thông theo chiều ngang, gấp đầu nhọn xuống dưới để xác định tâm của mỗi cây thông. Tiếp đến dùng kéo cắt một đường từ đỉnh cây thông xuống điểm vừa đánh dấu. Cây thông còn lại thì cắt từ đáy lên điểm vừa đánh dấu.
 	\begin{figure}[H]
-		\centering
 		\vspace*{-5pt}
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{Pi4_bai4}
-		\vspace*{-20pt}
-	\end{figure}
-	$\pmb{5.}$ Có $40$ con thú sống trong rừng gồm cáo, sói, thỏ rừng và lửng. Hàng năm, các con thú tổ chức vũ hội hóa trang: mỗi con đeo một chiếc mặt nạ của một loài động vật khác và trong hai năm liên tiếp không con nào đeo cùng một chiếc mặt nạ của cùng một loài.
-	\begin{figure}[H]
 		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width= 1\linewidth]{7}
+%		\caption{\small\textit{\color{}}}
+		\vspace*{-15pt}
+	\end{figure}
+	\textit{Bước} $3$: Sau khi đã hoàn thành việc cắt hai cây thông, em hãy ghép chúng lại với nhau theo các khe đã cắt, chú ý để các góc không bị cong. Nếu sau khi ráp cây thông bị lung lay các em có thể cố định lại bằng keo dán.
+	\begin{figure}[H]
 		\vspace*{-5pt}
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{Pi4_bai5}
-		\vspace*{-20pt}
-	\end{figure}
-	Hai năm trước, có $12$ ``cáo" và $28$ ``sói" tại vũ hội, một năm trước -- có $15$ ``thỏ rừng", $10$ ``cáo" và $15$ ``lửng", và năm nay -- $15$ ``thỏ rừng" và $25$ ``cáo" . Hỏi loài thú nào có nhiều nhất trong rừng? 
-	\vskip 0.1cm
-	$\pmb{6.}$ $a)$	Có tám bạn học sinh giải một đề thi gồm $8$ bài toán. Khi tổng kết lại, cô giáo thấy rằng với mỗi bài toán lại có đúng  năm bạn học sinh giải được bài đó. Chứng minh rằng có hai học sinh sao cho với mỗi bài toán trong đề có ít nhất một trong hai em giải được.
-	\vskip 0.1cm
-	$b)$	Em hãy chỉ ra một ví dụ rằng, nếu với mỗi bài toán đều có đúng bốn bạn học sinh giải được, thì điều khẳng định ở câu $a)$ không đúng.
-	\begin{figure}[H]
 		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width= 1\linewidth]{8}
+%		\caption{\small\textit{\color{}}}
+		\vspace*{-15pt}
+	\end{figure}
+	\textit{Bước} $4$: Cuối cùng các em chỉ cần điều chỉnh sao cho cây thông đứng vững, trang trí thêm các dây ruy băng hay rắc kim tuyến,… hoặc vẽ họa tiết lên cây thông Noel để nhìn đẹp hơn.
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[height= 0.31\linewidth]{9a}
+		\includegraphics[height= 0.31\linewidth]{9b}
+		\includegraphics[height= 0.31\linewidth]{9c}
+		\caption{\small\textit{\color{toancuabi}Ảnh: Internet.}}
 		\vspace*{-10pt}
+	\end{figure}
+	\textbf{\color{toancuabi}Bài tập}
+	\vskip 0.1cm
+	Còn gì tuyệt vời hơn khi được thả diều dưới bầu trời xanh và trong làn gió mát của những buổi chiều mùa hè oi ả. Bằng những kiến thức của bài ``Hình có trục đối xứng" và trí tưởng tượng phong phú của mình, em hãy tự làm ra cho mình một con diều đẹp đẽ với màu sắc rực rỡ nhé. Chúc em thành công!
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=0.7\linewidth]{Pi4_bai6}
+		\includegraphics[width= 1\linewidth]{10}
+		\caption{\small\textit{\color{toancuabi}Hình ảnh con diều (Ảnh: Internet)}}
+		\vspace*{-10pt}
+	\end{figure}
+\end{multicols}
+
+\newpage
+\begingroup
+\AddToShipoutPicture*{\put(78,675){\includegraphics[scale=1]{../tieude.pdf}}} 
+\centering
+\endgroup
+\vspace*{30pt}
+
+\begin{multicols}{2}
+	Thám tử Xuân Phong cùng thanh tra Lê Kính tham gia một buổi giới thiệu sản phẩm của hai công ty là Tae Yeon và TeaYon tại triển lãm Điện tử Expo -- New Vision của khu vực. Công ty  Tae Yeon có uy tín từ lâu đời, với những sản phẩm tinh tế có chất lượng tốt nổi tiếng,  các nhân viên của công ty luôn nói thật. Còn công ty TeaYon chuyên sản xuất đồ rẻ, kém chất lượng, bắt chước kiểu dáng của công ty Tae Yeon nên ban giám đốc dặn các nhân viên của mình chỉ được nói dối trong buổi triển lãm. 
+	\vskip 0.1cm
+	Vừa đặt chân tới khu vực triển lãm được trang hoàng lộng lẫy, Xuân Phong gặp ngay $5$ đại diện  của hai công ty này đứng tại cổng ra vào và tươi cười niềm nở tiếp đón. Xuân Phong tiến tới họ và hỏi cả $5$ người cùng một câu hỏi ``Có bao nhiêu người đến từ công ty Tae Yeon trong số các bạn?" 
+	\vskip 0.1cm
+	Người thứ nhất trả lời ``Không có ai cả". Hai người tiếp theo đều trả lời ``Có đúng một người". 
+	\vskip 0.1cm
+	Vậy hai người còn lại sẽ trả lời câu hỏi của thám tử Xuân Phong như thế nào nhỉ? Em có thể suy đoán ra câu trả lời của họ và giải thích lập luận được không?
+	\begin{figure}[H]
+		\centering
+		\vspace*{-5pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=1\linewidth]{xuanphong}
 		\vspace*{-5pt}
 	\end{figure}
+	%	
+	%	Người của công ty Tae Yeon không thể trả lời ``Không có ai cả" vì như vậy người đó sẽ nói dối. Vì vậy, người đầu tiên đến từ công ty TeaYon. 
+	%	\vskip 0.1cm
+	%	Hai người tiếp theo trả lời giống nhau, vì thế họ phải cùng nói thật hoặc cùng nói dối, tức là đến từ cùng một công ty.
+	%	\vskip 0.1cm
+	%	Nếu cả hai người này cùng đến từ công ty Tae Yeon, suy ra số người của công ty Tae Yeon trong số họ không ít hơn $2$ người. Suy ra câu trả lời của họ là sai. Vì vậy cả hai người thứ hai và thứ ba đều nói dối, tức là đến từ công ty TeaYon.
+	%	\vskip 0.1cm
+	%	Do vậy, trong số $5$ người này, có ít nhất $3$ người của công ty TeaYon và không quá $2$ người đến từ công ty Tae Yeon.
+	%	\vskip 0.1cm
+	%	Nhưng vì cả $3$ người đầu tiên đều nói dối, suy ra số người của công ty Tae Yeon trong số họ không thể là $0$ hoặc $1$. Vì vậy, cả hai người còn lại đều là nhân viên của công ty Tae Yeon. Và họ đều sẽ trả lời là ``Có hai người".
 \end{multicols}
 \vspace*{-10pt}
 {\color{toancuabi}\rule{1\linewidth}{0.1pt}}
 \begingroup
-\AddToShipoutPicture*{\put(110,350){\includegraphics[scale=1]{../tieude2.pdf}}} 
+\AddToShipoutPicture*{\put(115,305){\includegraphics[scale=1]{../tieude11.pdf}}} 
 \centering
 \endgroup
-\vspace*{75pt}
+\vspace*{53pt}
 
 \begin{multicols}{2}
-	$\pmb{1.}$ Bạn Tùng làm một số bài trắc nghiệm và sau đó sẽ lấy điểm trung bình của các bài đó để tự đánh giá học lực của mình. Trả lời xong bài trắc nghiệm cuối cùng, Tùng thấy rằng nếu bài này mình được $97$ điểm thì điểm trung bình của tất cả các bài trắc nghiệm sẽ là $90$ điểm, còn nếu như ở bài cuối Tùng chỉ nhận được $73$ điểm thì điểm trung bình sẽ chỉ còn $87$ điểm. Vậy số bài trắc nghiệm mà Tùng đã làm là bao nhiêu?
+	$\pmb{1.}$	Trong một cuộc thi thể thao, ban tổ chức chọn ra một số bạn học sinh ở lớp $5A$ và một số bạn ở lớp $5B$ thi đấu trực tiếp. Mỗi bạn ở lớp $5A$ được chọn ra sẽ thi đấu duy nhất một trận với một bạn ở lớp $5B$, và ngược lại, mỗi bạn ở lớp $5B$ được chọn ra chỉ đấu đúng một trận với một bạn ở lớp $5A$.
 	\begin{figure}[H]
 		\centering
-		\vspace*{-10pt}
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=0.98\linewidth]{Pi12_Bai1}
 		\vspace*{-5pt}
-	\end{figure}
-	\textit{Lời giải.} 	Các em có thể gọi số bài trắc nghiệm là $n$, tổng số điểm các bài trắc nghiệm  từ bài số $1$ tới bài thứ $(n-1)$ là $S$. Khi đó ta có các hệ thức sau
-	\begin{align*}
-		\frac{S + 97}{n} &= 90\\
-		\frac{S + 73}{n} &= 87.
-	\end{align*}
-	Từ đó suy ra $90n-97= 87n-73$. Các em nhận được $n=8$.
-	\vskip 0.1cm
-	Hoặc các em có thể lập luận nhẩm như sau. Điểm chênh lệch của bài trắc nghiệm  cuối sau hai lần dự tính của Tùng là $97-73 = 24$. Trong khi chênh lệch của hai điểm điểm trung bình là $90-87=3$. Vậy số bài trắc nghiệm  mà Tùng cần thực hiện là \linebreak$\dfrac{24}{3}=8$ (bài).
-	\vskip 0.1cm
-	$\pmb{2.}$ Có $3$ loại kẹo để trong lọ thủy tinh với ba màu khác nhau: kẹo màu đỏ, kẹo màu vàng và kẹo màu trắng. Nếu Bình nhặt hết số kẹo màu vàng thì tổng số kẹo trong lọ ít hơn một chiếc so với $2/3$ tổng số kẹo ban đầu. Còn nếu Bình nhặt hết số kẹo đỏ, thì số kẹo còn lại trong lọ nhiều hơn $4$ chiếc so với $2/3$ tổng số kẹo ban đầu.
-	\vskip 0.1cm
-	Vậy ban đầu trong hai loại kẹo màu vàng và kẹo màu trắng, loại nào có nhiều hơn và nhiều hơn bao nhiêu?
-	\begin{figure}[H]
-		\centering
-		\vspace*{-10pt}
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=0.45\linewidth]{Pi12_Bai2}
+		\includegraphics[width=1\linewidth]{Pi5_bai1}
 		\vspace*{-15pt}
 	\end{figure}
-	\textit{Lời giải.} 	Từ điều kiện thứ nhất suy ra số kẹo màu vàng nhiều hơn một chiếc so với $1/3$ tổng số kẹo ban đầu trong lọ. Từ điều kiện thứ hai suy ra số kẹo màu đỏ ít hơn $4$ chiếc so với $1/3$ tổng số kẹo ban đầu trong lọ. Suy ra số kẹo màu trắng  nhiều hơn $(4-1)=3$ chiếc so với $1/3$ tổng số kẹo ban đầu, tức là nhiều hơn $2$ chiếc so với số kẹo màu vàng.
-	\vskip 0.1cm
-	$\pmb{3.}$ $40$ bạn nhỏ nắm tay nhau xếp thành vòng tròn quanh đống lửa trại. Có tất cả $22$ bạn có nắm tay một bạn nam, và $30$ bạn có nắm tay một bạn nữ. Hỏi có tất cả bao nhiêu bạn nữ xếp trong vòng tròn quanh lửa trại ngày hôm đó?
+	Biết rằng số học sinh lớp $5A$ được chọn thi đấu chiếm $2/3$ tổng số học sinh toàn lớp $5A$, còn số học sinh lớp $5B$ được chọn thi đấu chiếm $3/5$ tổng số học sinh toàn lớp $5B$. Tổng số học sinh của cả hai lớp là $57$ bạn. Hỏi có bao nhiêu học sinh của hai lớp đã tham gia các trận thi đấu trực tiếp?
+	
+	$\pmb{2.}$ Công ty vận tải được thông báo ngắn gọn là có một số kiện hàng có tổng trọng lượng là $10$ tấn cần được vận chuyển, hơn nữa mỗi kiện hàng nặng không quá $1$ tấn. Hỏi công ty  cần điều động ít nhất bao nhiêu xe tải có trọng tải là $3$ tấn mỗi xe để luôn chắc chắn chở được hết được số hàng hoá đó?
+	\begin{figure}[H]
+		\centering
+		%			\vspace*{-1pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=1\linewidth]{Pi5_bai2}
+		\vspace*{-15pt}
+	\end{figure}
+	$\pmb{3.}$ Sau khi được sạc đầy pin, điện thoại di động của bạn An dùng đúng $6$ tiếng ở chế độ trò chuyện hoặc đúng $210$ tiếng ở chế độ chờ. Khi bạn An lên tàu hoả để đi du lịch, pin của bạn được sạc đầy $100\%$, và trên tàu không có ổ cắm sạc nên khi xuống ga, pin của bạn cũng vừa hết sạch. Biết rằng An đã nói chuyện với bạn bè đúng một nửa thời gian khi ngồi trên tàu, còn nửa thời gian còn lại đặt điện thoại ở chế độ chờ. Hỏi thời gian An đi trên tàu hoả là bao nhiêu lâu?
+	\begin{figure}[H]
+		\centering
+		\vspace*{-5pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=1\linewidth]{Pi5_bai3}
+		\vspace*{-15pt}
+	\end{figure}
+	$\pmb{4.}$ Một nhóm học sinh đi bộ từ điểm hẹn tới bến xe buýt để kịp đón chuyến xe vào lúc $8$ giờ. Cũng vào thời điểm này, từ điểm thăm quan, một chiếc xe buýt cũng xuất phát để tới kịp bến xe đón nhóm học sinh đó. Tuy  nhiên nhóm học sinh tới bến xe buýt khá sớm, vào lúc $6$ giờ $10$ phút, nên họ quyết định đi bộ tiếp tới điểm thăm quan. Trên đường, các bạn đã gặp được xe buýt và lên xe đi tiếp.  Cuối cùng cả nhóm đến được điểm thăm quan sớm hơn $20$ phút so với thời gian ấn định. Biết rằng vận tốc của xe buýt là $60$ km/h và vận tốc đi bộ của các em học sinh luôn không đổi. Hãy tìm vận tốc đi bộ của nhóm học sinh trước khi gặp xe buýt.
+	\begin{figure}[H]
+		\centering
+		%			\vspace*{-5pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=1\linewidth]{Pi5_bai4}
+		\vspace*{-10pt}
+	\end{figure}
+	$\pmb{5.}$ 	Có $100$ chiếc xe ô tô đỗ liền nhau thành một hàng dọc bên lề đường, trong đó có $70$ chiếc xe hiệu Mercedes, còn lại là những xe nhãn hiệu khác. Trong các xe nhãn hiệu Mercedes có $30$ chiếc màu đỏ, $20$ chiếc màu vàng và $20$ chiếc màu hồng. Biết rằng không có hai xe Mercedes nào khác màu lại đỗ cạnh nhau. Em hãy chỉ ra rằng luôn tìm ra $3$ chiếc xe Mercedes cùng màu đỗ liên tiếp nhau.
+	\begin{figure}[H]
+		\centering
+		\vspace*{-5pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=1\linewidth]{Pi5_bai5}
+		\vspace*{-15pt}
+	\end{figure}
+	$\pmb{6.}$ Một lớp học có $20$ em học sinh. Cô giáo chủ nhiệm của lớp tổ chức một số buổi thăm quan vào mỗi ngày cuối tuần trong suốt năm học, mỗi buổi tham quan có ít nhất $4$ em học sinh tham gia. Em hãy chứng minh rằng có một buổi thăm quan mà mỗi em học sinh tham gia buổi đó đều tham gia ít nhất $1/17$ tổng số tất cả các buổi tham quan của cả năm học.
+	\begin{figure}[H]
+		\centering
+		\vspace*{-5pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=1\linewidth]{Pi5_bai6}
+		\vspace*{-15pt}
+	\end{figure}
+\end{multicols}
+\newpage
+\begingroup
+\AddToShipoutPicture*{\put(110,645){\includegraphics[scale=1]{../tieude2.pdf}}} 
+\centering
+\endgroup
+\vspace*{55pt}
+
+\begin{multicols}{2}
+	$\pmb{1.}$ Một bác nông dân chở một xe ô tô quất cảnh ra chợ Tết để bán. Sau khi bán hết cây quất cuối cùng với giá $230$ nghìn đồng, bác tính nhẩm lại thấy mình đã bán số cây quất với giá trung bì nh là $245$ nghìn đồng/cây. Nhưng ngay lúc ấy người mua cây quất cuối quay trở lại và chỉ cho bác thấy cành quất bị rụng quá nhiều lá, nên ông ta chỉ đồng ý mua với giá $158$ nghìn đồng. 
+	Bác chấp thuận và bán cây quất đó. Khi nhẩm tính lại, bác nông dân thấy giá trung bình của xe quất bây giờ là $242$ nghìn đồng. Hỏi bác đã bán được bao nhiêu cây quất?
 	\begin{figure}[H]
 		\centering
 		\vspace*{-10pt}
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=0.9\linewidth]{Pi12_Bai3}
-		\vspace*{-5pt}
+		\includegraphics[width=0.7\linewidth]{Pi1_2_Bai1}
+		\vspace*{-15pt}
 	\end{figure}
-	\textit{Lời giải.} 	Vì $22+30=52$ và $52-40 = 12$, nên có $12$ bạn nhỏ hôm đó vừa nắm tay cả bạn nam lẫn bạn nữ trong vòng tròn. Suy ra có $30-12=18$ bạn chỉ nắm tay các bạn nữ.  $18$ bạn này nắm tất cả $18\times2=36$ cánh tay của các bạn nữ, còn $12$ bạn còn lại nắm đúng $12$ cánh tay của các bạn nữ. Vì thế tổng số cánh tay của các bạn nữ là $36+12=48$. Do đó số các bạn nữ là $48:2=24$ (bạn).
+	\textit{Lời giải.} Gọi số cây quất là $n$, còn giá tiền một cây quất là $Q$ (nghìn đồng). Khi đó $Q+230 = 245n$ và $Q+ 158 = 242n$. Trừ hai đẳng thức này ta có $72 = 3n$. Suy ra bác nông dân đã bán được $24$ cây quất.
 	\vskip 0.1cm
-	$\pmb{4.}$ Trên mặt bàn có $5$ đồng xu xếp thành hàng ngang. Đồng xu ở giữa đặt sấp còn $4$ đồng còn lại đều đặt ngửa. Mỗi một lần em được phép lật $3$ đồng xu đặt liền nhau tùy ý. Liệu em có thể có cách lật thế nào để cuối cùng $5$ đồng xu đều đặt sấp được không?
+	$\pmb{2.}$ Chuyện kể rằng có một người khi gặp nhà triết học và toán học Hy--Lạp Pythagoras đã hỏi ông: ``Bây giờ là mấy giờ?" Pythagoras đã trả lời ``Cho đến hết ngày, còn lại hai lần của hai phần năm khoảng thời gian đã trôi qua từ lúc bắt đầu ngày". Nghe vậy, người đó chịu không thể nghĩ ra ngay được lúc họ gặp nhau là mấy giờ. Em có thể giúp trả lời lúc đó là mấy giờ được không?
 	\vskip 0.1cm
-	Cũng câu hỏi như vậy, nếu lúc đầu đồng xu đặt sấp duy nhất là đồng xu xếp đầu hàng? Là đồng xu xếp thứ hai trong hàng?
+	\textit{Lời giải.} 	Gọi $x$ là thời gian (tính theo giờ) đã trôi qua từ lúc bắt đầu ngày. Khi đó ta có hệ thức sau theo câu trả lời của Pythagoras: $24 - x = 4/5 x$. Suy ra $x = 40/3$ (giờ), có nghĩa là $13$ giờ $20$ phút. Vậy người đó đã gặp Pythagoras lúc $13$ giờ $20$ phút.
 	\begin{figure}[H]
 		\centering
-		\vspace*{-5pt}
+		\vspace*{-10pt}
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{Pi12_Bai4}
-		\vspace*{-20pt}
-	\end{figure}
-	\textit{Lời giải.} Nếu lúc đầu đồng ở giữa là đồng duy nhất đặt xấp, thì em chỉ cần lật $3$ đồng xu xếp đầu tiên, sau đó lại lật $3$ đồng xu xếp cuối hàng là hoàn thành nhiệm vụ.
-	\vskip 0.1cm
-	Nếu lúc đầu đồng xu thứ hai là đồng đặt xấp duy nhất, thì em không thể nào lật xấp toàn bộ $5$ đồng xu. Thật vậy, có ba cách lật ba đồng xu đặt cạnh nhau: lật $3$ đồng xu đầu tiên, $3$ đồng xu ở giữa và $3$ đồng xu cuối hàng ngang. Do lúc đầu đồng xu đầu hàng và đồng xu cuối hàng đều đặt ngửa, nên mỗi một trong số hai đồng xu này phải lật một số lẻ lần, có nghĩa là hai cách “lật” kiểu thứ nhất và kiểu thứ ba phải thực hiện một số lẻ lần. Khi đó, với hai kiểu “lật” này đồng xu ở giữa sẽ bị lật một số chẵn lần (do \textit{lẻ $+$ lẻ $=$ chẵn}). Nhưng lúc đầu đồng xu ở giữa đặt ngửa nên số lần “lật” kiểu thứ hai cũng phải là số lẻ. Tuy nhiên, khi đó đồng xu thứ tư lại sẽ bị lật một số chẵn (\textit{$=$ lẻ $+$ lẻ}) lần, và nó cuối cùng sẽ vẫn bị lật ngửa. Do đó, trong trường hợp này em không thể lật xấp tất cả các đồng xu.
-	\vskip 0.1cm
-	Lý luận tương tự, em cũng có thể thấy không thể lật xấp cả $5$ đồng xu nếu lúc đầu đồng xu đứng đầu hàng là đồng xu duy nhất  được đặt xấp.
-	\vskip 0.1cm
-	$\pmb{5.}$ Một lần Lý Toét diện guốc mộc loẹt quẹt ra tận chợ phiên chơi ngày cuối tuần. Khi về nhà, Lý Toét ba hoa khoe khắp làng ``Tôi là tôi gặp $15$ ông bán cây cảnh ngoài chợ nhé. Mà tôi đi lòng vòng và nghiệm thấy cứ $3$ ông bất kỳ có tổng cộng đúng $10$ cây hoa hồng. Thế là tôi lẩm nhẩm đoán được ngay $15$ ông này có tất cả bao nhiêu cây hoa hồng."
-	\vskip 0.1cm
-	Em có thể đoán được Lý Toét đã tính số cây hoa hồng của $15$ ông bán cây cảnh như thế nào không? Hay Lý Toét có khoác lác hay nhầm lẫn gì không nhỉ?
-	\begin{figure}[H]
-		\centering
-		\vspace*{-5pt}
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=0.58\linewidth]{Pi12_Bai5}
+		\includegraphics[width=0.6\linewidth]{Pi1_2_Bai2}
 		\vspace*{-10pt}
 	\end{figure}
-	\textit{Lời giải.} Trước tiên ta sẽ chỉ ra hai ông bán cây bất kỳ luôn có số cây hồng bằng nhau. Gọi hai ông đó là $A$ và $B$. Lấy thêm hai ông $C$ và $D$ khác nữa trong số $15$ ông bán cây. Theo lời của Lý Toét, $3$ ông $A$, $C$ và $D$ có $10$ cây hồng. Và cũng thế, $3$ ông $B$, $C$, $D$ cũng có đúng $10$ cây hồng. Suy ra  ông $A$ và ông $B$ có số cây hồng bằng nhau.  Vì hai ông này được chọn bất kỳ, suy ra số cây hồng của mỗi ông trong số $15$ ông là như nhau.
+	$\pmb{3.}$ Một tháng trước bà Hoa ra chợ mua một cân khoai tây, một cân thịt và một chục trứng. Chủ nhật vừa rồi, khoai tây tăng lên gấp $3$, thịt gấp $4$ lần còn trứng đắt gấp $5$ lần, nên bà Hoa phải trả $600$ nghìn cho từng ấy món hàng như lần thứ nhất. Hôm nay thì khoai lại đắt gấp $6$ lần so với tháng trước, thịt đắt gấp $5$ lần còn trứng chỉ đắt gấp $4$ lần nên bà Hoa lại phải trả $660$ nghìn với cùng một lượng hàng. Hỏi bà Hoa đã trả bao nhiêu tiền cho lần mua thứ nhất?
+	\begin{figure}[H]
+		\centering
+		\vspace*{-10pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=0.7\linewidth]{Pi1_2_Bai3}
+		\vspace*{-10pt}
+	\end{figure}
+	\textit{Lời giải.} 	Giả sử vào tháng trước trong lần mua đầu tiên giá một cân khoai tây là $a$ (nghìn đồng), giá một cân thịt là $b$ (nghìn đồng) và giá một chục trứng là $c$ (nghìn đồng). Khi đó trong lần mua thứ nhất bà Hoa đã trả $a + b + c$ (nghìn), trong lần mua thứ hai là $3a+4b+5c = 600$ và trong lần mua thứ ba là $6a + 5b+ 4c = 660$. Cộng hai đẳng thức cuối này, ta có $9(a+b+c)= 1260$. Suy ra $a+b+c = 140$. Vậy vào tháng trước bà Hoa chỉ phải trả có $140$ nghìn đồng.
 	\vskip 0.1cm
-	Nhưng khi đó, ba ông bán cây không thể có đúng $10$ cây hồng vì số cây phải là số nguyên, mà $10$ lại không chia hết cho $3$.
+	$\pmb{4.}$ Trong một buổi dạ hội nọ mỗi quý ông đã hân hạnh khiêu vũ với ba quý bà, còn mỗi quý bà cũng đã khiêu vũ với ba quý ông. Em hãy chỉ ra rằng số quý ông và số quý bà tham gia dạ hội là bằng nhau.
+	\begin{figure}[H]
+		\centering
+		\vspace*{-5pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=0.85\linewidth]{Pi1_2_Bai4}
+		\vspace*{-10pt}
+	\end{figure}
+	\textit{Lời giải.} Ta sẽ tính tổng tất cả các cặp đã khiêu vũ với nhau. Một mặt, tổng này sẽ bằng $3$ lần số các quý ông, mặt khác nó lại bằng $3$ lần số các quý bà. Vì thế số các quý ông bằng số các quý bà.
 	\vskip 0.1cm
-	Vì thế, chắc chắn Lý Toét có hơi khoác lác hoặc nhầm lẫn đấy. 
+	$\pmb{5.}$ 	Sau khi kết thúc một giải thi cờ vua, ban tổ chức nhận thấy mỗi kỳ thủ tham gia đã có số trận thắng khi chơi bằng quân trắng bằng đúng tổng số trận thắng của toàn bộ các kỳ thủ còn lại khi chơi quân đen. Em hãy chỉ ra rằng tất cả các kỳ thủ tham gia thi đấu đã có số trận thắng là như nhau.
+	\begin{figure}[H]
+		\centering
+		\vspace*{-5pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=0.6\linewidth]{Pi1_2_Bai5}
+		\vspace*{-10pt}
+	\end{figure}
+	\textit{Lời giải.} Các em có thể nhận thấy số trận thắng của mỗi kỳ thủ tham gia giải bằng đúng tổng số trận thắng của tất cả các kỳ thủ khi chơi bằng quân đen. Vì thế mọi kỳ thủ tham gia đã có số trận thắng bằng nhau.
 	\vskip 0.1cm
-	$\pmb{6.}$ Có $20$ bạn tham gia nhóm Toán ngồi xung quanh một chiếc bàn tròn. Một lúc sau các bạn nhóm Văn cũng đến, cứ xen kẽ hai bạn nhóm Toán ngồi kề nhau giờ có thêm $20$ bạn mới từ nhóm Văn. Tổng cộng có tất cả $400$ bạn từ nhóm Văn ngồi thêm quanh chiếc bàn tròn rộng đó. Thỉnh thoảng một bạn nhóm Văn lại đứng dậy và rời khỏi bàn, dắt theo hai bạn ngồi cạnh mình đi luôn. Cứ như vậy, sau một lúc thì quanh bàn số bạn nhóm Toán còn lại chỉ là $3$ bạn. Hỏi số bạn nhóm Văn còn ở lại quanh bàn lúc đó ít nhất phải là bao nhiêu?
-	\vskip 0.1cm
-	\textit{Lời giải.} 	Các bạn nhóm Toán chia chiếc bàn tròn ra thành các khoảng bao gồm các bạn nhóm Văn ngồi giữa. Ta sẽ chỉ ra một tính chất (bất biến!) thú vị quan trọng sau: trong mỗi khoảng như vậy số các bạn nhóm Văn luôn là một số chia $3$ dư $2$. Thật vậy, điều này lúc đầu là đúng vì $20$ chia $3$ dư $2$. Nếu có $3$ bạn nhóm Văn rời khỏi bàn thì số bạn nhóm Văn trong một khoảng nào đó sẽ giảm đi $3$. Nếu có $1$ bạn nhóm Toán và $2$ bạn nhóm Văn rời khỏi bàn, thì hai khoảng sẽ nhập lại thành $1$ và tổng số bạn nhóm Văn trong khoảng tổng cộng mới đó sẽ giảm đi $2$.  Trong khoảng mới này, số bạn nhóm Văn sẽ chia $3$ dư $(2+2)-2 = 2$, có nghĩa là tính chất vẫn giữ nguyên. Cũng theo lập luận này, không thể xảy ra tình huống có $1$ bạn nhóm Văn rời bàn mang theo hai bạn nhóm Toán, vì khi đó trong khoảng giữa hai bạn nhóm Toán chỉ có $1$ bạn Văn, mà $1$ chia $3$ không thể dư $2$.
-	\vskip 0.1cm
-	Suy ra tính chất đó sẽ vẫn đúng ở thời điểm cuối cùng. Khi đó có $3$ bạn nhóm Toán ngồi lại, chia bàn ra $3$ khoảng, và trong mỗi khoảng phải có ít nhất $2$ bạn nhóm Văn. Suy ra số bạn nhóm Văn còn lại ngồi quanh bàn là $6$ bạn. 
-	\vskip 0.1cm
-	Ta có thể xây dựng tình huống để quanh bàn còn ngồi lại đúng $6$ bạn nhóm Văn như sau. Đầu tiên, $17$ bạn nhóm Toán rời khỏi bàn lần lượt, chỉ để lại $3$ bạn nhóm Toán ở lại. Sau đó mỗi một khoảng gồm các bạn nhóm Văn sẽ giảm dần cho đến khi chỉ còn $2$ bạn nhóm Văn ở lại khoảng đó.
+	$\pmb{6.}$ Vào một ngày Chủ nhật nọ, Vinh và người em trai nhỏ tuổi hơn là Minh  đạp hai chiếc xe tới hiệu sách trung tâm cách nhà vài cây số. Tại đó mỗi người chọn mua một cuốn sách quý mà nhóm bạn bè cũ đang bàn luận khen ngợi thường xuyên mấy năm nay trên Facebook. Mỗi người đều lấy tổng tất cả các chữ số của tất cả các trang sách mình đã mua và nhận thấy rằng số đó bẳng năm sinh của mình. Vậy ai  trong số hai anh em Vinh và Minh  đang đi học lớp  bồi dưỡng Toán cho học sinh phổ thông nhỉ?
+	\begin{figure}[H]
+		\centering
+		\vspace*{-5pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=0.8\linewidth]{Pi1_2_Bai6}
+		\vspace*{-10pt}
+	\end{figure}
+	\textit{Lời giải.} 	Trước tiên ta tính tổng chữ số của tất cả các số từ $1$ tới $99$. Nhận thấy rằng mỗi chữ số, trừ chữ số $0$ đều xuất hiện $10$ lần ở hàng chục, và cũng $10$ lần ở hàng đơn vị, nghĩa là $20$ lần tổng cộng. Do $1+2+ \cdots+9=45$, nên tổng này bằng  $900$. Tổng các chữ số của các số từ $100$ tới $199$ sẽ lớn hơn tổng trước là $100$. Vì thế tổng các chữ số của các số từ $1$ tới $199$ bằng $1900$. Vì vậy ta xét một vài trường hợp sau.
+	\begin{table}[H]
+		\centering
+		\vspace*{-5pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\renewcommand{\arraystretch}{1.05}
+		\begin{tabular}{|l|l|}
+			\hline
+			\textbf{Số trang sách}&	\textbf{Tổng các chữ số}\\
+			\hline
+			$200$&	$1900+2 =1902$\\
+			\hline
+			$202$&	$1902+3+4=1909$\\
+			\hline
+			$204$&	$1909+5+6=1920$\\
+			\hline
+			$206$&	$1920+7+8=1935$\\
+			\hline
+			$208$&	$1935+9+10=1954$\\
+			\hline
+			$210$&	$1954+11+3=1968$\\
+			\hline
+			$212$&	$1968+4+5=1977$\\
+			\hline
+			$214$&	$1977+6+7=1990$\\
+			\hline
+			$216$&	$1990+8+9=2007$\\
+			\hline
+			$217$&	$2007+10=2017$\\
+			\hline
+			$218$&	$2017+11=2028$\\
+			\hline
+		\end{tabular}
+		\vspace*{-5pt}
+	\end{table}
+	Các em thấy ngay chỉ có người sinh năm $2007$ trong số hai anh em mới có thể là học sinh phổ thông. Người đó cũng không thể là anh, vì nếu vậy người em trai sinh năm $2017$ đến giờ mới có $5$ tuổi không thể tự đi xe đạp vài km để mua sách dày hơn hai trăm trang và về nhà tự làm tính cộng hết từng đó chữ số, hơn nữa lại có nhóm bạn bè cũ trên Facebook bàn luận về cuốn sách tới mấy năm rồi. Vì vậy các em kết luận được người sinh năm $2007$ là em và có tên là Minh.
 \end{multicols}
 \newpage
 \begingroup
 \thispagestyle{toancuabinone}
-\blfootnote{$^1$\color{toancuabi}Ottawa, Canada.}
+%\blfootnote{$^1$\color{toancuabi}Ottawa, Canada.}
 \AddToShipoutPicture*{\put(60,733){\includegraphics[width=17.2cm]{../mathc.pdf}}}
 %\AddToShipoutPicture*{\put(-2,733){\includegraphics[width=17.2cm]{../mathl.pdf}}} 
-\AddToShipoutPicture*{\put(145,680){\includegraphics[scale=1]{../tieude3.pdf}}} 
+\AddToShipoutPicture*{\put(136,648){\includegraphics[scale=1]{../tieude12.pdf}}} 
 \centering
 \endgroup
-\vspace*{25pt}
+\graphicspath{{../toancuabi/pic/}}
+\vspace*{55pt}
 
 \begin{multicols}{2}
-	In this article, we introduce an application of graph theory to pattern recognition.
-	\vskip 0.2cm
-	\PIbox{
-		{\color{toancuabi}\textbf{Exercise} (Phrase matching)\textbf{.}} Match the Vietnamese phrases in the left column to their English translations in the right column of the table below.}
-	\begin{table}[H]
+	It is a beautiful and blossoming Spring day. Tom and Ken are visiting the National Zoo in Washington, D.C. 
+	\vskip 0.1cm
+	As they eagerly walk through the entrance, Tom says: ``The National Zoo is currently home to about $2{,}100$ animals; they comprise hundreds of species. In the zoo, the species need an environment that resembles their natural habitat as closely as possible. The animals must be accommodated to a lifestyle similar to their wild counterparts."
+	\vskip 0.1cm
+	``Oh I see. If they climb, they get trees or rocks. If they swim, they are in ponds, lakes and rivers. If they like to burrow, they own caves and tunnels. If they fly, they already have the sky." Ken replies excitedly.
+	\vskip 0.1cm
+	``Beautiful! The terrains are designed to make the animals feel secure as well. Some animals are tamed: giraffes like visitors watching and feeding them. Some animals don't like to see the crowd. These hermitian animals like leopards need a jungle where they can retreat from humans. In order to protect those creatures and conserve wildlife, zoologists must study Nature very well." Tom continues.
+	\vskip 0.1cm
+	``From the brochure, we can learn valuable scientific information and classifications. Can you tell which creatures are sociable and which animals are solitary?" Tom asks.
+	\vskip 0.1cm
+	``Well, let's see." Ken takes out the brochure. He reads out loud:
+	\vskip 0.1cm
+	--	Sociable: squirrels, primates, and so on.
+	\vskip 0.1cm
+	--	Solitary: leopards, giant pandas, and so on. 
+	\vskip 0.1cm
+	Tom nods: ``Wonderful! To express and see better, you can draw a circle like this. Put those solitary inside the circle and those sociable outside of the circle. This is called a \textit{Venn diagram}."
+	\begin{figure}[H]
+		\vspace*{-10pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width= 1\linewidth]{p1}
+		\vspace*{-15pt}
+	\end{figure}	
+	Tom continues: ``In math, we call this circle a set: the `solitary' set consisting of solitary species. The hermitian creatures inside the circle are called \textit{elements} of the `solitary' set. The tamed and sociable animals outside of the circle are not elements of the `solitary' set."
+	\vskip 0.1cm
+	Ken listens attentively: ``That's cool. So if I want to classify animals by their habitats, I can draw a Venn diagram of $3$ circles. One for landscapes, one for water, and one for the sky. The mammals live on land. The fish swim in water. The birds fly high." Ken replies.
+	\vskip 0.1cm
+	Tom slows down to emphasize: ``Perfect! And you have $3$ sets: the set of `on--land' animals, the set of `aquatic' animals, and the set of `on--sky' animals. Does it make sense?"
+	\vskip 0.1cm
+	``It is as clear as day." Ken answers, full of smiles.
+	\vskip 0.1cm
+	As they move on, Tom says: ``And here are some fun facts. Amphibians, like turtles and frogs, live both on grasslands and in the lakes. So they belong to both the on--land set and the aquatic set. You can draw to express the overlap." 
+	\vskip 0.1cm
+	``Really? There are creatures that can live in both environments!" Ken is surprised.
+	\vskip 0.1cm
+	Tom gives another example: ``Not just that! The bald eagles symbolize the national bird of the Americans. They hunt for fishes near the water surface and also hunt over grasslands. They belong to both ecosystems: the sky and the land."
+	\begin{figure}[H]
+		\vspace*{-10pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[height= 0.3\linewidth]{p2}
+		\includegraphics[height= 0.3\linewidth]{p3}
+		\vspace*{-25pt}
+	\end{figure}
+	Tom continues: ``Those overlapping areas are called \textit{intersections} of two sets. If you take all animals in two circles, the sky and the land say, you have a much bigger set of animals. You are thinking of all animals inhabiting either landscapes or the sky. Math lovers call it the \textit{union} of two sets." 
+	\vskip 0.1cm
+	Tom tries to conclude: ``Red--crowned cranes are found in Russia, China, Mongolia and Japan. In Japan, they forage regularly on pasturelands. They are also aquatic: they feed and nest in rivers or marshes with relatively deep water. They can fly well and migrate in flocks. These cranes inhabit all $3$ ecosystems: land, water and sky." 
+	\begin{figure}[H]
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\renewcommand{\arraystretch}{1.2}
-		\setlength{\tabcolsep}{4pt}
-		\resizebox{\columnwidth}{!}{\begin{tabular}{|c|l|c|c|l|}
-				\cline{1-2} \cline{4-5}
-				\multirow{ 2}{*}{$1$}  & \multirow{ 2}{*}{băng}       &  & \multirow{ 2}{*}{A} & bouquet (a bunch        \\
-				&      &  & &of flowers)        \\
-				\cline{1-2} \cline{4-5} 
-				$2$  & bó         &  & B & chalk                               \\ \cline{1-2} \cline{4-5} 
-				$3$  & bó hoa     &  & C & circle                              \\ \cline{1-2} \cline{4-5} 
-				$4$  & cánh hoa   &  & D & cluster                              \\ \cline{1-2} \cline{4-5} 
-				$5$  & đá         &  & E & detour                              \\ \cline{1-2} \cline{4-5} 
-				$6$  & đá lửa     &  & F & fire                                \\ \cline{1-2} \cline{4-5} 
-				\multirow{ 2}{*}{$7$}  & \multirow{ 2}{*}{đá phấn}    &  & \multirow{ 2}{*}{G} & flint (a stone used \\
-				&     &  &  & to make sparks) \\
-				\cline{1-2} \cline{4-5} 
-				$8$  & đường      &  & H & flower                              \\ \cline{1-2} \cline{4-5} 
-				$9$  & đường vòng &  & I & ice                                 \\ \cline{1-2} \cline{4-5} 
-				$10$ & hoa        &  & J & iceberg                             \\ \cline{1-2} \cline{4-5} 
-				$11$ & lửa        &  & K & mountain                            \\ \cline{1-2} \cline{4-5} 
-				$12$ & mở         &  & L & petal                               \\ \cline{1-2} \cline{4-5} 
-				$13$ & mở đường   &  & M & pollen                              \\ \cline{1-2} \cline{4-5} 
-				$14$ & mở mắt     &  & N & powder                              \\ \cline{1-2} \cline{4-5} 
-				$15$ & núi        &  & O & road                                \\ \cline{1-2} \cline{4-5} 
-				$16$ & núi băng   &  & P & rock                                \\ \cline{1-2} \cline{4-5} 
-				$17$ & núi lửa    &  & Q & tear (as in teardrop)               \\ \cline{1-2} \cline{4-5} 
-				$18$ & nước đá    &  & R & to make aware                       \\ \cline{1-2} \cline{4-5} 
-				$19$ & nước mắt   &  & S & to open                             \\ \cline{1-2} \cline{4-5} 
-				$20$ & phấn       &  & T & to pave the way                     \\ \cline{1-2} \cline{4-5} 
-				$21$ & phấn hoa   &  & U & volcano                             \\ \cline{1-2} \cline{4-5} 
-				$22$ & vòng       &  & V & wreath                              \\ \cline{1-2} \cline{4-5} 
-				$23$ & vòng hoa   &  &   &                                     \\ \cline{1-2} \cline{4-5} 
-		\end{tabular}}
+		\includegraphics[width= 0.7\linewidth]{p4}
 		\vspace*{-10pt}
-	\end{table}
-\textit{Solution.}
-We use a graph theory approach from the point of view of an English speaker to solve the problem.
-\vskip 0.1cm
-First, notice that the Vietnamese phrases above are single--word and double--word phrases.
-We construct a graph as follows: each phrase is represented by a vertex; an edge connects a single--word phrase and a double--word phrase where the latter contains the former.  See the graph below.
-\begin{figure}[H]
-	\vspace*{-5pt}
-	\centering
-	\captionsetup{labelformat= empty, justification=centering}
-	\includegraphics[width= 1\linewidth]{hc-2022-2-2-2-1.pdf}
-	\caption{\small\textit{\color{toancuabi}Graph of Vietnamese phrases}}
-	\vspace*{-10pt}
-\end{figure}
-In plain words, the graph of Vietnamese phrases represents connections in \textit{shared meaning} between the connected phrases.
-Similarly, we connect the English phrases such that, in each connected phrases, the meaning of one phrase is contained in the meaning of the other.
-We obtain the graph of English phrases below.
-\begin{figure}[H]
-	\vspace*{-5pt}
-	\centering
-	\captionsetup{labelformat= empty, justification=centering}
-	\includegraphics[width= 1\linewidth]{hc-2022-2-2-2-2.pdf}
-	\caption{\small\textit{\color{toancuabi}Graph of English phrases}}
-	\vspace*{-10pt}
-\end{figure}  
-Comparing the resulting graphs, only the $5-vertex$ subgraphs \textit{(phấn hoa, vòng hoa, cánh hoa, bó hoa, hoa)} and
-\textit{(bouquet, petal, pollen, wreath, flower),} are \textit{isomorphic} (that is to say, they are the same graphs). Therefore, \textit{hoa}=\textit{flower}.
-Observe that the relation between \textit{pollen} and \textit{powder} implies that \textit{powder} is \textit{phấn}. The rest of the vertices can then be paired up
-\textit{petal -- cánh hoa, bouquet -- bó hoa, pollen -- phấn hoa, wreath -- vòng hoa.}
-Thus \textit{bó -- cluster} and \textit{chalk -- đá phấn}.
-Similarly, the paths \textit{(băng -- núi băng -- núi -- núi lửa -- lửa -- đá lửa -- đá -- nước đá)} and
-\textit{(ice -- iceberg -- mountain -- volcano -- fire -- flint -- rock)} are very much alike. In addition, the relation of \textit{đá -- đá phấn} is similar to \textit{rock -- chalk}, and so both \textit{nước đá} and \textit{đá} mean \textit{ice}.
-Similarly, the paths \textit{(vòng -- đường vòng -- đường -- mở đường -- mở)} and
-\textit{(to open -- to pave the way -- road -- detour -- circle)} are very much alike.\\
-Following the same arguments, we can fill up the table below.
+	\end{figure}
+	Tom: ``In the large, the union of these $3$ sets is called the \textit{total set}."
+	\vskip 0.1cm
+	Ken's voice is filled with happiness: ``That is our beloved Earth!"
+	\vskip 0.1cm
+	Tom: ``Voilà!"
+	\vskip 0.1cm
+	Ken: ``Can we start with the Asia Trail? I can't wait to see the cute giant pandas!"
+	\vskip 0.1cm
+	``Ok, let's go!"
+	\vskip 0.1cm
+	The above article is meant to be an introduction to Venn diagram for children in early Grades (such as Grades $1$, $2$ and $3$) who have not met this concept before.
+	\vskip 0.1cm
+	Photo source: \url{https://nationalzoo.si.edu/}
+	\vskip 0.1cm
+	\PIbox{
+		{\centerline{\textbf{\color{toancuabi}Vocabulary}}}
+		\vskip 0.1cm
+		\textbf{\color{toancuabi}Natural sciences}
+		\vskip 0.1cm
+		{\color{toancuabi}species:} (n) giống loài
+		\vskip 0.1cm
+		{\color{toancuabi}habitat:} (n)  môi trường sống
+		\vskip 0.1cm
+		{\color{toancuabi}ecosystem:} (n)  hệ sinh thái
+		\vskip 0.1cm
+		{\color{toancuabi}symbolize:} (v)  biểu tượng
+		\vskip 0.1cm
+		{\color{toancuabi}burrow:} (v)  đào hang
+		\vskip 0.1cm
+		{\color{toancuabi}terrain:} (n)  địa hình
+		\vskip 0.1cm
+		{\color{toancuabi}solitary:} (adj)  đơn độc
+		\vskip 0.1cm
+		{\color{toancuabi}sociable:} (adj)  bầy đàn
+		\vskip 0.1cm
+		{\color{toancuabi}aquatic:} (adj)  dưới nước
+		\vskip 0.1cm
+		{\color{toancuabi}grassland:} (n)  đồng cỏ
+		\vskip 0.1cm
+		{\color{toancuabi}pastureland:} (n)  thảo nguyên
+		\vskip 0.1cm
+		{\color{toancuabi}feed:} (v)  nuôi, kiếm ăn
+		\vskip 0.1cm
+		{\color{toancuabi}hunt:} (v)  săn mồi 
+		\vskip 0.1cm
+		{\color{toancuabi}inhabit:} (v)  sinh sống 
+		\vskip 0.1cm
+		{\color{toancuabi}nest:} (v)  làm tổ 
+		\vskip 0.1cm
+		{\color{toancuabi}migrate:} (v)  di cư
+		\vskip 0.1cm
+		{\color{toancuabi}flock:} (n)  đàn, bầy
+		\vskip 0.1cm
+		{\color{toancuabi}amphibian:} (n)  động vật lưỡng cư
+		\vskip 0.1cm
+		{\color{toancuabi}crane:} (n)  con hạc / con sếu
+		\vskip 0.1cm
+		{\color{toancuabi}eagle:} (n)  đại bàng
+		\vskip 0.1cm
+		{\color{toancuabi}frog:} (n)  con ếch
+		\vskip 0.1cm
+		{\color{toancuabi}leopard:} (n)  con báo
+		\vskip 0.1cm
+		{\color{toancuabi}monkey:} (n)  con khỉ
+		\vskip 0.1cm
+		{\color{toancuabi}panda:} (n)  gấu trúc
+		\vskip 0.1cm
+		{\color{toancuabi}squirrel:} (n)  con sóc
+		\vskip 0.1cm
+		{\color{toancuabi}turtle:} (n)  con rùa 
+		\vskip 0.1cm
+		\textbf{\color{toancuabi}Mathematics}
+		\vskip 0.1cm
+		{\color{toancuabi}Venn diagram:} (n)  sơ đồ Venn / biểu đồ Venn
+			\vskip 0.1cm
+		{\color{toancuabi}set:} (n)  tập hợp
+		\vskip 0.1cm
+		{\color{toancuabi}intersection of $2$ sets:} (n)  giao của $2$ tập hợp
+		\vskip 0.1cm
+		{\color{toancuabi}union of $2$ sets:} (n)  hợp của $2$ tập hợp
+		\vskip 0.1cm
+		{\color{toancuabi}total set:} (n)  tập hợp tổng
+		\vskip 0.1cm
+		{\color{toancuabi}concept:} (n)  khái niệm}
 \end{multicols}
-\begin{center}
-	\renewcommand{\arraystretch}{1}
-	\setlength{\tabcolsep}{8pt}
-	\begin{tabular}{|c|l|l|c|l|}
-		\hline
-		$\#$ & Vietnamese & Literal meaning & Answer & English       \\ \hline
-		$1 $ & băng       & ice             & I      & ice           \\ \hline
-		$2 $ & bó         & cluster         & D      & cluster       \\ \hline
-		$3 $ & bó hoa     & flower cluster  & A      & bouquet       \\ \hline
-		$4 $ & cánh hoa   & flower wing     & L      & petal         \\ \hline
-		$5 $ & đá         & rock            & P      & rock          \\ \hline
-		$6 $ & đá lửa     & fire rock       & G      & flint         \\ \hline
-		$7 $ & đá phấn    & powder rock     & B      & chalk         \\ \hline
-		$8 $ & đường      & road            & O      & road          \\ \hline
-		$9 $ & đường vòng & circle road     & E      & detour        \\ \hline
-		$10$ & hoa        & flower          & H      & flower        \\ \hline
-		$11$ & lửa        & fire            & F      & fire          \\ \hline
-		$12$ & mở         & to open         & S      & to open       \\ \hline
-		$13$ & mở đường   & to open a road  & T      & to pave a way \\ \hline
-		$14$ & mở mắt     & to open eyes    & R      & to make aware \\ \hline
-		$15$ & núi        & mountain        & K      & mountain      \\ \hline
-		$16$ & núi băng   & ice mountain    & J      & iceberg       \\ \hline
-		$17$ & núi lửa    & fire mountain   & U      & volcano       \\ \hline
-		$18$ & nước đá    & rock water      & I      & ice           \\ \hline
-		$19$ & nước mắt   & eye water       & Q      & tear          \\ \hline
-		$20$ & phấn       & powder          & N      & powder        \\ \hline
-		$21$ & phấn hoa   & flower powder   & M      & pollen        \\ \hline
-		$22$ & vòng       & circle          & C      & circle        \\ \hline
-		$23$ & vòng hoa   & flower circle   & V      & wreath        \\ \hline
-	\end{tabular}
-\end{center}
-\PIbox{
-	\centerline{\textbf{\color{toancuabi}Vocabulary}}
-\begin{multicols}{2}
-	{\color{toancuabi}Approach:} (dt) cách tiếp cận (cách làm) 
-	\vskip 0.1cm
-	{\color{toancuabi}Connect:} (đt) kết nối 
-	\vskip 0.1cm
-	{\color{toancuabi}Connection:} (dt) mối liên hệ
-	\vskip 0.1cm
-	{\color{toancuabi}Graph:} (dt) đồ thị
-	\vskip 0.1cm
-	{\color{toancuabi}Introduce:} (đt) giới thiệu 
-	\vskip 0.1cm
-	{\color{toancuabi}Pattern:} (dt) quy luật
-	\vskip 0.1cm
-	{\color{toancuabi}Phrase:} (dt) cụm từ 
-	\vskip 0.1cm
-	{\color{toancuabi}Recognition:} (dt) sự phát hiện 
-	\vskip 0.1cm
-	{\color{toancuabi}Share:} (đt) chia sẻ 
-	\vskip 0.1cm
-	{\color{toancuabi}Vertex:} (dt) đỉnh
-	\vskip 0.1cm
-\end{multicols}}
