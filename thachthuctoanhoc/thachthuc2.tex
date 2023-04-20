@@ -189,953 +189,836 @@
 \begin{multicols}{2}
 	\setlength{\abovedisplayskip}{4pt}
 	\setlength{\belowdisplayskip}{4pt}
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P661.}}
-	(Mức $B$) Một xấp tiền giấy có $120$ tờ tiền, gồm các tờ tiền với mệnh giá $10{.}000$ đồng, $50{.}000$ đồng, và $100{.}000$ đồng. Số tờ tiền mệnh giá $50{.}000$ đồng là một số lớn hơn $5$ và chia hết cho $5$. Hỏi mỗi loại mệnh giá có bao nhiêu tờ tiền? Biết rằng, tổng mệnh giá của cả xấp tiền là $8{.}600{.}000$ đồng.\\
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo lời giải của tác giả bài toán})\textbf{\color{thachthuctoanhoc}.}\\
-	Giả sử $x$, $y$, $z$ tương ứng là số tờ tiền mệnh giá $10{.}000$ đồng, $50{.}000$ đồng, $100{.}000$ đồng.
-	\vskip 0.01cm
-	Theo các giả thiết của bài ra, ta có:
-	\begin{align*}
-		x,y,z \in \mathbb{N^*}, y > 5, y \text{ chia hết cho } 5, \text{ và}
-	\end{align*}
-	\begin{align*}
-		\begin{cases}
-			x + y + z = 120  \hspace*{102pt} {\color{black}(}1{\color{black})} \\[-0.5ex]
-			(x + 5y + 10z) \cdot 10^4 = 860 \cdot 10^4.\hspace*{24pt} {\color{black}(}2{\color{black})} 
-		\end{cases}
-	\end{align*}
-	Từ ($2$), ta được:
-	\begin{align*}
-		x + 5y + 10z = 860. \tag{$3$}
-	\end{align*}
-	Từ ($1$) và ($3$), suy ra
-	\begin{align*}
-		4y + 9z = 740;
-	\end{align*}
-	do đó, $4(185-y)= 9z$. \hfill ($4$)
-	\vskip 0.05cm
-	Vì $z$ là số nguyên và $(4, 9) = 1$ nên từ ($4$) suy ra, $185 - y$ chia hết cho $9$. Mà $185$ chia $9$ dư $5$, nên $y$ chia $9$ dư $5$. Do đó
-	\begin{align*}
-		y = 9t + 5,  \tag{$5$}
-	\end{align*}
-	với $t$ là một số nguyên dương (vì $y > 5$).
-	\vskip 0.05cm
-	Vì $y$ chia hết cho $5$ nên từ ($5$) suy ra, $9t$ chia hết cho $5$.
-	\vskip 0.05cm
-	Mà $(9, 5) = 1$ nên $t$ chia hết cho $5$.       \hfill           ($6$)
-	\vskip 0.05cm
-	Thay ($5$) vào ($4$), ta được:
-	\begin{align*}
-		36\left( {20 - t} \right) = 9z;
-	\end{align*}
-	suy ra, $z = 80 - 4t$. \hfill ($7$)
-	\vskip 0.05cm
-	Thay ($5$) và ($7$) vào ($3$), ta được:
-	\begin{align*}
-		x + 5t + 825 = 860;
-	\end{align*}
-	suy ra,  $x = 5 (7-t)$. \hfill ($8$)
-	\vskip 0.05cm
-	Vì $x > 0$ nên từ ($8$) và ($6$), với lưu ý $t \in \mathbb{N^*}$,  suy ra $t = 5$. Vì vậy, từ ($8$), ($5$) và ($7$), ta được $x = 10$, $y = 50$, $z = 60$.
-	\vskip 0.05cm
-	Ngược lại, với $x, y, z$ là các số vừa nêu trên, ta có $y$ lớn hơn $5$, chia hết cho $5$, và
-	\begin{align*}
-		\begin{cases}
-			x + y + z = 120\\[-0.5ex]
-			(x + 5y + 10z) \cdot 10^4 = 860 \cdot 10^4.
-		\end{cases}
-	\end{align*}
-	Vậy, số tờ tiền mệnh giá $10{.}000$ đồng, $50{.}000$ đồng, $100{.}000$ đồng, tương ứng, là $10$ tờ, $50$ tờ, $60$ tờ.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm	
-	$\pmb{1.}$ Để thuận tiện cho việc theo dõi lời giải của đông đảo đối tượng bạn đọc, trong lời giải trên, chúng tôi đã không sử dụng các ký hiệu của phép chia hết và phép đồng dư.
-	\vskip 0.05cm
-	$\pmb{2.}$ Trong số các bạn đọc đã gửi lời giải tới Tạp chí, một số bạn cho kết quả sai, do \textit{không} lưu ý tới giả thiết ``số tờ tiền mệnh giá $50{.}000$ đồng là một số lớn hơn $5$".
-	\vskip 0.05cm
-	\hfill	\textbf{\color{thachthuctoanhoc}Lê Huy}
-	\vskip 0.05cm
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P662.}}
-	(Mức $B$) Với mỗi số thực $x$, đặt $f(x)=\sqrt[3]{x^3-x}$. Cho các số thực đôi một phân biệt $a,b,c$ thoả mãn
-	\begin{align*}
-		&a f(b)+b f(c)+c f(a)\\[-0.5ex]
-		=\,\,&a f(c)+b f(a)+c f(b)=0.
-	\end{align*}
-	Chứng minh rằng $a+b+c=0$. 
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo đa số lời giải Tạp chí nhận được từ bạn đọc})\textbf{\color{thachthuctoanhoc}.}
-	\vskip 0.05cm
-	Trước hết, ta nhắc lại (không chứng minh) kết quả rất quen thuộc sau:
-	\vskip 0.05cm
-	\textit{Nhận xét.} Với $x, y, z$ là ba số thực: 
-	\begin{align*}
-		\text{Nếu } x + y + z = 0 \text{ thì } {x^3} + {y^3} + {z^3} = 3xyz.   
-	\end{align*}
-	Theo Nhận xét trên, vì $af\left( b \right) + bf\left( c \right) + cf\left( a \right) = 0$  nên
-	\begin{align*}
-		&{a^3}{\left( {f\left( b \right)} \right)^3} + {b^3}{\left( {f\left( c \right)} \right)^3} + {c^3}{\left( {f\left( a \right)} \right)^3} \\[-0.5ex]
-		= \,\,&abc \cdot f\left( a \right)f\left( b \right)f\left( c \right);
-	\end{align*}
-	và vì $af\left( c \right) + bf\left( a \right) + cf\left( b \right) = 0$  nên 
-	\begin{align*}
-		&{a^3}{\left( {f\left( c \right)} \right)^3} + {b^3}{\left( {f\left( a \right)} \right)^3} + {c^3}{\left( {f\left( b \right)} \right)^3} \\[-0.5ex]
-		=\,\,& abc \cdot f\left( a \right)f\left( b \right)f\left( c \right).
-	\end{align*}
-	Suy ra
-	\begin{align*}
-		&{a^3}{\left( {f\left( b \right)} \right)^3} + {b^3}{\left( {f\left( c \right)} \right)^3} + {c^3}{\left( {f\left( a \right)} \right)^3}\\[-0.5ex]
-		 = \,\,&{a^3}{\left( {f\!\left(c \right)} \!\right)^3} \!+\! {b^3}{\left(\! {f\!\left( a \right)} \!\right)^3} \!+\! {c^3}{\left(\! {f\left( b \right)} \!\right)^3}. \tag{$*$}
-	\end{align*}
-	Ta có:
-	\begin{align*}
-		&(*) \\
-		\Leftrightarrow&\, {a^3}\left( {{b^3} - b} \right) + {b^3}\left( {{c^3} - c} \right) + {c^3}\left( {{a^3} - a} \right) \\[-0.6ex]
-		&= {a^3}( {{c^3} - c}) + {b^3}( {{a^3} - a} ) + {c^3}( {{b^3} - b})\\[-0.6ex]
-		\Leftrightarrow&\, {a^3}c - {c^3}a + {c^3}b - {a^3}b + {b^3}a - {b^3}c = 0\\[-0.6ex]
-		\Leftrightarrow&\, ac( {{a^2} \!-\! {c^2}} ) \!-\! b( {{a^3} \!-\! {c^3}}) \!+\! {b^3}( {a \!-\! c} ) \!=\! 0\\[-0.6ex]
-		\Leftrightarrow& ( \!{a \!-\! c}\!)\!(\! {{a^2}c \!+\! a{c^2} \!-\! {a^2}b \!-\! abc \!-\! b{c^2} \!+\! {b^3}} \!) \!=\! 0\\[-0.6ex]
-%		\end{align*}
-%		\begin{align*}
-		\Leftrightarrow &(\! {a \!-\! c}\!)\!(\! {a^2}( {c \!-\! b}\! ) \!+\! ac(\! {c \!-\! b} \!) \!-\! b(\! {{c^2} \!-\! {b^2}}\!)\!) \!=\! 0\\[-0.6ex]
-		\Leftrightarrow& \left( {a - c} \right)\left( {c - b} \right)\left( {{a^2} + ac - bc - {b^2}} \right) = 0\\[-0.6ex]
-		\Leftrightarrow& \left( {a - c} \right)\left( {c - b} \right)\left( {a - b} \right)\left( {a + b + c} \right) = 0\\[-0.6ex]
-		\Leftrightarrow& \,a \!+\! b \!+\! c \!=\! 0 \text{ (do $a,b,c$ đôi một phân biệt).}
-	\end{align*}
-	Ta có điều phải chứng minh theo yêu cầu đề bài.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm
-	Rất tiếc, trong số các lời giải Tạp chí đã nhận được từ bạn đọc, có hai lời giải sai, do người giải bài đã \textit{ngộ nhận} rằng, với giả thiết $a + b + c \ne 0$, ta có:
-	\begin{align*}
-		&f\left( a \right) + f\left( b \right) + f\left( c \right) \\[-0.5ex]
-		&= \dfrac{a}{{a + b + c}}f\left( a \right) + \dfrac{b}{{a + b + c}}f\left( b \right) \\[-0.5ex]
-		&\quad+ \dfrac{c}{{a + b + c}}f\left( c \right)\\[-0.5ex]
-		\Leftrightarrow &\dfrac{a}{{a + b + c}} = \dfrac{b}{{a + b + c}} = \dfrac{c}{{a + b + c}} = 1.
-	\end{align*}
-	\hfill	\textbf{\color{thachthuctoanhoc}Lưu Thị Thanh Hà}
-	\vskip 0.05cm
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P663.}}
-	(Mức $B$) Cho hai đường tròn đồng tâm $(C_1)$ và $(C_2)$, có bán kính, tương ứng, là $14$ và $50$. Tìm số nguyên dương $k$ nhỏ nhất có tính chất: Nếu qua một điểm tuỳ ý nằm trên $(C_1)$, kẻ $k$ dây cung tuỳ ý của $(C_2)$ thì chắc chắn có một dây cung có độ dài không nguyên. 
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo lời giải của bạn Trần Minh Hoàng, lớp 10T1, trường THPT chuyên Hà Tĩnh, tỉnh Hà Tĩnh})\textbf{\color{thachthuctoanhoc}.}
-	\vskip 0.05cm
-	Gọi $O$ là tâm chung của hai đường tròn $(C_1)$ và $(C_2)$.
-	\vskip 0.05cm 
-	Xét điểm $M$ tùy ý nằm trên  $(C_1)$; và xét dây $AB$ tùy ý của $(C_2)$, đi qua $M$. Xảy ra các trường hợp sau:
-	\vskip 0.05cm
-	$\diamond$ \textit{Trường hợp} $1$: $AB$ tiếp xúc với  $(C_1)$ tại $M$ (xem Hình $1$).
-	\begin{figure}[H]
-		\vspace*{-15pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
-		\definecolor{ubqqys}{rgb}{0.29411764705882354,0.,0.5098039215686274}
-		\begin{tikzpicture}[thachthuctoanhoc,scale=0.6]
-			\draw[color=qqwuqq] (-0.11762822976546994,0.5713371160037106) -- (0.13377857056640663,0.62309733960145) -- (0.08201834696866722,0.8745041399333265) -- (-0.1693884533632093,0.8227439163355872) -- cycle; 
-			\draw  (0.,0.) circle (3.cm);
-			\draw  (0.,0.) circle (0.84cm);
-			\draw  (0.,0.)-- (-0.1693884533632093,0.8227439163355872);
-			\draw (0.7352,0.1878) node[anchor=north west] {$(C_1)$};
-			\draw (3.01,0.2604) node[anchor=north west] {$(C_2)$};
-			\draw  (-2.9902247379423654,0.2419835048045842)-- (2.6514478312159473,1.403504327866591);
-			\draw  (0.,0.)-- (-2.9902247379423654,0.2419835048045842);
-				\draw [fill=white] (0.,0.) circle (1.5pt);
-				\draw (0.1302,-0.389) node {$O$};
-				\draw [fill=white] (-0.1693884533632093,0.8227439163355872) circle (1.5pt);
-				\draw (-0.4022,1.1921) node {$M$};
-				\draw [fill=white] (-2.9902247379423654,0.2419835048045842) circle (1.5pt);
-				\draw (-3.4578,0.2725) node {$A$};
-				\draw [fill=white] (2.6514478312159473,1.403504327866591) circle (1.5pt);
-				\draw (2.99438,1.7003) node {$B$};
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P671.}}
+	(Mức $B$) Một hình chữ nhật được chia thành $9$ hình chữ nhật con như hình vẽ. Số ghi ở giữa mỗi hình chữ nhật con bằng chu vi của hình chữ nhật ấy. Biết rằng $c$ là một số nguyên khác $2,3,4,5$; hãy tìm $a,b,c,d,e$.
+	\begin{center} 
+		\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+		\begin{tikzpicture}[scale=0.7,thachthuctoanhoc]
+			\draw (0,0) rectangle (9,3); 
+			\draw (2,0) -- (2, 3) (6, 0) -- (6, 3);
+			\draw (0,1.2) -- (9, 1.2) (0, 2.1) -- (9, 2.1);
+			\draw (1,2.5) node{$a$};
+			\draw (1,1.5) node{$2$};
+			\draw (1,0.5) node{$d$};
+			\draw (4,2.5) node{$4$};
+			\draw (4,1.5) node{$c$};
+			\draw (4,0.5) node{$5$};
+			\draw (7.5,2.5) node{$b$};
+			\draw (7.5,1.5) node{$3$};
+			\draw (7.5,0.5) node{$e$};
 		\end{tikzpicture}
-		\caption{\small\textit{\color{thachthuctoanhoc}Hình $1$}}
-		\vspace*{-15pt}
-	\end{figure}
-	Khi đó, $OM \bot AB$ và do đó, $M$ là trung điểm của $AB$. Vì thế
-	\begin{align*}
-		AB &= 2AM = 2\sqrt {O{A^2} - O{M^2}}  \\
-		&= 2\sqrt {{{50}^2} - {{14}^2}}  = 96 \in \mathbb{Z}.
-	\end{align*}
-	$\diamond$ \textit{Trường hợp} $2$: $AB$ cắt  $(C_1)$ và đi qua $O$.
+	\end{center}
+	\textbf{Lời giải} (\textit{dựa theo lời giải của bạn Hà Mạnh Hùng, lớp 8A, trường THPT chuyên Hà Nội -- Amsterdam, Tp. Hà Nội})\textbf{.}
 	\vskip 0.05cm
-	Trong trường hợp này, $AB$ là đường kính của $(C_2).$ Do đó
-	\begin{align*}
-		AB = 2 \cdot 50 = 100 \in \mathbb{Z}.
-	\end{align*}
-	$\diamond$ \textit{Trường hợp} $3$: $AB$ cắt $(C_1)$ và không đi qua $O$ (xem Hình $2$).
-	\begin{figure}[H]
-		\vspace*{-15pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
-		\definecolor{ubqqys}{rgb}{0.29411764705882354,0.,0.5098039215686274}
-		\includegraphics[width=0.7\linewidth]{P663H2}
-		\caption{\small\textit{\color{thachthuctoanhoc}Hình $2$}}
-		\vspace*{-10pt}
-	\end{figure}
-	Gọi $H$ trung điểm của $AB$; ta có, $OH \bot AB$. Do đó, $AB$ tiếp xúc với đường tròn tâm $O$, bán kính $OH$, và
-	\begin{align*}
-		AB = 2AM = 2\sqrt {O{A^2} - O{H^2}}. \tag{$1$}
-	\end{align*}
-	Do $0 < OH < OM$, từ ($1$) suy ra
-	\begin{align*}
-		96 &= 2\sqrt {O{A^2} - O{M^2}}  < AB < 2\sqrt {O{A^2}}  \\
-		&= 2\sqrt {{{50}^2}}  = 100.
-	\end{align*}
-	Vì thế, độ dài $AB$ là số nguyên khi và chỉ khi $AB \in \{97; 98; 99\}$.
+	Trước hết, ta có Nhận xét đơn giản sau:
 	\vskip 0.05cm
-	Từ ($1$) ta có:
-	\vskip 0.05cm
-	$+$ $AB = 97  \Leftrightarrow  OH = \dfrac{{\sqrt {591} }}{2}$;
-	\vskip 0.05cm
-	$+$ $AB = 98  \Leftrightarrow OH = 3\sqrt{11}$;
-	\vskip 0.05cm
-	$+$ $AB = 99  \Leftrightarrow  OH = \dfrac{{\sqrt {199} }}{2}$.
-	\vskip 0.05cm
-	Vì vậy, trong trường hợp này, độ dài dây $AB$ là số nguyên khi và chỉ khi dây $AB$ đi qua $M$ và tiếp xúc với một trong các đường tròn $\left( {O,\frac{{\sqrt {591} }}{2}} \right),$    $\left( {O,3\sqrt {11} } \right),$      $\left( {O,\frac{{\sqrt {199} }}{2}}\right)$. \hfill ($2$)
-	\vskip 0.05cm
-	Dễ thấy, $\dfrac{{\sqrt {591} }}{2},3\sqrt {11} ,\dfrac{{\sqrt {199} }}{2} < 14 = OM;$  do đó, $M$ nằm ngoài cả ba đường tròn vừa nêu trên. Vì thế, với mỗi đường tròn, trong ba đường tròn đó, sẽ có đúng hai dây của  $(C_2)$ đi qua $M$ và tiếp xúc đường tròn ấy.                  \hfill ($3$)
-	\vskip 0.05cm
-	Vì ba đường tròn được nêu ở ($2$) đồng tâm, nên không có hai đường tròn nào trong chúng có tiếp tuyến chung. Do đó, từ ($2$) và ($3$) suy ra, có $2 \cdot 3 = 6$  dây của  $(C_2)$ đi qua $M$ và có độ dài nguyên.
-	\vskip 0.05cm
-	Từ kết quả xét ba trường hợp trên, suy ra, với mỗi điểm $M$ nằm trên $(C_1)$  có đúng $1 + 1 + 6 = 8$ dây của $(C_2)$  đi qua $M$ và có độ dài nguyên. Vì thế, số nguyên dương $k$ nhỏ nhất, thỏa mãn yêu cầu đề bài, bằng $9$.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm
-	Trong số các lời giải Tạp chí đã nhận được từ bạn đọc, lời giải của bạn \textit{Trần Minh Hoàng} là lời giải duy nhất đúng và hoàn chỉnh. Trong số các lời giải còn lại:
-	\vskip 0.05cm
-	-- Có \textit{hai lời giải không được chấp nhận là lời giải hoàn chỉnh}, do người giải bài chỉ liệt kê các khẳng định mang tính mấu chốt, mà không có bất kỳ sự giải thích nào cho tính đúng của các khẳng định đó;
-	\vskip 0.05cm
-	-- Có \textit{ba lời giải sai}, do người giải bài đã mắc một trong các lỗi sau:
-	\vskip 0.05cm
-	+ Nhầm lẫn một điều kiện cần thành điều kiện cần và đủ;
-	\vskip 0.05cm
-	+ Giải một bài toán hoàn toàn khác, không liên quan một chút nào với bài đã ra.
-	\vskip 0.05cm
-	\hfill	\textbf{\color{thachthuctoanhoc}Hà Thanh}
-	\vskip 0.05cm
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P664.}}
-	(Mức $B$) Giải hệ phương trình
-	\begin{align*}
-		\begin{cases}
-			x^{23}=3y^{21}-2z^{19}&\\[-0.5ex]
-			y^{23}=3z^{21}-2x^{19}&\\[-0.5ex]
-			z^{23}=3x^{21}-2y^{19}.
-		\end{cases}
-	\end{align*}
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo đa số lời giải Tạp chí nhận được từ bạn đọc})\textbf{\color{thachthuctoanhoc}.}
-	\vskip 0.05cm
-	$\bullet$ Giả sử $(x, y, z)$ là một nghiệm của hệ phương trình đã cho.
-	\vskip 0.05cm
-	Vì tính đối xứng vòng quanh của hệ đã cho đối với $x, y, z$, nên không mất tính tổng quát, có thể giả sử $x = \max\{x, y, z\}$ (tức, giả sử $x \ge y$ và $x \ge z$).
-	\vskip 0.05cm
-	Khi đó, ta có ${x^{23}} \ge {z^{23}};$ vì thế, từ phương trình thứ nhất và phương trình thứ ba của hệ đã cho, ta được:
-	\begin{align*}
-		3{y^{21}} - 2{z^{19}} \ge 3{x^{21}} - 2{y^{19}}.
-	\end{align*}
-	Do đó 
-	\begin{align*}
-		&2{y^{19}} - 2{z^{19}} \ge 3{x^{21}} - 3{y^{21}} \ge 0 \\[-0.5ex]
-		&\text{ (do từ } x \ge y \text{ suy ra } x^{21} \ge y^{21});
-	\end{align*}
-	suy ra, $y \ge z$. Do đó,  $y^{23} \ge z^{23}$; vì thế, từ phương trình thứ hai và phương trình thứ ba của hệ đã cho, ta được:
-	\begin{align*}
-		3{z^{21}} - 2{x^{19}} \ge 3{x^{21}} - 2{y^{19}}.
-	\end{align*}
-	Do đó
-	\begin{align*}
-		&2{y^{19}} - 2{z^{19}} \ge 3{x^{21}} - 3{y^{21}} \ge 0 \\[-0.5ex]
-		&\text{(do từ } x \ge y \text{ suy ra } x^{21} \ge y^{21}); \tag{$1$}
-	\end{align*}
-	suy ra, $y \ge x$. Mà $x \ge y$ nên $x = y$.  \hfill ($2$)
-	\vskip 0.05cm
-	Vì thế, từ ($1$) ta có:
-	\begin{align*}
-		0 \ge 3{x^{21}} - 3{z^{21}} \ge 0;
-	\end{align*}
-	suy ra, $3{x^{21}} - 3{z^{21}} = 0$; do đó, $x = z$. \hfill ($3$)
-	\vskip 0.05cm
-	Từ ($2$) và ($3$) suy ra, $x = y = z$.
-	\vskip 0.05cm
-	Thế $y = x$ và $z = x$ vào phương trình thứ nhất của hệ đã cho, ta được:
-	\begin{align*}
-		{x^{23}} = 3{x^{21}} - 2{x^{19}}. \tag{$4$}
-	\end{align*}
-	Ta có:
-	\begin{align*}
-		(4) \Leftrightarrow& {x^{19}}\left( {{x^4} - 3{x^2} + 2} \right) = 0\\[-0.5ex]
-			\Leftrightarrow &{x^{19}}\left( {{x^2} - 1} \right)\left( {{x^2} - 2} \right) = 0\\[-0.5ex]
-			\Leftrightarrow & x = 0,x =  \pm 1,x =  \pm \sqrt 2 .
-	\end{align*}
-	Như vậy, nếu $(x, y, z)$ là nghiệm của hệ đã cho thì
-	\begin{align*}
-		\left( {x,y,z} \right) \in &\left\{\!\! \left( { \!-\! \sqrt 2 , \!-\! \sqrt 2 , \!-\! \sqrt 2 } \right)\!,\!\left( { \!-\! 1, \!-\! 1, \!-\! 1} \right)\!,\right.\\[-0.5ex]
-		&\left.\left( {0,0,0} \right)\!,\!\left( {1,1,1} \right)\!,\!\left( {\sqrt 2 ,\sqrt 2 ,\sqrt 2 } \right)\!\! \right\}\!.
-	\end{align*}
-	$\bullet$ Ngược lại, dễ thấy, nếu bộ số $(x, y, z)$ có $x = y = z$, và $x$ là nghiệm của phương trình ($4$), thì bộ số đó là nghiệm của hệ đã cho.
-	\vskip 0.05cm
-	Vì vậy, tất cả các bộ số $(x, y, z)$ được nêu ở ($5$) là tất cả các nghiệm của hệ đã cho.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm
-	Rất tiếc, trong số các lời giải Tạp chí đã nhận được từ bạn đọc, \textit{có ba lời giải sai}, do người giải bài đã \textit{mắc một trong các lỗi sau}:
-	\vskip 0.05cm
-	-- \textit{Nhận thức sai} rằng, hệ đã cho là hệ đối xứng đối với $x, y, z$; vì thế, \textit{làm mất tính tổng quát}, khi giả sử $x \ge y \ge z$.
-	\vskip 0.05cm
-	-- \textit{Khẳng định sai} rằng, ``với mọi $n \in \mathbb{N^*}$, với mọi $a,b \in \mathbb{R}$, từ $a < b$ suy ra $a^n < b^n$".
-	\vskip 0.05cm
-	-- Giải sai phương trình ($4$) (theo ký hiệu ở lời giải trên).
-	\vskip 0.05cm
-	\hfill \textbf{\color{thachthuctoanhoc}Lưu Thị Thanh Hà}
-	\vskip 0.05cm
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P665.}}
-	(Mức $B$) Cho số thực $k\ge1$, và cho tam giác đều $ABC$ cạnh $a$. Một điểm $M$ di động trên đường tròn ngoại tiếp của tam giác đó. Hãy tìm giá trị nhỏ nhất và lớn nhất của biểu thức $S=kMA+MB+MC$.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{của người chấm bài})\textbf{\color{thachthuctoanhoc}.}
-	\vskip 0.05cm
-	Trước hết, ta nhắc lại (không chứng minh) kết quả quen thuộc sau:
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bổ đề.} Cho tam giác đều $ABC$, và cho điểm $M$ tùy ý, nằm trên đường tròn ngoại tiếp của tam giác đó. Khi đó, trong ba đoạn thẳng $MA$, $MB$, $MC$, có một đoạn có độ dài bằng tổng độ dài của hai đoạn còn lại.
-	\vskip 0.05cm
-	\textit{Trở lại bài toán.}
-	\vskip 0.05cm
-	Gọi $O$ là tâm đường tròn ngoại tiếp tam giác đều $ABC$. Xảy ra các trường hợp sau:
-	\vskip 0.05cm
-	$\diamond$ \textit{Trường hợp} $1$: $M$ thuộc cung nhỏ $BC$ của đường tròn $(O)$. (Xem Hình $1$.)
-	\begin{figure}[H]
-		\vspace*{-15pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
-		\definecolor{ffqqqq}{rgb}{1.,0.,0.}
-		\definecolor{qqffqq}{rgb}{0.,1.,0.}
-		\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
-		\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
-		\definecolor{qqqqff}{rgb}{0.,0.,1.}
-		\begin{tikzpicture}[thachthuctoanhoc,scale=0.45]
-			\draw [shift={(2.,-1.)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (0.:0.6) arc (0.:60.:0.6) -- cycle;
-			\draw [shift={(7.014441094914693,-2.726246369365568)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (101.00372004279374:0.6) arc (101.00372004279374:161.00372004279376:0.6) -- cycle;
-			\draw [shift={(9.,-1.)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (120.:0.6) arc (120.:180.:0.6) -- cycle;
-			\draw [shift={(7.014441094914693,-2.726246369365568)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (41.00372004279372:0.4) arc (41.00372004279372:101.00372004279373:0.4) -- cycle;
-			\draw [shift={(5.5,5.06217782649107)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-120.:0.6) arc (-120.:-60.:0.6) -- cycle;
-			\draw  (2.,-1.)-- (9.,-1.);
-			\draw  (2.,-1.)-- (5.5,5.06217782649107);
-			\draw  (5.5,5.06217782649107)-- (9.,-1.);
-			\draw  (5.5,1.0207259421636907) circle (4.04145188432738cm);
-			\draw (5.28,6.2) node[anchor=north west] {$A$};
-			\draw (1.1,-1) node[anchor=north west] {$B$};
-			\draw (9.,-0.76) node[anchor=north west] {$C$};
-			\draw (5.02,1.24) node[anchor=north west] {$O$};
-			%			\draw (5.02,-2.84) node[anchor=north west] {$A'$};
-			\draw [color=qqffqq] (7.014441094914693,-2.726246369365568)-- (5.5,5.06217782649107);
-			\draw [color=qqqqff] (7.014441094914693,-2.726246369365568)-- (2.,-1.);
-			\draw [color=qqqqff] (7.014441094914693,-2.726246369365568)-- (9.,-1.);
-			\draw (7.02,-2.48) node[anchor=north west] {$M$};
-			%			\draw [color=ffqqqq] (5.5,-3.020725942163689)-- (5.5,5.06217782649107);
-			\draw [fill=white] (2.,-1.) circle (1.5pt);
-			\draw [fill=white] (9.,-1.) circle (1.5pt);
-			\draw [fill=white] (2.,-1.) circle (1.5pt);
-			\draw [fill=white] (5.5,5.06217782649107) circle (1.5pt);
-			\draw [fill=white] (5.5,1.0207259421636907) circle (1.5pt);
-			%				\draw [fill=white] (5.5,-3.020725942163689) circle (1.5pt);
-			\draw [fill=white] (7.014441094914693,-2.726246369365568) circle (1.5pt);
-		\end{tikzpicture}
-		\caption{\small\textit{\color{thachthuctoanhoc}Hình $1$}}
-		\vspace*{-15pt}
-	\end{figure}
-	Khi đó, do các cung nhỏ $AB$, $BC$, $CA$ bằng nhau (vì $ABC$ là tam giác đều), nên cả hai cung nhỏ $MB$, $MC$ đều không vượt quá cung nhỏ $MA$. Do đó, $MB, MC \le MA$. Vì thế, theo Bổ đề, $MA = MB + MC$; suy ra
-	\begin{align*}
-		S = (k + 1)MA.                            \tag{$1$} 
-	\end{align*}
-	Do cung nhỏ $AB$ không vượt quá cung nhỏ $AM$ nên $MA \ge AB = a$. \hfill ($2$)
-	\vskip 0.05cm
-	Do ngoại tiếp tam giác đều cạnh $a$, nên $(O)$ có đường kính bằng $\frac{2\sqrt{3}a}{3}$; do đó, \linebreak $MA \le \frac{2\sqrt{3}a}{3}$.             \hfill ($3$)
-	\vskip 0.05cm
-	Từ ($1$), ($2$) và ($3$), với lưu ý $k + 1 > 0$, suy ra
-	\begin{align*}
-		\left( {k + 1} \right)a \le S \le \dfrac{{2\sqrt 3 \left( {k + 1} \right)a}}{3}. \tag{$4$}
-	\end{align*}
-	$\diamond$ \textit{Trường hợp} $2$: \textit{$M$ thuộc cung lớn $BC$ của} $(O)$. (Xem Hình $2$.)
-	\begin{figure}[H]
-		\vspace*{-15pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
-		\definecolor{ffqqqq}{rgb}{1.,0.,0.}
-		\definecolor{qqffqq}{rgb}{0.,1.,0.}
-		\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
-		\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
-		\definecolor{qqqqff}{rgb}{0.,0.,1.}
-		\begin{tikzpicture}[thachthuctoanhoc,scale=0.45]
-			\draw [shift={(-3.,0.)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (0.:0.6) arc (0.:60.:0.6) -- cycle;
-			\draw [shift={(4.,0.)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (120.:0.6) arc (120.:180.:0.6) -- cycle;
-			\draw [shift={(0.5,6.06217782649107)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-120.:0.6) arc (-120.:-60.:0.6) -- cycle;
-			\draw [shift={(-3.5278435424871644,2.352101455106002)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-17.351600107417042:0.6) arc (-17.351600107417042:42.64839989258295:0.6) -- cycle;
-			\draw [shift={(-3.5278435424871644,2.352101455106002)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-77.35160010741706:0.4) arc (-77.35160010741706:-17.351600107417042:0.4) -- cycle;
-			\draw  (-3.,0.)-- (4.,0.);
-			\draw  (-3.,0.)-- (0.5,6.06217782649107);
-			\draw  (0.5,6.06217782649107)-- (4.,0.);
-			\draw  (0.5,2.0207259421636903) circle (4.04145188432738cm);
-			\draw [color=qqqqff] (-3.5278435424871644,2.352101455106002)-- (0.5,6.06217782649107);
-			\draw [color=qqqqff] (-3.5278435424871644,2.352101455106002)-- (-3.,0.);
-			\draw [color=qqffqq] (-3.5278435424871644,2.352101455106002)-- (4.,0.);
-			\draw (0.26,7.2) node[anchor=north west] {$A$};
-			\draw (-4.2,0.2) node[anchor=north west] {$B$};
-			\draw (4.,0.24) node[anchor=north west] {$C$};
-			\draw (-4.9,2.65) node[anchor=north west] {$M$};
-			\draw (0.52,2.85) node[anchor=north west] {$O$};
-%			\draw [color=ffqqqq] (4.,0.)-- (-3.,4.041451884327381);
-%			\draw (-4.2,4.68) node[anchor=north west] {$C'$};
-			\draw [fill=white] (-3.,0.) circle (1.5pt);
-			\draw [fill=white] (4.,0.) circle (1.5pt);
-			\draw [fill=white] (-3.,0.) circle (1.5pt);
-			\draw [fill=white] (0.5,6.06217782649107) circle (1.5pt);
-			\draw [fill=white] (0.5,2.0207259421636903) circle (1.5pt);
-			\draw [fill=white] (-3.5278435424871644,2.352101455106002) circle (1.5pt);
-%			\draw [fill=white] (-3.,4.041451884327381) circle (1.5pt);
-		\end{tikzpicture}
-		\caption{\small\textit{\color{thachthuctoanhoc}Hình $2$}}
-		\vspace*{-15pt}
-	\end{figure}
-	Trong trường hợp này, vì $B$ và $C$ đối xứng với nhau qua đường thẳng $AO$ (do $ABC$ là tam giác đều), nên không mất tính tổng quát, có thể giả sử $M$ thuộc cung nhỏ $AB$.
-	\vskip 0.05cm
-	Khi đó, cả hai cung nhỏ $MA$, $MB$ đều không vượt quá cung nhỏ $MC$. Do đó, $MA, MB \le MC$. Vì thế, theo Bổ đề,\linebreak $MC = MA + MB.$ \hfill ($5$)
-	\vskip 0.05cm
-	Do cung nhỏ $AC$ không vượt quá cung nhỏ $MC$, nên $MC \ge AC = a$. \hfill ($6$)
-	\vskip 0.05cm
-	Từ ($5$) và ($6$), với lưu ý $k - 1 \ge 0$, suy ra
-	\begin{align*}
-		S &= (k - 1)MA + (MA + MB) + MC \\
-		&= (k - 1)MA + 2MC \ge 2a.                      \tag{$7$}
-	\end{align*}
-	Tiếp theo, do đường kính đường tròn $(O)$ bằng $\dfrac{2\sqrt{3}a}{3}$, nên  $MC \le \dfrac{2\sqrt{3}a}{3}$. \hfill ($8$)
-	\vskip 0.05cm
-	Từ ($5$) và ($8$), với lưu ý $k + 1 > 0$ và $MB \le kMB$ (do $k \ge 1$), suy ra
-	\begin{align*}
-		S &\le k\left( {MA + MB} \right) + MC = \left( {k + 1} \right)MC \\
-		&\le \dfrac{{2\sqrt 3 \left( {k + 1} \right)a}}{3}. \tag{$9$}
-	\end{align*}
-	Từ ($7$) và ($9$), ta được:
-	\begin{align*}
-		2a \le S \le \dfrac{{2\sqrt 3 \left( {k + 1} \right)a}}{3}. \tag{$10$}
-	\end{align*}
-	$\diamond$ Từ ($4$) và ($10$), với lưu ý $2a \le (k + 1)a$ (do $k \ge 1$), suy ra, với mọi vị trí của $M$ trên $(O)$, luôn có:
-	\begin{align*}
-		2a \le S \le \dfrac{{2\sqrt 3 \left( {k + 1} \right)a}}{3}. 
-	\end{align*}
-	Hơn nữa, dễ thấy, $S = 2a$ khi $M \equiv A$, và $S = \dfrac{{2\sqrt 3 \left( {k + 1} \right)a}}{3}$  khi $M$ đối xứng với $A$ qua $O$.
-	\vskip 0.05cm
-	Vì vậy, giá trị nhỏ nhất và giá trị lớn nhất của $S$, tương ứng, bằng $2a$ và $\dfrac{{2\sqrt 3 \left( {k + 1} \right)a}}{3}$.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm
-	$\pmb{1.}$ Bổ đề ở Lời giải trên là một kết quả đã được đề cập trong Sách Bài tập Toán $9$ Tập $2$ (NXB Giáo dục), dưới dạng một bài tập (bài $20$, trang $102$).
-	\vskip 0.05cm
-	$\pmb{2.}$ Rất tiếc, tất cả các lời giải Tạp chí đã nhận được từ bạn đọc đều là lời giải không đúng, do người giải bài đã mắc một trong các lỗi sau:
-	\vskip 0.05cm
-	-- Ngộ nhận rằng, chỉ cần khảo sát các giá trị của biểu thức $S$, với giả thiết $M$ di động trên cung nhỏ $BC$;
-	\vskip 0.05cm
-	-- Đưa ra các kết luận về giá trị nhỏ nhất và giá trị lớn nhất của $S$ ngay sau khi mới chỉ chứng minh được các đánh giá cho $S$, mà chưa kiểm tra khả năng xảy ra dấu ``=" ở các đánh giá đó.
-	\vskip 0.05cm
-	-- Đưa ra lời giải cho một bài toán, khác bài đã ra.
-	\vskip 0.05cm
-	\hfill \textbf{\color{thachthuctoanhoc}Hạ Vũ Anh}
-	\vskip 0.05cm
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P666.}}
-	(Mức $B$) Cho số nguyên $n\ge 13$. Chia hình vuông cạnh $n$ thành năm hình chữ nhật, như ở hình dưới đây. Hỏi, độ dài các cạnh của năm hình chữ nhật đó có thể là $1$, $2$, $3$, $4$, $5$, $6$, $7$, $8$, $9$, $10$ hay không? Vì sao?
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo lời giải của bạn Phùng Việt Cường, lớp $11$ Toán $2$, trường THPT chuyên Lê Hồng Phong, tỉnh Nam Định})\textbf{\color{thachthuctoanhoc}.}
-	\vskip 0.05cm
-	Giả sử có thể phân chia hình vuông cạnh $n$ thành năm hình chữ nhật, thỏa mãn các yêu cầu của đề bài.
+	\textbf{\textit{Nhận xét.}} Nếu một hình chữ nhật được phân chia thành bốn hình chữ nhật I, II, III, IV như ở hình dưới đây, thì tổng chu vi của hai hình chữ nhật I và IV bằng tổng chu vi của hai hình chữ nhật II và III.
 	\begin{figure}[H]
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\definecolor{qqqqff}{rgb}{0,0,1}
-		\definecolor{qqqqffa}{rgb}{1,1,1}
-		\begin{tikzpicture}[thachthuctoanhoc,scale=0.25]
-			\draw [] (-5,5)-- (5,5);
-			\draw [] (5,5)-- (5,-5);
-			\draw [] (-5,5)-- (-5,-5);
-			\draw [] (-5,-5)-- (5,-5);
-			\draw [] (-1.8064850795005638,5)-- (-1.806485079500564,-0.9133587450621485);
-			\draw [] (-5,-0.9133587450621485)-- (1.4776647785694939,-0.9133587450621485);
-			\draw [] (1.4776647785694939,1.1789625354824862)-- (1.477664778569494,-5);
-			\draw [] (-1.806485079500564,1.1789625354824862)-- (5,1.1789625354824862);
-			\draw [fill=white] (-5,5) circle (1.5pt);
-			\draw [fill=white] (5,5) circle (1.5pt);
-			\draw [fill=white] (5,-5) circle (1.5pt);
-			\draw [fill=white] (-5,-5) circle (1.5pt);
-			\draw [fill=white] (-1.8064850795005638,5) circle (1.5pt);
-			\draw [fill=white] (5,1.1789625354824862) circle (1.5pt);
-			\draw [fill=white] (-5,-0.9133587450621485) circle (1.5pt);
-			\draw [fill=white] (1.477664778569494,-5) circle (1.5pt);
-			\draw [fill=white] (-1.806485079500564,1.1789625354824862) circle (1.5pt);
-			\draw [fill=white] (1.4776647785694939,1.1789625354824862) circle (1.5pt);
-			\draw [fill=white] (1.4776647785694939,-0.9133587450621485) circle (1.5pt);
-			\draw [fill=white] (-1.806485079500564,-0.9133587450621485) circle (1.5pt);
+		\begin{tikzpicture}[thachthuctoanhoc]
+			\draw (0,0) rectangle (5,3);
+			\draw (0,2) -- (5,2) (2,0) -- (2,3);			
 		\end{tikzpicture}
 		\vspace*{-10pt}
 	\end{figure}
-	Ký hiệu ${a_1},{a_2}, \ldots ,{a_{10}}$  là độ dài các cạnh của năm hình chữ nhật trong phân chia nói trên, như ở Hình $1$ dưới đây.
-	\begin{figure}[H]
-		\vspace*{-15pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\begin{tikzpicture}[scale=0.495,thachthuctoanhoc]
-			\draw  (0.,0.)-- (5.,0.);
-			\draw  (0.,5.)-- (5.,5.);
-			\draw  (5.,5.)-- (5.,0.);
-			\draw  (0.,5.)-- (0.,0.);
-			\draw  (2.,5.)-- (2.,1.76);
-			\draw  (2.,1.76)-- (0.,1.76);
-			\draw  (2.,3.46)-- (5.,3.46);
-			\draw  (3.2,3.46)-- (3.2,0.);
-			\draw  (2.,1.76)-- (3.2,1.76);
-			\draw (0.7411478095238109,5.945053904761909) node[anchor=north west] {$a_1$};
-			\draw (3.225934666666671,5.945053904761909) node[anchor=north west] {$a_2$};
-			\draw (5.035841142857149,4.840704190476194) node[anchor=north west] {$a_3$};
-			\draw (5.06651752380953,2.4786228571428586) node[anchor=north west] {$a_4$};
-			\draw (3.7474331428571475,-0.2619525714285716) node[anchor=north west] {$a_5$};
-			\draw (1.0785880000000017,-0.24233053333333336) node[anchor=north west] {$a_6$};
-			\draw (-1.2,1.7117133333333343) node[anchor=north west] {$a_7$};
-			\draw (-1.2,4.165823809523812) node[anchor=north west] {$a_8$};
-			\draw (2.305643238095241,4.564616761904765) node[anchor=north west] {$a_9$};
-			\draw (3.1645819047619086,3.1228268571428592) node[anchor=north west] {$a_{10}$};
-		\end{tikzpicture}
-		\caption{\small\textit{\color{thachthuctoanhoc}Hình $1$}}
-		\vspace*{-15pt}
-	\end{figure}
-	Ta có $\left\{ {{a_1};{a_2}; \ldots ;{a_{10}}} \right\} = \left\{ {1;2; \ldots ;10} \right\},$ và
+	Theo Nhận xét trên, từ các giả thiết của bài ra về chu vi của $9$ hình chữ nhật con, ta có:
 	\begin{align*}
-		n = {a_1} + {a_2} = {a_3} + {a_4} = {a_5} + {a_6} = {a_7} + {a_8}.
+		\begin{cases}
+			a + c = 4 + 2 = 6 \hfill (1)\\
+			b + c = 4 + 3 = 7 \hfill (2)\\
+			c + e = 3 + 5 = 8 \hfill (3)\\
+			c + d = 2 + 5 = 7. \hfill (4)
+		\end{cases}
 	\end{align*}
-	Do đó
-	\begin{align*}
-		4n &= {a_1} + {a_2} + {a_3} + {a_4} + {a_5} + {a_6} + {a_7} + {a_8} \\
-		&\le 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 52;
-	\end{align*}
-	suy ra, $n \le 13$. Mà theo giả thiết, $n \ge 13$, nên $n = 13$.
+	Từ ($1$), do $a > 0$, suy ra $0 < c < 6$. Mà $c$ là một số nguyên, khác $2$, $3$, $4$, $5$ (giả thiết), nên $c = 1$. Từ đây và ($1$), ($2$), ($3$), ($4$), lần lượt suy ra, $a = 6 – 1 = 5$, $b = 7 – 1 = 6$, $e = 8 – 1 = 7$, $d = 7 – 1 = 6$.
 	\vskip 0.05cm
-	Như vậy, với $n \ge 13$, ta có thể phân chia hình vuông cạnh $n$ thành năm hình chữ nhật, thỏa mãn các yêu cầu của đề bài, chỉ khi $n = 13$.
+	Vậy, $a = 5$, $b = 6$, $c = 1$, $d = 6$, $e = 7$.
 	\vskip 0.05cm
-	Với $n = 13$, phân chia được thể hiện ở Hình $2$ dưới đây thỏa mãn các yêu cầu của đề bài.
-	\begin{figure}[H]
-		\vspace*{-15pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\begin{tikzpicture}[scale=0.22,thachthuctoanhoc, node font=\small]
-			\draw  (0.,0.)-- (12.902720021180311,0.);
-			\draw  (0.,12.902720021180311)-- (12.902720021180311,12.902720021180311);
-			\draw  (12.902720021180311,12.902720021180311)-- (12.902720021180311,0.);
-			\draw  (0.,12.902720021180311)-- (0.,0.);
-			\draw  (9.025004744255101,12.902720021180313)-- (9.025004744255101,6.);
-			\draw  (9.025004744255101,6.)-- (0.,6.);
-			\draw  (9.025004744255101,8.033375486746607)-- (12.902720021180311,8.033375486746607);
-			\draw  (10.,8.033375486746607)-- (10.,0.);
-			\draw  (9.025004744255101,6.)-- (10.,6.);
-			\draw (4.231659743459114,14.7289269960977) node[anchor=north west] {$9$};
-			\draw (10.574639348977636,14.751598908646) node[anchor=north west] {$4$};
-			\draw (13.261077770138423,11.311830988972293) node[anchor=north west] {$5$};
-			\draw (8.58156796848920555,9.9755594148325) node[anchor=north west] {$1$};
-			\draw (10.0126899612117505,7.9552898046145526) node[anchor=north west] {$2$};
-			\draw (13.0186454480661734,4.795734936070321) node[anchor=north west] {$8$};
-			\draw (10.6246248954267832,-0.25477887991443754) node[anchor=north west] {$3$};
-			\draw (4.679399480319246,-0.25477887991443754) node[anchor=north west] {$10$};
-			\draw (-1.68427239409557028,3.625632172873369) node[anchor=north west] {$6$};
-			\draw (-1.69919705199090798,10.043235067868588) node[anchor=north west] {$7$};
-		\end{tikzpicture}
-		\caption{\small\textit{\color{thachthuctoanhoc}Hình $2$}}
-		\vspace*{-15pt}
-	\end{figure}
-	Vậy, nếu $n = 13$ thì câu trả lời cho câu hỏi đặt ra ở bài toán là ``\textit{có thể}"; nếu $n > 13$ thì câu trả lời là ``\textit{không thể}".
+	\textbf{Bình luận và Nhận xét}
 	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm
-	Trong số các lời giải Tạp chí nhận được từ bạn đọc, rất tiếc, có một lời giải sai (do người giải bài đã mắc khá nhiều lỗi logic trong các lập luận) và một lời giải không được chấp nhận là lời giải hoàn chỉnh, do có câu trả lời không chính xác cho câu hỏi của bài toán và mắc một số lỗi ``chính tả" trong các diễn đạt toán học.
-	\vskip 0.05cm
-	\hfill \textbf{\color{thachthuctoanhoc}Lê Huy}
-	\vskip 0.05cm
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P667.}}
-	(Mức $A$) Chứng minh rằng
-	\begin{align*}
-		8(x+y-1)^2-9xy(x+y-1)+xy\ge0
-	\end{align*}
-	với mọi $x,y\in[0;1]$. 
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{của người chấm bài})\textbf{\color{thachthuctoanhoc}.}
-	\vskip 0.05cm
-	Đặt $a = \dfrac{x + y}{2}$; khi đó, bất đẳng thức của đề bài trở thành
-	\begin{align*}
-		4{\left( {2a - 1} \right)^2} + xy\left( {5 - 9a} \right) \ge 0. \tag{$1$}
-	\end{align*}
-	Vì $x, y \in [0; 1]$ nên $a \in [0; 1]$.
-	\vskip 0.05cm
-	Nếu  $0 \le a \le \dfrac{5}{9}$ thì bất đẳng thức ($1$) hiển nhiên đúng.
-	\vskip 0.05cm
-	Xét $\dfrac{5}{9} < a \le 1$.
-	\vskip 0.05cm  
-	Khi đó, $5 - 9a < 0.$ \hfill ($2$)
-	\vskip 0.05cm
-	Theo bất đẳng thức trung bình cộng -- trung bình nhân, ta có:
-	\begin{align*}
-		{a^2} = {\left( {\dfrac{{x + y}}{2}} \right)^2} \ge xy. \tag{$3$}
-	\end{align*}
-	Từ ($2$) và ($3$), suy ra
-	\begin{align*}
-			&4{\left( {2a - 1} \right)^2} + xy\left( {5 - 9a} \right) \\[-0.5ex]
-			\ge \,&4{\left( {2a - 1} \right)^2} + {a^2}\left( {5 - 9a} \right)\\
-		 = \,&4 - 16a + 21{a^2} - 9{a^3}\\[-0.5ex]
-		= \,&\left( {1 - a} \right){\left( {2 - 3a} \right)^2} \ge 0\left( {{\text{do }}a \le 1} \right).
-	\end{align*}
-	Bất đẳng thức ($1$) được chứng minh; và vì thế, bất đẳng thức của bài ra được chứng minh.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm
-	$\pmb{1.}$ Dễ dàng chứng minh được rằng, dấu ``$=$" ở bất đẳng thức của đề bài xảy ra khi và chỉ khi
-	\begin{align*}
-		\left( {x,y} \right) \in \left\{ {\left( {0,1} \right),\left( {1,0} \right),\left( {1,1} \right),\left( {\dfrac{2}{3},\dfrac{2}{3}} \right)} \right\}.
-	\end{align*}
-	$\pmb{2.}$ Bằng cách đặt $z = 2 - x - y$, có thể biến đổi bất đẳng thức của đề bài về bất đẳng thức Schur bậc ba
-	\begin{align*}
-		xyz \ge \left( {x + y - z} \right)\left( {y + z - x} \right)\left( {z + x - y} \right).
-	\end{align*}
-	Vì thế, có thể nói, bất đẳng thức của bài ra là một trường hợp đặc biệt của bất đẳng thức vừa nêu trên, khi $z = 2 - x - y$.
-	\vskip 0.05cm
-	$\pmb{3.}$ Trong số các lời giải Tạp chí đã nhận được từ bạn đọc, rất tiếc, có một số lời giải sai, do người giải bài đã nhầm lẫn chiều của các bất đẳng thức, hoặc thực hiện sai một số tính toán.
-	\vskip 0.05cm
-	\hfill \textbf{\color{thachthuctoanhoc}Võ Quốc Bá Cẩn}
-	\vskip 0.05cm
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P668.}}
-	(Mức $A$) Cho số nguyên $n\ge2$. Có $n$ con ếch nằm trên một trục số, tại $n$ điểm tuỳ ý, thuộc tập $2n$ điểm $1,2,\ldots,2n$. Vào cùng một thời điểm, mỗi con ếch đều nhảy đến một trong số $n$ điểm còn lại, thuộc tập $2n$ điểm vừa nêu, sao cho không có hai con nào cùng nhảy tới một điểm. Chứng minh rằng
-	\vskip 0.05cm
-	$a)$ Tổng khoảng cách $n$ con ếch đã nhảy không vượt quá $n^2$. 
-	\vskip 0.05cm
-	$b)$ Tồn tại một phương án nhảy của $n$ con ếch, sao cho tổng khoảng cách chúng đã nhảy đúng bằng $n^2$. 
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo lời giải của tác giả bài toán}).
-	\vskip 0.05cm
-	Lần lượt, theo thứ tự từ bé đến lớn, ký hiệu ${a_1},{a_2}, \ldots ,{a_n}$  là các điểm mà $n$ con ếch nằm ở thời điểm ban đầu.
-	\vskip 0.05cm
-	Với mỗi $i = 1, 2, \ldots, n$, gọi con ếch nằm ở điểm  $a_i$ là con ếch thứ $i$.
-	\vskip 0.05cm
-	Với mỗi $i = 1, 2, \ldots, n$, ký hiệu $b_i$  là điểm con ếch thứ $i$ nhảy đến.
-	\vskip 0.05cm
-	Theo giả thiết của bài ra,
-	\begin{align*}
-		&\left\{ {{a_1};{a_2}; \ldots ;{a_n};{b_1};{b_2}; \ldots ;{b_n}} \right\} \\[-0.5ex]
-		= \,&\left\{ {1;2; \cdots ;2n} \right\}. \tag{$1$}
-	\end{align*}
-	Với mỗi $i = 1, 2, \ldots, n$, khoảng cách con ếch thứ $i$ đã nhảy là $\left| {{a_i} - {b_i}} \right|.$
-	\vskip 0.05cm 
-	Ký hiệu $S$ là tổng khoảng cách $n$ con ếch đã nhảy. Do với mọi $i = 1, 2, \ldots , n$,
-	\begin{align*}
-		\left| {{a_i} - {b_i}} \right| = \max \left\{ {{a_i},{b_i}} \right\} - \min \left\{ {{a_i},{b_i}} \right\},
-	\end{align*}
-	nên
-	\begin{align*}
-		S = \sum\limits_{i = 1}^n {\!\max \!\left\{ {{a_i},{b_i}} \right\}}  \!-\! \sum\limits_{i = 1}^n {\!\min\! \left\{ {{a_i},{b_i}} \right\}}.  \tag{$2$}
-	\end{align*}
-	$a)$ Do ($1$) nên
-	\begin{align*}
-		\sum\limits_{i = 1}^n {\max \left\{ {{a_i},{b_i}} \right\}}  &\!\le\! \left( {n \!+\! 1} \right) \!+\! \left( {n \!+\! 2} \right) \!+\!  \cdots  \!+\! 2n \\[-1.2ex]
-		&= {n^2} + \sum\limits_{k = 1}^n k,  \tag{$3$}\\[-1ex]
-	\sum\limits_{i = 1}^n {\min \left\{ {{a_i},{b_i}} \right\}}  &\ge \sum\limits_{k = 1}^n k. \tag{$4$}
-\end{align*}
-	Từ ($2$), ($3$) và ($4$), suy ra
-	\begin{align*}
-		S \le \left( {{n^2} + \sum\limits_{k = 1}^n k } \right) - \sum\limits_{k = 1}^n k  = {n^2}.
-	\end{align*}
-	Ta có điều phải chứng minh theo yêu cầu đề bài.
-	\vskip 0.05cm
-	$b)$ Lần lượt, theo thứ tự từ lớn đến bé, ký hiệu ${c_1},{c_2}, \ldots ,{c_n}$  là các phần tử của tập hợp
-	\begin{align*}
-		\left\{ {1;2; \ldots ;2n} \right\}\backslash \left\{ {{a_1};{a_2}; \ldots ;{a_n}} \right\}.
-	\end{align*}
-	Xảy ra hai trường hợp sau:
-	\vskip 0.05cm
-	$\diamond$ \textit{Trường hợp} $1$: $1 \le {a_1} < {a_2} < \cdots  < {a_n} \le n.$
-	\vskip 0.05cm  
-	Khi đó, $\left\{ {{c_1},{c_2}, \ldots ,{c_n}} \right\} \!=\! \left\{ {n \!+\! 1;n \!+\! 2; \ldots ;2n} \right\}\!.$  Do đó, với mọi $i = 1, 2, \ldots, n$,
-	\begin{align*}
-		\max \!\left\{\! {{a_i},{c_i}} \!\right\} \!=\! {c_i} \!\ge\! n \!+\! 1, \min\! \left\{\! {{a_i},{c_i}} \!\right\} \!=\! {a_i} \!\le\! n.
-	\end{align*}
-	$\diamond$ \textit{Trường hợp} $2$: Tồn tại $h \in \mathbb{N^*}$  sao cho  $1 \le {a_1} <  \cdots  < {a_h} \le n < {a_{h + 1}} <  \cdots  < {a_n} \le 2n.$ 
-	\vskip 0.05cm
-	Khi đó, ${c_1} >  \cdots  > {c_h} \ge n + 1 > {c_{h + 1}} >  \cdots  > {c_n} \ge 1.$ 
-	\vskip 0.05cm
-	Do đó, với mọi $i = 1, 2, \ldots , h$,
-	\begin{align*}
-		\max \!\left\{\! {{a_i},{c_i}} \!\right\} \!=\! {c_i} \!\ge\! n \!+\! 1, \min\! \left\{ \!{{a_i},{c_i}} \!\right\} \!=\! {a_i} \!\le\! n;
-	\end{align*}
-	và với mọi $i = h + 1, \ldots , n$,
-	\begin{align*}
-		\max\! \left\{\! {{a_i},{c_i}} \!\right\} \!=\! {a_i} \!\ge\! n \!+\! 1, \min\! \left\{\! {{a_i},{c_i}} \!\right\} \!=\! {c_i} \!\le\! n.
-	\end{align*}
-	Từ kết quả xét hai trường hợp trên, suy ra, ta luôn có
-	\begin{align*}
-		\max \!\left\{\! {{a_i},{c_i}} \!\right\} \!\ge\! n \!+\! 1,\min\! \left\{\! {{a_i},{c_i}} \!\right\} \!\le\! n, \tag{$5$}
-	\end{align*}
-	với mọi $i = 1, 2, \ldots, n$.
-	\vskip 0.05cm
-	Xét phương án nhảy như sau của $n$ con ếch: Với mỗi $i = 1, 2, \ldots, n$, $b_i = c_i$.
-	\vskip 0.05cm  
-	Khi đó, theo ($5$),
-	\begin{align*}
-		\max \!\left\{\! {{a_i},{b_i}} \!\right\} \!\ge\! n \!+\! 1,\min\! \left\{\! {{a_i},{b_i}} \!\right\} \!\le\! n,
-	\end{align*}
-	với mọi $i = 1, 2, \ldots , n$.
-	\vskip 0.05cm
-	Do đó, với lưu ý tới ($1$), ta có:
-	\begin{align*}
-		\sum\limits_{i = 1}^n {\max \left\{ {{a_i},{b_i}} \right\}}  &= \left( {n \!+\! 1} \right) \!+\! \left( {n \!+\! 2} \right) \!+\!  \cdots \! +\! 2n \\[-1.2ex]
-		&= {n^2} + \sum\limits_{k = 1}^n k\\[-1.2ex]
-		\sum\limits_{i = 1}^n {\min \left\{ {{a_i},{b_i}} \right\}}  &= \sum\limits_{k = 1}^n k.
-	\end{align*}
-	Vì thế, theo ($2$), $S = n^2$.
-	\vskip 0.05cm  
-	Ta có điều phải chứng minh theo yêu cầu đề bài.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm
-	Tạp chí đã nhận được hai lời giải, từ bạn đọc; trong đó, rất tiếc, có một lời giải sai ở ý $b)$, do người giải bài, khi xây dựng phương án nhảy của $n$ con ếch, đã áp đặt vị trí ban đầu của chúng là $n$ điểm $1, 2, \ldots, n$.
-	\vskip 0.05cm
-	\hfill	\textbf{\color{thachthuctoanhoc}Nguyễn Khắc Minh}
-	\vskip 0.05cm
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P669.}}
-	(Mức $A$) Cho tam giác nhọn $ABC$, với $AB<AC$, nội tiếp đường tròn $(O)$. Gọi $M,N$ tương ứng là trung điểm của các cung $BC$ lớn và cung $BC$ nhỏ. Trên đường thẳng $AN$, lấy điểm $D$ sao cho $D$ nằm trong tam giác $ABC$ và không trùng với tâm đường tròn nội tiếp tam giác ấy. Trên đoạn thẳng $MD$, lấy điểm $T$ sao cho $\angle{MBT}=\angle{DCB}$. Chứng minh rằng trực tâm của tam giác $TND$ nằm trên đường thẳng $BC$.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{của người chấm bài}).
-	\begin{figure}[H]
-		\vspace*{-10pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\definecolor{ffqqqq}{rgb}{1.,0.,0.}
-		\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
-		\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
-		\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
-		\definecolor{qqqqff}{rgb}{0.,0.,1.}
-		\begin{tikzpicture}[scale=0.32,thachthuctoanhoc]
-			\draw [shift={(10.,-2.)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (166.8046508068974:0.88) arc (166.8046508068974:180.:0.88) -- cycle;
-			\draw [shift={(0.,-2.)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (44.4249154392908:0.88) arc (44.4249154392908:57.6202646323934:0.88) -- cycle;
-			\draw[pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (3.028672358412081,-4.746051562850727) -- (3.0941777880108416,-4.441898577178908) -- (2.790024802339022,-4.376393147580148) -- (2.7245193727402617,-4.680546133251967) -- cycle; 
-			\draw [shift={(4.185301543683374,2.1021169441445613)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-135.5750845607092:0.66) arc (-135.5750845607092:-102.15414161359068:0.66) -- cycle;
-			\draw [shift={(10.,-2.)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (166.8046508068974:0.66) arc (166.8046508068974:200.22559375401596:0.66) -- cycle;
-			\draw [shift={(2.7245193727402617,-4.680546133251967)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (20.225593754015947:0.66) arc (20.225593754015947:77.84585838640933:0.66) -- cycle;
-			\draw [shift={(2.7245193727402617,-4.680546133251967)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (77.84585838640933:0.44) arc (77.84585838640933:135.4661230188027:0.44) -- cycle;
-			\draw[pattern color=ffqqqq,fill=ffqqqq,fill opacity=0.10000000149011612] (2.662862274480868,1.6530470327261946) -- (2.7508851876612797,1.354631271153127) -- (3.049300949234347,1.442654184333539) -- (2.961278036053935,1.7410699459066064) -- cycle; 
-			\draw  (2.,5.)-- (0.,-2.);
-			\draw  (0.,-2.)-- (10.,-2.);
-			\draw  (10.,-2.)-- (2.,5.);
-			\draw  (5.,0.35714285714285715) circle (5.527759261127387cm);
-			\draw  (5.,-5.17061640398453)-- (2.,5.);
-			\draw  (3.6238019594012094,-0.505022281702721)-- (10.,-2.);
-			\draw  (5.,5.884902118270244)-- (3.6238019594012094,-0.505022281702721);
-			\draw  (5.,5.884902118270244)-- (0.,-2.);
-			\draw  (4.185301543683374,2.1021169441445613)-- (0.,-2.);
-			\draw (1.3538,6.796) node[anchor=north west] {$A$};
-			\draw (-0.64,-2.228) node[anchor=north west] {$B$};
-			\draw (10.008,-1.728) node[anchor=north west] {$C$};
-			\draw (4.64,7.242) node[anchor=north west] {$M$};
-			\draw (4.75,-4.984) node[anchor=north west] {$N$};
-			\draw (4.992,0.626) node[anchor=north west] {$O$};
-			\draw (3.1,-0.21) node[anchor=north west] {$D$};
-			\draw (3.7266,2.804) node[anchor=north west] {$T$};
-			\draw (2.0286,-4.722) node[anchor=north west] {$K$};
-			\draw  (3.6238019594012094,-0.505022281702721)-- (2.7245193727402617,-4.680546133251967);
-			\draw  (4.185301543683374,2.1021169441445613)-- (5.,-5.17061640398453);
-			\draw  (4.185301543683374,2.1021169441445613)-- (-9.72171775070981,-2.);
-			\draw  (5.,-5.17061640398453)-- (5.,5.884902118270244);
-			\draw (-10.43,-1.954) node[anchor=north west] {$H$};
-			\draw  (-9.72171775070981,-2.)-- (5.,-5.17061640398453);
-			\draw  (-9.72171775070981,-2.)-- (0.,-2.);
-			\draw  (2.7245193727402617,-4.680546133251967)-- (10.,-2.);
-			\draw  (2.7245193727402617,-4.680546133251967)-- (0.,-2.);
-			\draw  (5.,-5.17061640398453)-- (10.,-2.);
-			\draw [shift={(4.185301543683374,2.1021169441445613)},color=qqwuqq] (-135.5750845607092:0.66) arc (-135.5750845607092:-102.15414161359068:0.66);
-			\draw [shift={(4.185301543683374,2.1021169441445613)},color=qqwuqq] (-135.5750845607092:0.55) arc (-135.5750845607092:-102.15414161359068:0.55);
-			\draw [shift={(10.,-2.)},color=qqwuqq] (166.8046508068974:0.66) arc (166.8046508068974:200.22559375401596:0.66);
-			\draw [shift={(10.,-2.)},color=qqwuqq] (166.8046508068974:0.55) arc (166.8046508068974:200.22559375401596:0.55);
-			\draw [shift={(2.7245193727402617,-4.680546133251967)},color=qqwuqq] (20.225593754015947:0.66) arc (20.225593754015947:77.84585838640933:0.66);
-			\draw[color=qqwuqq] (3.113938829900631,-4.232005737763528) -- (3.20047648704738,-4.132330094321653);
-			\draw [shift={(2.7245193727402617,-4.680546133251967)},color=qqwuqq] (77.84585838640933:0.44) arc (77.84585838640933:135.4661230188027:0.44);
-			\draw[color=qqwuqq] (2.6173217256447794,-4.322238075210854) -- (2.5794872619640197,-4.195776407666933);
-			\draw  (-9.72171775070981,-2.)-- (3.6238019594012094,-0.505022281702721);
-			\draw  (0.,-2.)-- (5.,-5.17061640398453);
-			\draw [fill=white] (2.,5.) circle (1.5pt);
-			\draw [fill=white] (0.,-2.) circle (1.5pt);
-			\draw [fill=white] (10.,-2.) circle (1.5pt);
-			\draw [fill=white] (5.,0.35714285714285715) circle (1.5pt);
-			\draw [fill=white] (5.,-5.17061640398453) circle (1.5pt);
-			\draw [fill=white] (5.,5.884902118270244) circle (1.5pt);
-			\draw [fill=white] (3.6238019594012094,-0.505022281702721) circle (1.5pt);
-			\draw [fill=white] (0.,-2.) circle (1.5pt);
-			\draw [fill=white] (0.,-2.) circle (1.5pt);
-			\draw [fill=white] (4.185301543683374,2.1021169441445613) circle (1.5pt);
-			\draw [fill=white] (5.,5.884902118270244) circle (1.5pt);
-			\draw [fill=white] (2.7245193727402617,-4.680546133251967) circle (1.5pt);
-			\draw [fill=white] (-9.72171775070981,-2.) circle (1.5pt);
-		\end{tikzpicture}
-		\vspace*{-20pt}
-	\end{figure}
-	Gọi $K$ là giao điểm thứ hai, khác $M$, của $MD$ và $(O)$.
-	\vskip 0.05cm
-	Do $M$ là điểm chính giữa cung $BAC$ nên
-	\begin{align*}
-		\angle BKT \!=\! \angle BKM \!=\! \angle MKC \!=\! \angle DKC. \tag{$1$}
-	\end{align*}
-	Do $BKCM$ là tứ giác nội tiếp, nên $\angle BMK = \angle BCK$; kết hợp với giả thiết $\angle MBT = \angle DCB,$  suy ra
-	\begin{align*}
-		\angle BTK &= \angle MBT + \angle BMK \\
-		&= \angle DCB + \angle BCK = \angle DCK. \tag{$2$}
-	\end{align*}
-	Từ ($1$) và ($2$), suy ra $\Delta BKT \sim  \Delta DKC$; do đó
-	\begin{align*}
-		\dfrac{{KB}}{{KT}} = \dfrac{{KD}}{{KC}}. \tag{$3$}
-	\end{align*}
-	Gọi $H$ là giao điểm của $NK$ và $BC$.
-	\vskip 0.05cm
-	Từ giả thiết về vị trí của các điểm $M$, $N$, suy ra $MN$ là đường kính của $(O)$. Do đó, $KN \bot KM$; mà $KM$ là phân giác trong của góc $BKC$ (vì $M$ là điểm chính giữa cung $BAC$), nên $KN$ là phân giác ngoài của góc $BKC$. Suy ra, $\angle NKC = \angle BKH$. \hfill ($4$)
-	\vskip 0.05cm 
-	Vì $BKNC$ là tứ giác nội tiếp, nên 
-	\begin{align*}
-		\angle KNC = \angle KBH. \tag{$5$}
-	\end{align*}
-	Từ ($4$) và ($5$), suy ra $\Delta NKC \sim \Delta BKH$; do đó
-	\begin{align*}
-		\dfrac{{KC}}{{KN}} = \dfrac{{KH}}{{KB}}. \tag{$6$}
-	\end{align*}
-	Từ ($3$) và ($6$), suy ra
-	\begin{align*}
-		\dfrac{{KH}}{{KT}} = \dfrac{{KH}}{{KB}} \cdot \dfrac{{KB}}{{KT}} = \dfrac{{KC}}{{KN}} \cdot \dfrac{{KD}}{{KC}} = \dfrac{{KD}}{{KN}}.
-	\end{align*}
-	Mà  $\angle TKH = \angle NKD = {90^{\rm{o}}}$ (do $KN \bot KM$, theo chứng minh trên), nên $\Delta KHT \sim  \Delta KDN$. Suy ra
-	\begin{align*}
-		\angle THK = \angle NDK = {90^{\rm{o}}} - \angle KND.
-	\end{align*}
-	Do đó
-	\begin{align*}
-		\angle THN + \angle HND = \angle THK + \angle KND = {90^\circ}.
-	\end{align*}
-	Suy ra, $TH \bot ND$. Mà $NH \bot TD$ (do $KN \bot KM$, theo chứng minh trên), nên $H$ là trực tâm của tam giác $TND$. Vì vậy, trực tâm của tam giác $TND$ nằm trên đường thẳng $BC$.
-	\vskip 0.05cm
-	Ta có điều phải chứng minh theo yêu cầu đề bài.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm
-	Trong số các lời giải Tạp chí đã nhận được từ bạn đọc, có một lời giải không được chấp nhận là lời giải đúng, do người giải bài đã sử dụng chưa đúng một dấu hiệu nhận biết trực tâm của một tam giác.
+	Trong số các lời giải Tạp chí đã nhận được, rất tiếc, có một lời giải không được coi là lời giải hoàn chỉnh, do người giải bài vẫn đang dang dở trong các lập luận lý giải cho kết quả tìm được.
 	\begin{flushright}
-		\textbf{\color{thachthuctoanhoc}Hạ Vũ Anh}
+		\textbf{Lê Huy}
 	\end{flushright}
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P670.}}
-	(Mức $A$) Hỏi, có thể chọn được tối đa bao nhiêu điểm nguyên trong mặt phẳng toạ độ, sao cho đoạn thẳng nối hai điểm bất kỳ trong chúng chứa đúng $2022$ điểm nguyên?
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P672.}}
+	(Mức $B$) Cho $x$ và $y$ là các số nguyên dương phân biệt thoả mãn
+	\begin{align*}
+		2023x^{2023}+999 y^{2023}
+	\end{align*}
+	chia hết cho $x+y$. Chứng minh rằng $x+y$ là hợp số. 
 	\vskip 0.05cm
-	(Trong mặt phẳng toạ độ, một điểm được gọi là {\it điểm nguyên}, nếu cả hoành độ và tung độ của nó đều là các số nguyên.)
+	\textbf{Lời giải} (\textit{phỏng theo Đáp án của bài toán})\textbf{.}
 	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{của người chấm bài})\textbf{\color{thachthuctoanhoc}.}
+	Ta có:
+	\begin{align*}
+		2023{x^{2023}} + 999{y^{2023}} = 999\left( {{x^{2023}} + {y^{2023}}} \right) + {2^{10}} \cdot {x^{2023}}.
+	\end{align*}
+	Do $2023$ là số lẻ, nên $\left( {{x^{2023}} + {y^{2023}}} \right) \vdots \left( {x + y} \right)$. Vì thế, từ giả thiết của bài toán và ($1$), suy ra
+	\begin{align*}
+		{2^{10}} \cdot {x^{2023}} \vdots \left( {x + y} \right).
+	\end{align*}
+	Vì $x, y$ là hai số nguyên dương phân biệt, nên $x + y \ge  3 > 1$. Do đó, $x + y$ hoặc là số nguyên tố lẻ, hoặc là hợp số.  
+	\hfill ($3$)
 	\vskip 0.05cm
-	Trong phần trình bày dưới đây, $\gcd(a, b)$ ký hiệu ước chung lớn nhất của hai số nguyên $a, b$.\vskip 0.05cm
-	Trước hết, ta nhắc lại kết quả quen biết sau:
+	Nếu $x + y$ là số nguyên tố lẻ thì $\left( {{2^{10}},x + y} \right) = 1$.  Vì thế, từ ($2$) ta có
+	\begin{align*}
+		{x^{2023}} \vdots \left( {x + y} \right).
+	\end{align*}
+	Mà $x + y$ là số nguyên tố nên $x \vdots \left( {x + y} \right)$.  Suy ra, $x \ge  x + y$ (do $x, x + y \in \mathbb{N^*}$), là điều vô lý (do $y > 0$). Vì vậy, $x + y$ không thể là số nguyên tố lẻ. Từ đây và ($3$) suy ra, $x + y$ là hợp số.
 	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bổ đề.} Trong mặt phẳng tọa độ $Oxy$, cho hai điểm nguyên phân biệt $A(a, b)$ và $B(u, v)$. Khi đó, số điểm nguyên thuộc đoạn thẳng $AB$ bằng $\gcd(a - u, b - v) + 1$.
+	Ta có điều phải chứng minh theo yêu cầu đề bài.
+	\vskip 0.05cm
+	\textbf{Bình luận và Nhận xét}
+	\vskip 0.05cm
+	$\pmb{1.}$ Trong lời giải trên, ta đã sử dụng kết quả rất quen biết sau:
+	\vskip 0.05cm
+	``Với mọi $n \in \mathbb{N}$, với mọi  $a.b \in \mathbb{Z}$, mà $a + b \ne  0, \pm 1$, luôn có  $\left( {{a^{2n + 1}} + {b^{2n + 1}}} \right) \vdots \left( {a + b} \right).$"
+	\vskip 0.05cm
+	Các bạn đọc chưa biết kết quả trên, có thể dễ dàng chứng minh được kết quả đó, bằng cách sử dụng phân tích của ${a^{2n + 1}} + {b^{2n + 1}}$ thành thừa số.
+	\vskip 0.05cm
+	$\pmb{2.}$ Tất cả các lời giải Tạp chí nhận được từ bạn đọc đều mắc \textit{lỗi logic} sau: Khẳng định, với $a \in \mathbb{N^*}$, nếu $a$ không là số nguyên tố thì $a$ là hợp số.
+	\vskip 0.05cm
+	Lưu ý rằng, \textit{$1$ không phải là số nguyên tố, và cũng không phải là hợp số}! Vì thế, để từ `` $a \in \mathbb{N^*}$  và $a$ không là số nguyên tố" có thể suy ra ``$a$ là hợp số", cần có thêm điều kiện $a > 1$.
+	\vskip 0.05cm
+	Người chấm bài đã châm chước lỗi trên, khi đánh giá tính đúng và tính hoàn chỉnh của lời giải.
+	\vskip 0.05cm
+	$\pmb{3.}$ Với sự châm chước nêu trên, trong số các lời giải Tạp chí nhận được từ bạn đọc, rất tiếc, vẫn có một số lời giải không được chấp nhận là lời giải hoàn chỉnh, do người giải bài không có các giải thích cần thiết cho một số sự kiện thiết yếu của lời giải.
+	\begin{flushright}
+		\textbf{Lưu Thị Thanh Hà}
+	\end{flushright}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P673.}}
+	(Mức $B$) Chứng minh rằng,
+	\begin{align*}
+		A=\sqrt[3]{1^3+1}+\sqrt[3]{2^3+1}+\cdots+\sqrt[3]{2023^3+1}
+	\end{align*}
+	không phải là số nguyên.
+	\textbf{Lời giải} (\textit{dựa theo lời giải của bạn Hà Mạnh Hùng, lớp $8$A, trường THPT chuyên Hà Nội -- Amsterdam, Tp. Hà Nội})\textbf{.}
+	\vskip 0.05cm
+	Đặt $A = \sqrt[3]{{{1^3} + 1}} + \sqrt[3]{{{2^3} + 1}} +  \cdots  + \sqrt[3]{{{{2023}^3} + 1}},$  và $B = 1 + 2 +  \cdots  + 2023$.
+	\vskip 0.05cm 
+	Vì với mọi  $ \in \mathbb{N^*}, \sqrt[3]{{{n^3} + 1}} > \sqrt[3]{{{n^3}}} = n$, nên $A > B$. \hfill ($1$)
+	\vskip 0.05cm      
+	Tiếp theo, với mọi $n \in \mathbb{N^*}$, do ${n^2} + n < 3{n^2},$  nên
+	\begin{align*}
+		{n^3} + 1 < {n^3} + \frac{{3{n^2}}}{{n\left( {n + 1} \right)}} < {\left( {n + \frac{1}{{n\left( {n + 1} \right)}}} \right)^3}.
+	\end{align*}
+	Suy ra
+	\begin{align*}
+		\sqrt[3]{{{n^3} + 1}} < n + \frac{1}{{n\left( {n + 1} \right)}} = n + \left( {\frac{1}{n} - \frac{1}{{n + 1}}} \right),
+	\end{align*}
+	với mọi $n \in \mathbb{N^*}$.
+	\vskip 0.05cm  
+	Vì thế
+	\begin{align*}
+		A < B + \left( {\left( {\frac{1}{1} - \frac{1}{2}} \right) + \left( {\frac{1}{2} - \frac{1}{3}} \right) +  \cdots  + \left( {\frac{1}{{2023}} - \frac{1}{{2024}}} \right)} \right) = B + \left( {1 - \frac{1}{{2024}}} \right) < B + 1. \tag{$2$}
+	\end{align*}
+	Từ ($1$) và ($2$), ta có $B < A < B + 1$. Mà $B$ là số nguyên, nên $A$ không là số nguyên.
+	\vskip 0.05cm
+	Ta có điều phải chứng minh theo yêu cầu đề bài.
+	\vskip 0.05cm
+	\textbf{Bình luận và Nhận xét}
+	\vskip 0.05cm
+	$\pmb{1.}$ Ngoài cách đã nêu ở Lời giải trên, còn có thể chứng minh $A < B + 1$ (theo ký hiệu ở Lời giải) bằng cách sử dụng đánh giá sau:
+	\begin{align*}
+		\sqrt[3]{{{n^3} + 1}} < n + \frac{1}{{3{n^2}}}, \text{ với mọi } n \in \mathbb{N^*}.
+	\end{align*}
+	$\pmb{2.}$ Trong số các lời giải Tạp chí đã nhận được từ bạn đọc, rất tiếc có một lời giải sai (do người giải bài đã tính sai tổng các số tự nhiên từ $2$ đến $2024$) và một lời giải \textit{không} được chấp nhận là đầy đủ và chính xác (do người giải bài đã bỏ qua quá nhiều các tính toán cụ thể cần thiết).
+	\begin{flushright}
+		\textbf{Lê Huy}
+	\end{flushright}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P674.}}
+	(Mức $B$) Ở mỗi ô vuông con của bảng ô vuông $8\times8$ được điền một số $+1$, hoặc một số $-1$, sao cho tổng của bốn số ở một bảng con $2\times2$ tuỳ ý bằng $2$, hoặc $-2$. Chứng minh rằng, trong bảng số thu được có hai hàng giống nhau.
+	\vskip 0.05cm
+	\textbf{Lời giải} (\textit{của người chấm bài})\textbf{.}
+	\vskip 0.05cm
+	Ở lời giải này:
+	\vskip 0.05cm
+	-- $\left( {{x_1},{x_2}, \ldots ,{x_8}} \right)$ ký hiệu hàng, mà các ô vuông con của nó, lần lượt từ trái qua phải, được điền các số  ${x_1},{x_2}, \ldots ,{x_8}.$
+	\vskip 0.05cm
+	-- $\left( \begin{array}{l}
+		xu\\
+		yv
+	\end{array} \right)$  ký hiệu bảng $2 \times  2$, mà các ô vuông con của nó, lần lượt từ trên xuống dưới, từ trái qua phải, được điền các số $x, y, u, v$.
+	\vskip 0.05cm
+	-- Cặp gồm hàng thứ $m$ và hàng thứ $n$ sẽ được gọi vắn tắt là \textit{cặp} $m - n$.
+	\vskip 0.05cm
+	Ta có các Nhận xét sau:
+	\vskip 0.05cm
+	\textbf{Nhận xét} $\pmb{1.}$ Giả sử các ô vuông con của một bảng con $2 \times  2$ tùy ý của bảng $8 \times  8$ đã cho, theo thứ tự từ trên xuống dưới, từ trái qua phải, lần lượt được điền các số $a, b, c, d$ (xem Hình $1$).
+	\begin{table}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+			\begin{tabular}{|c|c|}
+				\hline
+				$a$ & $c$\\
+				\hline
+				$b$ & $d$\\
+				\hline
+			\end{tabular}
+		\caption{\small\textit{\color{thachthuctoanhoc}Hình $1$.}}
+		\vspace*{-10pt}
+	\end{table}
+	Khi đó:
+	-- Nếu $a = b$ thì $c = -d$;
+	\vskip 0.05cm
+	-- Nếu $a = -b$ thì $c = d$.
+	\vskip 0.05cm
+	\textit{Chứng minh.} Theo giả thiết của bài ra, $a, b, c, d \in  \{+1; -1\}$ và $(a + b + c + d) \in  \{2; -2\}$. Suy ra, trong bốn số đó, hoặc có ba số bằng $1$ và số còn lại bằng $-1$, hoặc có ba số bằng $-1$ và số còn lại bằng $1$. Do đó, $abcd = -1$. Vì vậy:
+	\vskip 0.05cm
+	-- Nếu $a = b$ thì $cd = -1$ (do $ab = {a^2} = 1$); suy ra, $c = -d$.
+	\vskip 0.05cm
+	-- Nếu $a = -b$ thì $cd = 1$ (do $ab =  - {a^2} =  - 1$); suy ra, $c = d$.
+	\vskip 0.05cm
+	Nhận xét $1$ được chứng minh.
+	\vskip 0.05cm
+	\textbf{Nhận xét} $\pmb{2.}$ Giả sử $\left( {{x_1},{x_2}, \ldots ,{x_8}} \right)$ và $\left( {{y_1},{y_2}, \ldots ,{y_8}} \right)$ là hai hàng liên tiếp của bảng $8 \times  8$ đã cho (xem Hình $2$).
+	\begin{table}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+			\hline
+			$x_1$ & $x_2$ & $x_3$ & $x_4$ & $x_5$ & $x_6$ & $x_7$ & $x_8$ \\
+			\hline
+			$y_1$ & $y_2$ & $y_3$ & $y_4$ & $y_5$ & $y_6$ & $y_7$ & $y_8$ \\
+			\hline
+		\end{tabular}
+		\caption{\small\textit{\color{thachthuctoanhoc}Hình $2$.}}
+		\vspace*{-10pt}
+	\end{table}
+	Khi đó:
+	\vskip 0.05cm
+	-- Nếu ${x_1} = {y_1}$ thì ${x_i} = {y_i}$  với mọi $i \in  \{1; 3; 5; 7\}$, và ${x_i} =  - {y_i}$  với mọi $i \in  \{2; 4; 6; 8\}$;
+	\vskip 0.05cm
+	-- Nếu ${x_1} =  - {y_1}$ thì ${x_i} = {y_i}$ với mọi $i \in  \{2; 4; 6; 8\}$, và  ${x_i} =  - {y_i}$ với mọi $i \in  \{1; 3; 5; 7\}$.
 	\vskip 0.05cm
 	\textit{Chứng minh.}
 	\vskip 0.05cm
-	Không mất tính tổng quát, giả sử $b \ge  v$.
-	\vskip 0.05cm
-	Xét phép tịnh tiến theo vectơ $\overrightarrow{BO}$. Qua phép tịnh tiến này, điểm $A$ biến thành điểm $A'\left( {a - u,b - v} \right),$  và điểm $B$ biến thành gốc tọa độ $O$. Dễ thấy, số điểm nguyên thuộc đoạn thẳng $AB$ bằng số điểm nguyên thuộc đoạn thẳng $OA'$.
-	\vskip 0.05cm 
-	Gọi $s$ là số điểm nguyên thuộc đoạn thẳng $OA'$.
-	\vskip 0.05cm
-	Do $b \ge  v$ nên xảy ra hai trường hợp sau:
-	\vskip 0.05cm
-	$\diamond$ \textit{Trường hợp} $1$: $b = v$.
-	\vskip 0.05cm
-	Khi đó, $A'$  là điểm nằm trên trục hoành, và có hoành độ là $a - u$. Vì vậy
+	-- Giả sử  $x_1 = y_1$. Khi đó, áp dụng Nhận xét $1$, lần lượt, cho  $\left( \begin{array}{l}
+		{x_1}{x_2}\\
+		{y_1}{y_2}
+	\end{array} \right)$,  $\left( \begin{array}{l}
+	{x_2}{x_3}\\
+	{y_2}{y_3}
+\end{array} \right)$,  $\left( \begin{array}{l}
+{x_3}{x_4}\\
+{y_3}{y_4}
+\end{array} \right)$,
+$\left( \begin{array}{l}
+	{x_4}{x_5}\\
+	{y_4}{y_5}
+\end{array} \right)$,
+ $\left( \begin{array}{l}
+{x_5}{x_6}\\
+{y_5}{y_6}
+\end{array} \right)$,  $\left( \begin{array}{l}
+{x_6}{x_7}\\
+{y_6}{y_7}
+\end{array} \right)$,  $\left( \begin{array}{l}
+{x_7}{x_8}\\
+{y_7}{y_8}
+\end{array} \right)$,  ta được:
 	\begin{align*}
-		s = (a - u) + 1 &= \gcd(a - u, 0) + 1 \\
-		&= \gcd(a - u, b - v) + 1.
+		{x_2} =  - {y_2}, x_3 = y_3, x_4 = - y_4, x_5 = y_5, x_6 = -y_6, x_7 = y_7, x_8 = -y_8.
 	\end{align*}
-	$\diamond$ \textit{Trường hợp} $2$: $b > v$.
-	\vskip 0.05cm
-	Đặt $d = \gcd(a - u, b - v)$.
-	\vskip 0.05cm
-	Khi đó, tồn tại $c\in \mathbb{Z}$  và $k \in \mathbb{N^*}$  nguyên tố cùng nhau, sao cho
+	-- Giả sử  $x_1 = -y_1$. Khi đó, áp dụng Nhận xét $1$, lần lượt, cho bảy bảng con $2 \times  2$ vừa nêu trên, ta được:
 	\begin{align*}
-		a - u = cd \text{ và } b - v = kd.
+		x_2 = y_2, x_3 = -y_3, x_4 = y_4, x_5 = -y_5, x_6 = y_6, x_7 = -y_7, x_8 = y_8.
+	\end{align*}
+	Nhận xét $2$ được chứng minh.
+	\vskip 0.05cm
+	Ta gọi cặp gồm hai hàng liên tiếp,  $\left( {{x_1},{x_2}, \ldots ,{x_8}} \right)$ và  $\left( {{y_1},{y_2}, \ldots ,{y_8}} \right)$, là một \textit{cặp xanh}, nếu  $x_1 = y_1$; và gọi cặp gồm hai hàng đó là một \textit{cặp đỏ}, nếu  $x_1 = -y_1$.
+	\vskip 0.05cm
+	Trong phần trình bày dưới đây, thứ tự của các hàng được tính từ trên xuống dưới.
+	\vskip 0.05cm
+	Với bảng $8 \times  8$ đã cho, xảy ra đúng một trong hai trường hợp sau:
+	\vskip 0.05cm
+	$\diamond$ \textit{Trường hợp} $1$: Tồn tại ba hàng liên tiếp mà cặp $1 - 2$ và cặp $2 - 3$ là hai cặp cùng màu.
+	\vskip 0.05cm
+	Giả sử $\left( {{a_1},{a_2}, \ldots ,{a_8}} \right)$  là hàng thứ nhất trong ba hàng đó. Khi đó, theo Nhận xét $2$, ba hàng này sẽ hoặc là ba hàng ở Hình $3$, hoặc là ba hàng ở Hình $4$.
+	\begin{table}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+			\hline
+			$a_1$ & $a_2$ & $a_3$ & $a_4$ & $a_5$ & $a_6$ & $a_7$ & $a_8$ \\
+			\hline
+			$a_1$ & $-a_2$ & $a_3$ & $-a_4$ & $a_5$ & $-a_6$ & $a_7$ & $-a_8$ \\
+			\hline
+			$a_1$ & $a_2$ & $a_3$ & $a_4$ & $a_5$ & $a_6$ & $a_7$ & $a_8$ \\
+			\hline
+		\end{tabular}
+		\caption{\small\textit{\color{thachthuctoanhoc}Hình $3$. Cặp $1 - 2$ và cặp $2 - 3$ cùng là cặp xanh.}}
+		\vspace*{-10pt}
+	\end{table}
+	\begin{table}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+			\hline
+			$a_1$ & $a_2$ & $a_3$ & $a_4$ & $a_5$ & $a_6$ & $a_7$ & $a_8$ \\
+			\hline
+			$-a_1$ & $a_2$ & $-a_3$ & $a_4$ & $-a_5$ & $a_6$ & $-a_7$ & $a_8$ \\
+			\hline
+			$a_1$ & $a_2$ & $a_3$ & $a_4$ & $a_5$ & $a_6$ & $a_7$ & $a_8$ \\
+			\hline
+		\end{tabular}
+		\caption{\small\textit{\color{thachthuctoanhoc}Hình $4$. Cặp $1 - 2$ và cặp $2 - 3$ cùng là cặp đỏ.}}
+		\vspace*{-10pt}
+	\end{table}
+	Nhận thấy, hàng thứ nhất và hàng thứ ba ở mỗi hình (trong hai hình, $3$ và $4$) là hai hàng giống nhau. Điều này cho thấy, trong bảng $8 \times 8$ đã cho có hai hàng giống nhau.
+	\vskip 0.05cm
+	$\diamond$ \textit{Trường hợp} $2$: Với ba hàng liên tiếp bất kì, cặp $1 - 2$ và cặp $2 - 3$ là hai cặp khác màu.
+	\vskip 0.05cm
+	Xét năm hàng đầu tiên của bảng $8 \times  8$ đã cho.
+	\vskip 0.05cm
+	Giả sử $\left( {{a_1},{a_2}, \ldots ,{a_8}} \right)$ là hàng thứ nhất trong năm hàng đó.
+	\vskip 0.05cm
+	Xảy ra một trong hai khả năng sau:
+	\vskip 0.05cm
+	-- \textit{Khả năng} $1$: Cặp $1 - 2$ là cặp xanh, và cặp $2 - 3$ là cặp đỏ.
+	\vskip 0.05cm
+	Khi đó, từ giả thiết ``khác màu" suy ra, cặp $3 - 4$ là cặp xanh, và cặp $4 - 5$ là cặp đỏ.
+	\vskip 0.05cm
+	Vì thế, ở khả năng này, theo Nhận xét $2$, năm hàng đầu tiên của bảng $8 \times  8$ đã cho là năm hàng dưới đây (xem Hình $5$):
+	\begin{table}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+			\hline
+			$a_1$ & $a_2$ & $a_3$ & $a_4$ & $a_5$ & $a_6$ & $a_7$ & $a_8$ \\
+			\hline
+			$a_1$ & $-a_2$ & $a_3$ & $-a_4$ & $a_5$ & $-a_6$ & $a_7$ & $-a_8$ \\
+			\hline
+			$-a_1$ & $-a_2$ & $-a_3$ & $-a_4$ & $-a_5$ & $-a_6$ & $-a_7$ & $-a_8$ \\
+			\hline
+			$-a_1$ & $a_2$ & $-a_3$ & $a_4$ & $-a_5$ & $a_6$ & $-a_7$ & $a_8$ \\
+			\hline
+			$a_1$ & $a_2$ & $a_3$ & $a_4$ & $a_5$ & $a_6$ & $a_7$ & $a_8$ \\
+			\hline
+		\end{tabular}
+		\caption{\small\textit{\color{thachthuctoanhoc}Hình $5$.}}
+		\vspace*{-10pt}
+	\end{table}
+	-- \textit{Khả năng} $2$: Cặp $1 - 2$ là cặp đỏ, và cặp $2 - 3$ là cặp xanh.
+	\vskip 0.05cm
+	Khi đó, từ giả thiết ``khác màu" suy ra, cặp $3 - 4$ là cặp đỏ, và cặp $4 - 5$ là cặp xanh.
+	\vskip 0.05cm
+	Vì thế, ở khả năng này, theo Nhận xét $2$, năm hàng đầu tiên của bảng $8 \times  8$ đã cho là năm hàng dưới đây (xem Hình $6$):
+	\begin{table}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+			\hline
+			$a_1$ & $a_2$ & $a_3$ & $a_4$ & $a_5$ & $a_6$ & $a_7$ & $a_8$ \\
+			\hline
+			$-a_1$ & $a_2$ & $-a_3$ & $a_4$ & $-a_5$ & $a_6$ & $-a_7$ & $a_8$ \\
+			\hline
+			$-a_1$ & $-a_2$ & $-a_3$ & $-a_4$ & $-a_5$ & $-a_6$ & $-a_7$ & $-a_8$ \\
+			\hline
+			$a_1$ & $-a_2$ & $a_3$ & $-a_4$ & $a_5$ & $-a_6$ & $a_7$ & $-a_8$ \\
+			\hline
+			$a_1$ & $a_2$ & $a_3$ & $a_4$ & $a_5$ & $a_6$ & $a_7$ & $a_8$ \\
+			\hline
+		\end{tabular}
+		\caption{\small\textit{\color{thachthuctoanhoc}Hình $6$.}}
+		\vspace*{-10pt}
+	\end{table}
+	Nhận thấy, hàng thứ nhất và hàng thứ năm ở mỗi hình, trong hai hình $5$ và $6$, là hai hàng giống nhau. Điều này cho thấy, dù khả năng nào xảy ra, trong bảng $8 \times  8$ đã cho đều có hai hàng giống nhau.
+	\vskip 0.05cm
+	Kết quả xét hai trường hợp trên đây cho ta điều phải chứng minh theo yêu cầu đề bài.
+	\vskip 0.05cm
+	\textbf{Bình luận và Nhận xét}
+	\vskip 0.05cm
+	$\pmb{1.}$ Lời giải trên được trình bày theo tinh thần giúp bạn đọc cảm nhận, hình dung được cách tiếp cận để tìm ra lời giải cho bài đã ra.
+	\vskip 0.05cm
+	$\pmb{2.}$ Lời giải trên cho thấy, kết quả của bài đã ra không thay đổi, khi thay bảng $8 \times  8$ bởi bảng $m \times  n$, với $m, n$ là các số nguyên dương tùy ý, thỏa mãn $m \ge  5$ và $n \ge  2$.
+	\vskip 0.05cm
+	$\pmb{3.}$ Rất tiếc, cho tới thời điểm bản thảo vào Nhà in, Tạp chí vẫn chưa nhận được lời giải nào, từ bạn đọc.
+	\begin{flushright}
+		\textbf{Nguyễn Khắc Minh}
+	\end{flushright}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P675.}}
+	(Mức $B$) Cho hình thang $ABCD$ vuông tại $A$ và $D$. Trên tia $AD$ lấy điểm $F$ sao cho $AF\cdot AD=AB\cdot CD$. Gọi $E$ là hình chiếu vuông góc của $A$ trên $BD$. Chứng minh rằng $\angle CEF=90^\circ$. 
+	\vskip 0.05cm
+	\textbf{Lời giải} (\textit{của người chấm bài})\textbf{.}
+	\vskip 0.05cm
+	Từ các giả thiết của bài toán suy ra, $F \not\equiv A$  và $E$ nằm giữa $B$ và $D$.
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 1\linewidth]{}
+		\caption{\small\textit{\color{thachthuctoanhoc}Hình $1$.}}
+		\vspace*{-10pt}
+	\end{figure}
+	Vì $DA \bot  AB$ và $AE \bot  BD$ (giả thiết), nên
+	\begin{align*}
+		\angle ABD = \angle EAD \text{ (hai góc nhọn có cạnh tương ứng vuông góc).}
+	\end{align*}
+	Do đó, tam giác vuông (tại $A$) $ABD$ đồng dạng với tam giác vuông (tại $E$) $EAD$. Vì vậy
+	\begin{align*}
+		\frac{{AB}}{{AD}} = \frac{{EA}}{{ED}}. \tag{$1$}
+	\end{align*}
+	Từ giả thiết về vị trí của điểm $F$ trên tia $AD$, ta có:
+	\begin{align*}
+		\frac{{AF}}{{CD}} = \frac{{AB}}{{AD}}. \tag{$2$}
+	\end{align*}
+	Từ ($1$) và ($2$), suy ra $\frac{{EA}}{{ED}} = \frac{{AF}}{{CD}}$; do đó
+	\begin{align*}
+		\frac{{AE}}{{AF}} = \frac{{DE}}{{DC}}. \tag{$3$}
+	\end{align*}
+	Vì $AF \bot  DC$ và $AE \bot  DE$ (giả thiết), nên
+	\begin{align*}
+		\angle EAF = \angle EDC \text{ (hai góc nhọn có cạnh tương ứng vuông góc).} \tag{$4$}
+	\end{align*}
+	Từ ($3$) và ($4$), suy ra $\Delta EAF \sim  \Delta EDC$. Do vậy
+	\begin{align*}
+		\angle AEF = \angle CED. \tag{$5$}
 	\end{align*}
 	Xảy ra hai trường hợp sau:
 	\vskip 0.05cm
-	$+$ \textit{Trường hợp} $2.1$: $a = u$.
+	$\diamond$ \textit{Trường hợp} $1$: $AC \bot  BD$ (xem Hình $2$).
 	\vskip 0.05cm
-	Khi đó, $A'$  là điểm nằm trên trục tung, và có tung độ là $b - v$. Vì thế
+	Khi đó, ba điểm $A, E, C$ thẳng hàng, và $\angle CED = 90^\circ$.  Do đó, theo ($5$), ta có:
 	\begin{align*}
-		s = (b - v) + 1 &= \gcd(0, b - v) + 1 \\
-		&= \gcd(a - u, b - v) + 1.
+		\angle AEF = {90^{\rm{o}}} = \angle AED
 	\end{align*}
-	$+$ \textit{Trường hợp} $2.2$: $a \ne u$.
+	suy ra, $F$ thuộc đường thẳng $ED$. Mà theo giả thiết, $F$ thuộc tia $AD$, nên $F$ là giao điểm của $ED$ và tia $AD$. Vì vậy, $F \equiv D$.  Do đó,  
+	$\angle CEF = \angle CED = {90^{\rm{o}}}$.
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 1\linewidth]{}
+		\caption{\small\textit{\color{thachthuctoanhoc}Hình $2$.}}
+		\vspace*{-10pt}
+	\end{figure}
+	$\diamond$ \textit{Trường hợp} $2$: $AC$ \textit{không vuông góc} $BD$.
 	\vskip 0.05cm
-	Khi đó, $c \ne 0$; do đó, đường thẳng $OA'$  có phương trình:
+	Khi đó, $F \not\equiv D$.  Do đó, hoặc $F$ nằm giữa $A$ và $D$ (xem Hình $1$), hoặc $F$ nằm trên tia đối của tia $DA $ (xem Hình $3$).
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 1\linewidth]{}
+		\caption{\small\textit{\color{thachthuctoanhoc}Hình $3$.}}
+		\vspace*{-10pt}
+	\end{figure}
+	-- Nếu $F$ nằm giữa $A$ và $D$ thì tia $ED$ nằm giữa hai tia $EF$ và $EC$. Do đó
 	\begin{align*}
-		y = \frac{k}{c}x.
+			\angle CEF = \angle CED + \angle DEF\\
+			 = \angle AEF + \angle DEF\left( {{\rm{do}}(5)} \right)\\
+			 = \angle AED = {90^{\rm{o}}}.
 	\end{align*}
-	Vì thế, với điểm $M\left( {{x_M},{y_M}} \right)$  tùy ý thuộc đoạn thẳng $OA'$,  ta có $0 \le {y_M} \le kd,$  và
+	-- Nếu $F$ nằm trên tia đối của tia $DA$ thì tia $EF$ nằm giữa hai tia $ED$ và $EC$. Do đó
 	\begin{align*}
-		{y_M} = \frac{k}{c}{x_M}.
+			\angle CEF = \angle CED - \angle DEF\\
+			 = \angle AEF - \angle DEF\left( {{\rm{do}}(5)} \right)\\
+			 = \angle AED = {90^{\rm{o}}}.
 	\end{align*}
-	Từ đó, do $\gcd(c, k) = 1$, suy ra, điểm  $M\left( {{x_M},{y_M}} \right)$ thuộc đoạn thẳng  $OA'$ là điểm nguyên khi và chỉ khi $x_M = hc$,  với $h$ là số tự nhiên thỏa mãn $0 \le h \le d$. Vì vậy
+	Kết quả xét hai trường hợp trên đây cho ta điều phải chứng minh theo yêu cầu đề bài.
+	\vskip 0.05cm
+	\textbf{Bình luận và Nhận xét}
+	\vskip 0.05cm
+	$\pmb{1.}$ Ngoài cách ``tính góc", được trình bày ở Lời giải trên, còn có thể giải bài đã ra bằng cách ``sử dụng tứ giác nội tiếp"; tóm tắt như sau:
+	\vskip 0.05cm
+	-- Chứng minh $BF \bot  AC$. Từ đó, gọi $K$ là giao điểm của $BF$ và $AC$, ta có $D$, $F$, $K$, $C$ là bốn điểm cùng nằm trên đường tròn đường kính $CF$. \hfill ($*$)
+	\vskip 0.05cm
+	-- Chứng minh
 	\begin{align*}
-		s = d + 1 = \gcd(a - u, b - v) + 1.
+		BK \cdot BF = BE \cdot BD. \tag{$**$}
 	\end{align*}
-	Kết quả xét các trường hợp nêu trên cho ta điều phải chứng minh theo yêu cầu của Bổ đề.
+	Từ đó suy ra, bốn điểm $K$, $F$, $D$, $E$ cùng nằm trên một đường tròn.                                                  \hfill ($***$)
+	\vskip 0.05cm
+	-- Từ ($*$) và ($**$) suy ra điều phải chứng minh theo yêu cầu đề bài.
+	\vskip 0.05cm
+	Lưu ý rằng, \textit{từ ($**$) có thể suy ra ($***$) khi và chỉ khi hai đường thẳng $KF$ và $ED$ cắt nhau tại $B$}. Do đó, điều ``suy ra" vừa nêu \textit{chỉ đúng} trong trường hợp $AC$ \textit{không} vuông góc $BD$. Vì vậy, lời giải theo cách nêu trên, mà \textit{không} xét trường hợp $AC \bot  BD (\Leftrightarrow F \equiv D$) \textit{không thể} được coi là lời giải đúng.
+	\vskip 0.05cm
+	$\pmb{2.}$ Tất cả các lời giải Tạp chí nhận được từ bạn đọc, rất tiếc, đều chỉ đúng cho trường hợp $F$ nằm giữa $A$ và $D$.
+	\begin{flushright}
+		\textbf{Hạ Vũ Anh}
+	\end{flushright}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P676.}}
+	(Mức $B$) Cho $a, b, c$ là các số thực dương. Chứng minh rằng
+	\begin{align*}
+		\sqrt{\!\!\frac{a}{b\!+\!c}}\!+\!\sqrt{\!\!\frac{b}{c\!+\!a}}\!+\!\sqrt{\!\!\frac{c}{a\!+\!b}}
+		\!\leq\! \sqrt{\!\!\frac{a}{b}\!+\!\frac{b}{c}\!+\!\frac{c}{a}\!+\!\frac{3}{2}} .
+	\end{align*}
+	\textbf{Lời giải} (\textit{dựa theo lời giải của bạn Nguyễn Thị Bảo Tiên, lớp $11$ Toán $1$, trường THPT chuyên Lương Văn Chánh, tỉnh Phú Yên})\textbf{.}
+	\vskip 0.05cm
+	Theo bất đẳng thức Cauchy -- Schwarz, ta có:
+	\begin{align*}
+		{\left( {\sqrt {\frac{a}{{b + c}}}  + \sqrt {\frac{b}{{c + a}}}  + \sqrt {\frac{c}{{a + b}}} } \right)^2} \le (a + b + c)\left( {\frac{1}{{b + c}} + \frac{1}{{c + a}} + \frac{1}{{a + b}}} \right) = \frac{a}{{b + c}} + \frac{b}{{c + a}} + \frac{c}{{a + b}} + 3. \tag{$1$}
+	\end{align*}
+	Tiếp theo, ta sẽ chứng minh
+	\begin{align*}
+		\frac{a}{{b + c}} + \frac{b}{{c + a}} + \frac{c}{{a + b}} + \frac{3}{2} \le \frac{a}{b} + \frac{b}{c} + \frac{c}{a}.
+	\end{align*}
+	Thật vậy, ta có:
+	\begin{align*}
+		(2) \Leftrightarrow \frac{a}{b} - \frac{a}{{b + c}} + \frac{b}{c} - \frac{b}{{c + a}} + \frac{c}{a} - \frac{c}{{a + b}} \ge \frac{3}{2} \Leftrightarrow \frac{{ca}}{{b\left( {b + c} \right)}} + \frac{{ab}}{{c\left( {c + a} \right)}} + \frac{{bc}}{{a\left( {a + b} \right)}} \ge \frac{3}{2}. \tag{$3$}
+	\end{align*}
+	Theo bất đẳng thức Cauchy -- Schwarz và bất đẳng thức rất quen biết
+	\begin{align*}
+		{\left( {x + y + z} \right)^2} \ge 3\left( {xy + yz + zx} \right)\forall x,y,z \in  \\mathbb{R},
+	\end{align*}
+	với lưu ý $a, b, c > 0$, ta có:
+	\begin{align*}
+			\frac{{ca}}{{b\left( {b + c} \right)}} + \frac{{ab}}{{c\left( {c + a} \right)}} + \frac{{bc}}{{a\left( {a + b} \right)}} = \frac{{{{\left( {ca} \right)}^2}}}{{abc\left( {b + c} \right)}} + \frac{{{{\left( {ab} \right)}^2}}}{{abc\left( {c + a} \right)}} + \frac{{{{\left( {bc} \right)}^2}}}{{abc\left( {a + b} \right)}}\\
+			 \ge \frac{{{{\left( {ca + ab + bc} \right)}^2}}}{{2abc\left( {a + b + c} \right)}} \ge \frac{{3abc\left( {a + b + c} \right)}}{{2abc\left( {a + b + c} \right)}} = \frac{3}{2}.
+	\end{align*}
+	Bất đẳng thức ($3$) được chứng minh; do đó, ($2$) được chứng minh.
+	\vskip 0.05cm
+	Từ ($1$) và ($2$) hiển nhiên suy ra bất đẳng thức cần chứng minh theo yêu cầu đề bài.
+	\vskip 0.05cm
+	\textbf{Bình luận và Nhận xét}
+	\vskip 0.05cm
+	$\pmb{1.}$ Dễ dàng chứng minh được rằng, dấu ``$=$" ở bất đẳng thức của đề bài xảy ra khi và chỉ khi $a = b = c$.
+	\vskip 0.05cm
+	$\pmb{2.}$ Một cách vận dụng khác bất đẳng thức Cauchy -- Schwarz đối với biểu thức ở vế trái của bất đẳng thức cần chứng minh theo yêu cầu đề bài:
+	\begin{align*}
+			{\left( {\sqrt {\frac{a}{{b + c}}}  + \sqrt {\frac{b}{{c + a}}}  + \sqrt {\frac{c}{{a + b}}} } \right)^2}\\
+			= {\left( {\sqrt {\frac{a}{b} + \frac{1}{2}}  \cdot \sqrt {\frac{{2ab}}{{\left( {2a + b} \right)\left( {b + c} \right)}}}  + \sqrt {\frac{b}{c} + \frac{1}{2}}  \cdot \sqrt {\frac{{2bc}}{{\left( {2b + c} \right)\left( {c + a} \right)}}}  + \sqrt {\frac{c}{a} + \frac{1}{2}}  \cdot \sqrt {\frac{{2ca}}{{\left( {2c + a} \right)\left( {a + b} \right)}}} } \right)^2}\\
+			\le \left( {\frac{a}{b} + \frac{b}{c} + \frac{c}{a} + \frac{3}{2}} \right)\left( {\frac{{2ab}}{{\left( {2a + b} \right)\left( {b + c} \right)}} + \frac{{2bc}}{{\left( {2b + c} \right)\left( {c + a} \right)}} + \frac{{2ca}}{{\left( {2c + a} \right)\left( {a + b} \right)}}} \right).
+	\end{align*}
+	Từ đó, bằng cách chứng minh bất đẳng thức
+	\begin{align*}
+		\frac{{2ab}}{{\left( {2a + b} \right)\left( {b + c} \right)}} + \frac{{2bc}}{{\left( {2b + c} \right)\left( {c + a} \right)}} + \frac{{2ca}}{{\left( {2c + a} \right)\left( {a + b} \right)}} \le 1,
+	\end{align*}
+	bạn sẽ thu được một lời giải cho bài đã ra.
+	\vskip 0.05cm
+	$\pmb{3.}$ Tất cả các lời giải Tạp chí đã nhận được từ bạn đọc đều là lời giải đúng và hoàn chỉnh.
+	\begin{flushright}
+		\textbf{Võ Quốc Bá Cẩn}
+	\end{flushright}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P677.}}
+	(Mức $A$) Cho dãy số thực $(u_n)$ xác định bởi 
+	\begin{align*}
+		u_n=\dfrac{C^n_{2n}-2022}{n^2},\quad n=1,2,3,\ldots.
+	\end{align*}
+	$a)$ Chứng minh rằng $(u_n)$ là dãy tăng và không bị chặn trên.
+	\vskip 0.05cm
+	$b)$ Tìm tất cả các số thực $\alpha$,  sao cho dãy số $(x_n)$, xác định bởi
+	\begin{align*}
+		x_n=\dfrac{n^\alpha. u_n}{4^n},\quad n=1,2,3,\ldots,
+	\end{align*}
+	có giới hạn hữu hạn khác $0$, khi $n\to+\infty$.
+	\vskip 0.05cm
+	\textbf{Lời giải} (\textit{dựa theo lời giải của bạn Trần Minh Hoàng, lớp 10T1, trường THPT chuyên Hà Tĩnh, tỉnh Hà Tĩnh})\textbf{.}
+	\vskip 0.05cm
+	$a)$ Sử dụng công thức xác định dãy  $(u_n)$ dễ dàng tính được $u_1 = -2020, u_2 = -504$.  Do đó, $u_1 < u_2$   \hfill ($1$)
+	\vskip 0.05cm
+	Với $n \ge  3$, ta có:
+	\begin{align*}
+		\frac{{{\rm{C}}_{2n}^n}}{{{\rm{C}}_{2\left( {n - 1} \right)}^{n - 1}}} = \frac{{\left( {2n} \right)!}}{{{{\left( {n!} \right)}^2}}} \cdot \frac{{{{\left( {\left( {n - 1} \right)!} \right)}^2}}}{{\left( {2n - 2} \right)!}} = \frac{{2\left( {2n - 1} \right)}}{n}.
+	\end{align*}
+	Do đó
+	\begin{align*}
+		\frac{{\frac{{{\rm{C}}_{2n}^n}}{{{n^2}}}}}{{\frac{{{\rm{C}}_{2\left( {n - 1} \right)}^{n - 1}}}{{{{\left( {n - 1} \right)}^2}}}}} = \frac{{2\left( {2n - 1} \right){{\left( {n - 1} \right)}^2}}}{{{n^3}}} > 4{\left( {\frac{{n - 1}}{n}} \right)^3} \ge 4 \cdot {\left( {\frac{2}{3}} \right)^3} = \frac{{32}}{{27}} > 1,
+	\end{align*}
+	với mọi $n \ge  3$. Suy ra
+	\begin{align*}
+		\frac{{{\rm{C}}_{2n}^n}}{{{n^2}}} > \frac{{{\rm{C}}_{2\left( {n - 1} \right)}^{n - 1}}}{{{{\left( {n - 1} \right)}^2}}}\forall n \ge 3.
+	\end{align*}
+	Do đó
+	\begin{align*}
+		{u_n} = \frac{{{\rm{C}}_{2n}^n}}{{{n^2}}} - \frac{{2022}}{{{n^2}}} > \frac{{{\rm{C}}_{2\left( {n - 1} \right)}^{n - 1}}}{{{{\left( {n - 1} \right)}^2}}} - \frac{{2022}}{{{{\left( {n - 1} \right)}^2}}} = {u_{n - 1}}\forall n \ge 3.
+	\end{align*}
+	Từ ($1$) và ($2$) suy ra, $(u_n)$  là dãy tăng.                \hfill ($3$)
+	\vskip 0.05cm
+	Giả sử dãy $(u_n)$  bị chặn trên. Khi đó, $(u_n)$  có giới hạn hữu hạn khi  $n \to + \infty$. Đặt $\lim {u_n} = L.$
+	\vskip 0.05cm 
+	Do $\lim \frac{{2022}}{{{n^2}}} = 0$  nên
+	\begin{align*}
+		L = \lim {u_n} = \lim \left( {\frac{{{\rm{C}}_{2n}^n}}{{{n^2}}} - \frac{{2022}}{{{n^2}}}} \right) = \lim \frac{{{\rm{C}}_{2n}^n}}{{{n^2}}}.
+	\end{align*}
+	Suy ra
+	\begin{align*}
+		1 = \lim \frac{{\frac{{{\rm{C}}_{2n}^n}}{{{n^2}}}}}{{\frac{{{\rm{C}}_{2\left( {n - 1} \right)}^{n - 1}}}{{{{\left( {n - 1} \right)}^2}}}}} = \lim \frac{{2\left( {2n - 1} \right){{\left( {n - 1} \right)}^2}}}{{{n^3}}} = 4,
+	\end{align*}
+	là điều vô lí. Vì vậy, dãy  $(u_n)$ không bị chặn trên.                            \hfill ($4$)
+	\vskip 0.05cm
+	($3$) và ($4$) cho ta điều phải chứng minh theo yêu cầu đề bài.
+	\vskip 0.05cm
+	$b)$ Trước hết, nhắc lại rằng, với mỗi $n \in \mathbb{N^*}, (2n-1)!!$    ký hiệu tích của $n$ số nguyên dương lẻ đầu tiên và $(2n)!!$  ký hiệu tích của$ n$ số nguyên dương chẵn đầu tiên.
+	\vskip 0.05cm
+	Ta sẽ chứng minh rằng, dãy số $(s_n)$  xác định bởi
+	\begin{align*}
+		{s_n} = \frac{{\sqrt n {\rm{C}}_{2n}^n}}{{{4^n}}}, n = 1,2,\ldots,
+	\end{align*}
+	có giới hạn hữu hạn khác $0$, khi $ n \to + \infty$.
+	\vskip 0.05cm 
+	Thật vậy, với mọi $n \ge  1$, ta có $s_n > 0$  và
+	\begin{align*}
+		{s_n} = \frac{{\sqrt n {\rm{C}}_{2n}^n}}{{{4^n}}} = \sqrt n  \cdot \frac{{\left( {2n} \right)!}}{{{4^n} \cdot {{\left( {n!} \right)}^2}}} = \sqrt n  \cdot \frac{{\left( {2n - 1} \right)!!}}{{\left( {2n} \right)!!}}.
+	\end{align*}
+	Suy ra
+	\begin{align*}
+		\frac{{{s_{n + 1}}}}{{{s_n}}} = \frac{{\sqrt {n + 1} \left( {2n + 1} \right)}}{{\sqrt n \left( {2n + 2} \right)}} = \frac{{2n + 1}}{{2\sqrt {n\left( {n + 1} \right)} }} > 1\forall n \ge 1.
+	\end{align*}
+	Do đó, $(s_n)$  là một dãy dương tăng.
+	\vskip 0.05cm
+	Hơn nữa, $(s_n)$  là một dãy bị chặn trên, do với mọi $n \ge  1$, ta có
+	\begin{align*}
+		s_n^2 = n \cdot \frac{{{{\left( {\left( {2n - 1} \right)!!} \right)}^2}}}{{{{\left( {\left( {2n} \right)!!} \right)}^2}}} < n \cdot \frac{{\left( {2n - 1} \right)!! \cdot \left( {2n} \right)!!}}{{\left( {2n} \right)!! \cdot \left( {3 \cdot 5 \cdot  \cdots  \cdot \left( {2n + 1} \right)} \right)}} = \frac{n}{{2n + 1}} < \frac{1}{2}.
+	\end{align*}
+	Vì vậy, $(s_n)$  có giới hạn hữu hạn khác $0$, khi $n \to +\infty$.  Đặt $\lim {s_n} = S,   S \ne  0$.  \hfill                                 ($5$)
+	\vskip 0.05cm
+	Tiếp theo, với mọi $n \ge  1$, ta có:
+	\begin{align*}
+		{x_n} = \frac{{{n^\alpha } \cdot {u_n}}}{{{4^n}}} = {n^{\alpha  - \frac{5}{2}}} \cdot \left( {{n^{\frac{5}{2}}} \cdot \frac{{{u_n}}}{{{4^n}}}} \right) = {n^{\alpha  - \frac{5}{2}}} \cdot \frac{{\sqrt n \left( {{\rm{C}}_{2n}^n - 2022} \right)}}{{{4^n}}} = {n^{\alpha  - \frac{5}{2}}}\left( {{s_n} - 2022 \cdot \frac{{\sqrt n }}{{{4^n}}}} \right). \tag{$6$}
+	\end{align*}
+	Dễ thấy, $\lim \frac{{\sqrt n }}{{{4^n}}} = 0.$  Từ đây và ($5$), suy ra
+	\begin{align*}
+		\lim \left( {{s_n} - 2022 \cdot \frac{{\sqrt n }}{{{4^n}}}} \right) = S \ne 0. \tag{$7$}
+	\end{align*}
+	Từ ($6$) và ($7$), do $\lim {n^{\alpha  - \frac{5}{2}}} = 1$  nếu $\alpha  = \frac{5}{2}$, $\lim {n^{\alpha  - \frac{5}{2}}} = 0$  nếu  $\alpha  < \frac{5}{2}$, và $\lim {n^{\alpha  - \frac{5}{2}}} =  + \infty $  nếu  $\alpha  > \frac{5}{2}$, suy ra, dãy $(x_n)$  có giới hạn hữu hạn khác $0$ khi và chỉ khi  $\alpha  = \frac{5}{2}$.
+	\vskip 0.05cm
+	\textbf{Bình luận và Nhận xét}
+	\vskip 0.05cm
+	$\pmb{1.}$ Bài đã ra là một bài toán khá cơ bản về khảo sát tính hội tụ của một dãy số.
+	\vskip 0.05cm
+	$\pmb{2.}$ Bằng các kiến thức giải tích ở bậc học cao hơn bậc phổ thông, ta chứng minh được rằng, $\lim {s_n} = \frac{1}{{\sqrt \pi  }}$   ($(s_n)$  là dãy số được định nghĩa trong lời giải trên).
+	\vskip 0.05cm
+	$\pmb{3.}$ Vấn đề đặt ra ở câu $b)$ là một vấn đề quan trọng trong Toán học: Tìm các dãy tương đương của một dãy số.
+	\vskip 0.05cm
+	Ta nói rằng, dãy $\left( {{x_n}} \right)$  tương đương với dãy $\left( {{y_n}} \right),$  và viết  ${x_n} \sim {y_n},$ nếu  $\lim \frac{{{x_n}}}{{{y_n}}} = 1.$
+	\vskip 0.05cm
+	Như vậy, kết quả của câu $b)$ và kết quả được nêu ở mục $2$ cho thấy ${u_n} \sim \frac{1}{{\sqrt \pi  }} \cdot {4^n} \cdot {n^{ - \frac{5}{2}}}.$
+	\vskip 0.05cm 
+	$\pmb{4.}$ Trong số các lời giải Tạp chí nhận được từ bạn đọc, có hai lời giải sai ở câu $b)$, do người giải bài đã mắc những lỗi chuyên môn cơ bản.
+	\begin{flushright}
+		\textbf{Trần Nam Dũng}
+	\end{flushright}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P678.}}
+	(Mức $A$) Trong mặt phẳng, cho hai điểm $I$, $J$ cố định thoả mãn $IJ=8$.  Gọi $(S)$ là tập hợp các điểm $M$ sao cho ít nhất một trong hai đoạn thẳng $MI,MJ$ có độ dài không vượt quá $7$. Với $A,B,C$ là ba điểm không thẳng hàng thuộc $(S)$, chu vi tam giác $ABC$ lớn nhất là bao nhiêu?
+	\vskip 0.05cm
+	\textbf{Lời giải} (\textit{dựa theo Đáp án của bài toán})\textbf{.}
+	\vskip 0.05cm
+	\textbf{Bình luận và Nhận xét}	
+	\begin{flushright}
+		\textbf{Hà Thanh}
+	\end{flushright}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P679.}}
+	(Mức $A$) Có $100$ quả trứng, được xếp thành một vòng tròn. Gọi một quả bất kỳ, trong $100$ quả trứng đó, là quả thứ nhất; sau đó, theo chiều kim đồng hồ, lần lượt gọi các quả trứng tiếp theo là quả thứ $2$, quả thứ $3$, $\ldots$, quả thứ $100$. Người ta nhặt trứng theo quy tắc: đầu tiên, nhặt quả thứ hai; sau đó, theo chiều kim đồng hồ, cứ cách một quả lại nhặt một quả, cho đến khi nhặt được hết $100$ quả trứng. Hỏi quả trứng nhặt được ở lần cuối cùng là quả thứ mấy?
+	\vskip 0.05cm
+	\textbf{Lời giải} (\textit{dựa theo lời giải của các bạn Hà Mạnh Hùng, lớp $8$A, trường THPT chuyên Hà Nội -- Amsterdam, Tp. Hà Nội, và Trần Minh Hoàng, lớp $10$T$1$, trường THPT chuyên Hà Tĩnh, tỉnh Hà Tĩnh})\textbf{.}
+	\vskip 0.05cm
+	Ta có Nhận xét sau:
+	\vskip 0.05cm
+	\textbf{\textit{Nhận xét.}} Với cách nhặt trứng của đề bài, nếu số quả trứng trên vòng tròn bằng  $2^n,n \in \mathbb{N^*}$ tùy ý, thì quả trứng nhặt được ở lần cuối cùng là quả thứ nhất.
+	\vskip 0.05cm
+	\textit{Chứng minh.} Ta sẽ chứng minh bằng phương pháp quy nạp theo $n$.
+	\vskip 0.05cm
+	Với $n = 1$, kết luận của Nhận xét là hiển nhiên.
+	\vskip 0.05cm
+	Giả sử kết luận của Nhận xét đã đúng với $n = k$.
+	\vskip 0.05cm
+	Xét $n = k + 1$.
+	\vskip 0.05cm
+	Khi đó, sau $2^k$  lần nhặt đầu tiên, số quả trứng còn lại trên vòng tròn bằng
+	\begin{align*}
+		{2^{k + 1}} - {2^k} = {2^k} \text{ (quả),}
+	\end{align*}
+	và quả trứng được nhặt ở lần thứ  $2^k$ là quả thứ $2^{k+1}$.
+	\vskip 0.05cm 
+	Vì vậy, bắt đầu từ lần nhặt thứ $2^k +1$,  ta sẽ thực hiện việc nhặt, theo quy tắc của đề bài, $2^k$  quả trứng, với quả thứ nhất trong $2^k$  quả này chính là quả thứ nhất trong $2^{k+1}$  quả ban đầu. Do đó, theo giả thiết quy nạp, quả trứng được nhặt ở lần cuối cùng (lần thứ  $2^{k+1}$) là quả thứ nhất trong $2^{k+1}$  quả ban đầu. Điều này cho thấy, kết luận của Nhận xét đúng với $n = k + 1$.
+	\vskip 0.05cm
+	Theo nguyên lý quy nạp, Nhận xét được chứng minh.
 	\vskip 0.05cm
 	\textit{Trở lại bài toán.}
 	\vskip 0.05cm
-	Xét số nguyên dương $n$, mà với nó, tồn tại $n$ điểm phân biệt  ${A_1}\left( {{x_1},{y_1}} \right),$ ${A_2}\left( {{x_2},{y_2}} \right), \ldots ,$ ${A_n}\left( {{x_n},{y_n}} \right)$, sao cho đoạn thẳng nối hai điểm bất kỳ trong chúng chứa đúng $2022$ điểm nguyên.
-	\vskip 0.05cm
-	Khi đó, theo Bổ đề,
+	Dễ thấy, sau $36$ lần nhặt trứng đầu tiên, trên vòng tròn sẽ còn lại
 	\begin{align*}
-		\gcd \left( {{x_i} - {x_j},{y_i} - {y_j}} \right) = 2021, \tag{$1$}
+		100 - 36 = 64 = {2^6}
 	\end{align*}
-	với mọi $i, j \in \{1; 2; \ldots ; n\}, i \ne j$.
+	quả trứng, và quả trứng được nhặt ở lần thứ $36$ là quả thứ $ 72$.
 	\vskip 0.05cm
-	Với mỗi $i = 1, 2, \ldots , n$, gọi $r_i$  và $s_i$  tương ứng là số dư trong phép chia $x_i$  và $y_i$  cho $2$.
+	Vì vậy, bắt đầu từ lần nhặt thứ $37$, ta sẽ thực hiện việc nhặt, theo quy tắc của đề bài, $2^6$  quả trứng, với quả thứ nhất trong $2^6$  quả này là quả thứ $73$ trong $100$ quả ban đầu. Do đó, áp dụng Nhận xét cho $n = 6$, ta được: quả trứng được nhặt ở lần cuối cùng (lần thứ $100$) là quả thứ $73$ trong $100$ quả ban đầu.
 	\vskip 0.05cm
-	Khi đó, do  ${r_i},{s_i} \in \left\{ {0;1} \right\}$ với mọi \linebreak$i \in \{1; 2; \ldots ; n\}$, nên
-	\begin{align*}
-		\left( {{r_i},{s_i}} \right) \in \left\{ {\left( {0,0} \right);\left( {0,1} \right);\left( {1,0} \right);\left( {1,1} \right)} \right\}
-	\end{align*}
-	với mọi $i \in \{1; 2; \ldots ; n\}$.
+	\textbf{Bình luận và Nhận xét}
 	\vskip 0.05cm
-	Vì thế, nếu $n \ge  5$ thì theo nguyên lý Dirichlet, tồn tại $p \ne q, p, q \in \{1; 2; \ldots ; n\}$, sao cho
-	\begin{align*}
-		\left( {{r_p},{s_p}} \right) = \left( {{r_q},{s_q}} \right).
-	\end{align*}
-	Nghĩa là, tồn tại $p \ne q, p, q \in \{1; 2; \ldots ; n\}$, sao cho 
-	\begin{align*}
-		{x_p} \equiv {x_q}\left( {\bmod 2} \right) \text{ và } {y_p} \equiv {y_q}\left( {\bmod 2} \right). \tag{$2$}
-	\end{align*}
-	Từ ($2$) và ($1$), suy ra
-	\begin{align*}
-		2\left| {\gcd \left( {{x_p} - {x_q},{y_p} - {y_q}} \right) = 2021,} \right.
-	\end{align*}
-	là điều vô lý. Vì vậy, $n \le 4$.
-	\vskip 0.05cm
-	Hơn nữa, bằng cách sử dụng Bổ đề, dễ dàng chứng minh được rằng, đoạn thẳng, nối hai điểm bất kỳ trong bốn điểm $A(0, 0),$ $B(0, 2021),$ $C(2021, 0),$ $D(2021, 2021)$, chứa đúng $2022$ điểm nguyên.
-	\vskip 0.05cm
-	Vậy, có thể chọn được tối đa bốn điểm nguyên trong mặt phẳng tọa độ, sao cho đoạn thẳng nối hai điểm bất kỳ trong chúng chứa đúng $2022$ điểm nguyên.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm
-	$\pmb{1.}$ Lời giải trên cho thấy, bài đã ra là một khai thác nhẹ nhàng, thú vị đối với một kết quả cơ bản, quen biết về lưới nguyên trong mặt phẳng (Bổ đề trong lời giải trên).
-	\vskip 0.05cm
-	$\pmb{2.}$ Ở lời giải trên, thay $2021$ bởi $2n - 1$, $2022$ bởi $2n$, và $n$ bởi $m$, ta sẽ thu được một chứng minh cho khẳng định sau:
-	\vskip 0.05cm
-	``\textit{Với mọi số nguyên dương $n$, luôn chọn được tối đa bốn điểm nguyên trong mặt phẳng tọa độ, sao cho đoạn thẳng nối hai điểm bất kỳ trong chúng chứa đúng $2n$ điểm nguyên.}"
-	\vskip 0.05cm
-	$\pmb{3.}$ Trong số các lời giải Tạp chí nhận được từ bạn đọc, rất tiếc, có hai lời giải không được chấp nhận là lời giải hoàn chỉnh, do trong các lời giải đó có một số lập luận không chặt chẽ, thiếu chính xác.
+	Trong số các lời giải Tạp chí đã nhận được từ bạn đọc, rất tiếc, có hai lời giải không được chấp nhận là lời giải hoàn chỉnh, do người giải bài chỉ nêu ra các kết quả mang tính suy đoán, mà không có bất cứ lập luận nào chứng minh các suy đoán đó là đúng.
 	\begin{flushright}
-		\textbf{\color{thachthuctoanhoc}Nguyễn Khắc Minh}
+		\textbf{Nguyễn Khắc Minh}
+	\end{flushright}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P680.}}
+	(Mức $A$) Xác định tất cả các số nguyên $a$ sao cho: với mỗi số nguyên dương $k$, tồn tại số nguyên dương $n_k$ thoả mãn $2^k\mid n_k^{n_k}+a$. 
+	\vskip 0.05cm
+	\textbf{Lời giải} (\textit{của người chấm bài})\textbf{.}
+	\vskip 0.05cm
+	\textit{Để thuận tiện cho việc theo dõi Lời giải của đông đảo đối tượng bạn đọc, chúng tôi nhắc lại một số kí hiệu toán học, được sử dụng trong Lời giải này:}
+	\vskip 0.05cm
+	-- Với $p$ là một ước nguyên tố của số nguyên dương $n$, ${v_p}\left( n \right)$ ký hiệu số mũ của $p$ trong phân tích chuẩn của $n$;
+	\vskip 0.05cm
+	-- Với $n$ là một số nguyên dương lớn hơn $1$,  ${\rm{\varphi }}\left( n \right)$ ký hiệu giá trị của Phi--hàm Euler tại $n$.
+	\vskip 0.05cm
+	\textit{Trở lại bài toán.}
+	\vskip 0.05cm
+	$\bullet$ Trước hết, dễ thấy $a = 0$ là một số nguyên thỏa mãn yêu cầu đề bài.
+	\vskip 0.05cm
+	$\bullet$ Xét số nguyên chẵn $a \ne  0$ tùy ý.
+	\vskip 0.05cm
+	Giả sử $a$ là số thỏa mãn yêu cầu đề bài.
+	\vskip 0.05cm
+	Đặt ${k_0} = {v_2}\left( {|a|} \right);$  do $a$ chẵn, khác $0$, nên $k_0 \ge 1$.
+	\vskip 0.05cm  
+	Theo đề bài, với mỗi số nguyên dương $k > k_0$,  tồn tại số nguyên dương $n_k$   sao cho
+	\begin{align*}
+		{2^k}\left| {n_k^{{n_k}} + a} \right.. \tag{$1$}
+	\end{align*}
+	Vì $a$ là số chẵn, nên $n_k$  là số nguyên dương chẵn. Do đó, ${v_2}\left( {{n_k}} \right) \ge 1.$\hfill   ($2$)
+	\vskip 0.05cm
+	Kí hiệu $S$ là tập hợp tất cả các số  $n_k^{{n_k}} + a, k = {k_0} + 1,{k_0} + 2, \ldots $. 
+	\vskip 0.05cm
+	Giả sử tồn tại $k > k_0$, sao cho ${v_2}\left( {n_k^{{n_k}}} \right) \ne {k_0}.$  Khi đó, nếu $n_k^{{n_k}} + a \ne 0$  thì từ ($1$) ta có
+	\begin{align*}
+		{k_0} < k \le {v_2}\left( {\left| {n_k^{{n_k}} + a} \right|} \right) = \min \left\{ {{v_2}\left( {n_k^{{n_k}}} \right),{k_0}} \right\} \le {k_0},
+	\end{align*}
+	là điều vô lý. Vì vậy, nếu $k>k_0$  và $n_k^{{n_k}} + a \ne 0,$  thì
+	\begin{align*}
+		{k_0} = {v_2}\left( {n_k^{{n_k}}} \right) = {n_k} \cdot {v_2}\left( {{n_k}} \right). \tag{$3$}
+	\end{align*}
+	Hiển nhiên, ($3$) cũng đúng khi $k>k_0$  và  $n_k^{{n_k}} + a = 0.$ Do vậy, ($3$) đúng với mọi $k > {k_0}.$                   \hfill ($4$)
+	\vskip 0.05cm
+	Từ ($2$) và ($4$), suy ra
+	\begin{align*}
+		{n_k}\left| {{k_0}} \right.\forall k > {k_0}.
+	\end{align*}
+	Do đó, $S$ là tập hữu hạn.       \hfill ($5$)
+	\vskip 0.05cm
+	Xét tập  $U = \left\{ {u \in \mathbb{N^*}\left| {\exists s \in S:u|s} \right.} \right\}.$
+	\vskip 0.05cm
+	Do ($1$) nên  $2^k \in U$ với mọi $k > k_0$.  Do đó, $U$ là tập vô hạn.                                                    \hfill             ($6$)
+	\vskip 0.05cm
+	Từ ($5$) và ($6$), suy ra $0 \in S$  (vì nếu ngược lại, $0 \notin S$  thì $U$ là tập hữu hạn); nghĩa là, tồn tại số nguyên dương $q > k_0$,  sao cho $n_q^{{n_q}} + a = 0,$  hay $a =  - n_q^{{n_q}}.$
+	\vskip 0.05cm  
+	Như vậy, nếu số nguyên chẵn $a \ne  0$ thỏa mãn yêu cầu đề bài thì $a$ có dạng $a =  - {m^m},$  với $m$ là một số nguyên dương chẵn.
+	\vskip 0.05cm
+	Ngược lại, giả sử $a$ là số có dạng vừa nêu trên. Khi đó, với mỗi số nguyên dương $k$, chọn  $n_k = m$, hiển nhiên có ${2^k}\left| {n_k^{{n_k}} + a} \right..$
+	\vskip 0.05cm 
+	Vì vậy, tất cả các số nguyên $a$ có dạng $a =  - {m^m},$  với $m$ là một số nguyên dương chẵn, đều thỏa mãn yêu cầu đề bài.
+	\vskip 0.05cm
+	$\bullet$ Xét số nguyên lẻ $a$ tùy ý.
+	\vskip 0.05cm
+	Ta sẽ chứng minh Khẳng định sau:
+	\vskip 0.05cm
+	\textbf{\textit{Khẳng định.}} Với mỗi số nguyên dương $k$, tồn tại số nguyên dương  $n_k$ sao cho ${2^k}\left| {n_k^{{n_k}} + a} \right..$
+	\vskip 0.05cm 
+	\textit{Chứng minh.} Ta sẽ chứng minh bằng phương pháp quy nạp theo $k$.
+	\vskip 0.05cm
+	Với $k = 1$, do $a$ là số nguyên lẻ, nên chọn $n_1$  là một số nguyên dương lẻ bất kỳ, sẽ có
+	\begin{align*}
+		{2^1}\left| {n_1^{{n_1}} + a} \right.
+	\end{align*}
+	Như vậy, Khẳng định đúng với $k = 1$.
+	\vskip 0.05cm
+	Giả sử Khẳng định đã đúng với $k = h, h \in \mathbb{N^*}$;  nghĩa là, tồn tại $n_h \in\mathbb{N^*}$  sao cho
+	\begin{align*}
+		{2^h}\left| {n_h^{{n_h}} + a} \right.. \tag{$7$}
+	\end{align*}
+	Xét $k = h + 1$.
+	\vskip 0.05cm
+	Nếu $n_h^{{n_h}} + a = 0,$  chọn  ${n_{h + 1}} = {n_h}$, ta sẽ có ${n_{h + 1}} \in \mathbb{N^*}$  và  ${2^{h + 1}}\left| {n_{h + 1}^{{n_{h + 1}}} + a} \right.$.
+	\vskip 0.05cm
+	Giả sử $n_h^{{n_h}} + a \ne 0.$  Khi đó, do ($7$) nên có thể xảy ra hai trường hợp sau:
+	\vskip 0.05cm
+	-- \textit{Trường hợp} $1$: ${v_2}\left( {\left| {n_h^{{n_h}} + a} \right|} \right) \ge h + 1.$
+	\vskip 0.05cm  
+	Khi đó, chọn  ${n_{h + 1}} = {n_h}$, ta sẽ có ${n_{h + 1}} \in \mathbb{N^*}$   và  ${2^{h + 1}}\left| {n_{h + 1}^{{n_{h + 1}}} + a} \right.$.
+	\vskip 0.05cm
+	-- \textit{Trường hợp} $2$:  ${v_2}\left( {\left| {n_h^{{n_h}} + a} \right|} \right) = h$                                                                                                        \hfill $(8)$
+	\vskip 0.05cm
+	Chọn  ${n_{h + 1}} = {n_h} + {2^h}$; ta có  ${n_{h + 1}} \in \mathbb{N^*}$  và
+	\begin{align*}
+		n_{h + 1}^{{n_{h + 1}}} + a = n_{h + 1}^{{n_h}}\left( {n_{h + 1}^{{2^h}} - 1} \right) + \left( {n_{h + 1}^{{n_h}} - n_h^{{n_h}}} \right) + \left( {n_h^{{n_h}} + a} \right). \tag{$9$}
+	\end{align*}
+	Do $a$ là số nguyên lẻ nên từ ($7$) suy ra, $n_h$  là số nguyên dương lẻ; do đó, $n_{h+1}$  cũng là số nguyên dương lẻ. Vì thế
+	\begin{align*}
+		n_{h + 1}^{{n_h}} - n_h^{{n_h}} = \left( {{n_{h + 1}} - {n_h}} \right) \cdot \sum\limits_{i = 0}^{{n_h} - 1} {n_{h + 1}^{\left( {{n_h} - 1} \right) - i} \cdot n_h^i}  = {2^h} \cdot \sum\limits_{i = 0}^{{n_h} - 1} {n_{h + 1}^{\left( {{n_h} - 1} \right) - i} \cdot n_h^i}
+	\end{align*}
+	và $\sum\limits_{i = 0}^{{n_h} - 1} {n_{h + 1}^{\left( {{n_h} - 1} \right) - i} \cdot n_h^i}$  là một số nguyên dương lẻ (do là tổng của một số lẻ các số nguyên dương lẻ).
+	\vskip 0.05cm
+	Do đó
+	\begin{align*}
+		{v_2}\left( {n_{h + 1}^{{n_h}} - n_h^{{n_h}}} \right) = {v_2}\left( {{n_{h + 1}} - {n_h}} \right) = {v_2}\left( {{2^h}} \right) = h. \tag{$10$}
+	\end{align*}
+	Từ ($8$) và ($10$) suy ra, nếu  $n_{h + 1}^{{n_h}} + a \ne 0$ thì
+	\begin{align*}
+		{v_2}\left( {\left| {\left( {n_{h + 1}^{{n_h}} - n_h^{{n_h}}} \right) + \left( {n_h^{{n_h}} + a} \right)} \right|} \right) \ge h + 1.
+	\end{align*}
+	Vì vậy
+	\begin{align*}
+		{2^{h + 1}}\left| {\left( {n_{h + 1}^{{n_h}} - n_h^{{n_h}}} \right) + \left( {n_h^{{n_h}} + a} \right)} \right.. \tag{$11$}
+	\end{align*}
+	Do $\left( {{n_{h + 1}},{2^{h + 1}}} \right) = 1$  (vì ${n_{h + 1}}$  là số nguyên dương lẻ) và ${\rm{\varphi }}\left( {{2^{h + 1}}} \right) = {2^h},$  nên theo định lí Euler,
+	\begin{align*}
+		{2^{h + 1}}\left| {n_{h + 1}^{{2^h}} - 1} \right..\tag{$12$}
+	\end{align*}
+	Từ ($9$), ($11$) và ($12$), suy ra
+	\begin{align*}
+		{2^{h + 1}}\left| {n_{h + 1}^{{n_{h + 1}}} + a} \right..
+	\end{align*}
+	Kết quả xét các trường hợp trên đây cho thấy, Khẳng định đúng với $k = h + 1$.
+	\vskip 0.05cm
+	Theo nguyên lý quy nạp, Khẳng định được chứng minh.
+	\vskip 0.05cm
+	Do đó, tất cả các số nguyên lẻ $a$ đều thỏa mãn yêu cầu đề bài.
+	\vskip 0.05cm
+	$\bullet$ Vậy, tóm lại, tất cả các số nguyên $a$ thỏa mãn yêu cầu đề bài là: tất cả các số nguyên lẻ, $0$, và tất cả các số nguyên có dạng $-m^m$  với $m$ là một số nguyên dương chẵn.
+	\vskip 0.05cm
+	\textbf{Bình luận và Nhận xét}
+	\vskip 0.05cm
+	Tạp chí đã nhận được hai lời giải cho bài toán, từ bạn đọc. Rất tiếc, cả hai lời giải này đều không đúng, do người giải bài đã mắc một số lỗi, trong các lỗi sau:
+	\vskip 0.05cm
+	-- Mặc định tất cả các số $n_k^{{n_k}} + a$  đều là số nguyên dương;
+	\vskip 0.05cm
+	-- Khẳng định rằng, với $x, y$ là các số nguyên, từ $x \mid y$ suy ra $x \le y$;
+	\vskip 0.05cm
+	-- Không xét trường hợp $a = 0$.
+	\begin{flushright}
+		Lưu Thị Thanh Hà
 	\end{flushright}
 \end{multicols}
-
+\begin{center}
+	\textbf{DANH SÁCH HỌC SINH CÓ LỜI GIẢI HOÀN CHỈNH}
+\end{center}
+\textit{Trong các ngoặc đơn ở phần dưới đây, sau tên lớp là mã hiệu của các bài toán mà học sinh có lời giải hoàn chỉnh.}
+\vskip 0.05cm
+\begin{multicols}{2}
+	\textbf{KHỐI THCS}
+	\vskip 0.05cm
+	$\bullet$  Trường \textbf{THCS xã Pom Lót}, Huyện Điện Biên, Tỉnh Điện Biên: \textit{Nguyễn Ngọc Diệp} (lớp $9$D$3$; P$671$).
+	\vskip 0.05cm
+	$\bullet$  Trường \textbf{THPT chuyên Hà Nội -- Amsterdam}, Thành phố Hà Nội: \textit{Hà Mạnh Hùng} (lớp $8$A; P$671$, P$672$, P$673$, P$679$).
+	\vskip 0.05cm
+	$\bullet$  Trường \textbf{THCS Phúc Yên}, Thành phố Phúc Yên, tỉnh Vĩnh Phúc: \textit{Vũ Bảo Lân} (lớp $8$A$5$; P$672$).
+	\vskip 0.05cm
+	\textbf{KHỐI THPT}
+	\vskip 0.05cm
+	$\bullet$  Trường \textbf{THPT chuyên Nguyễn Quang Diêu}, Tỉnh Đồng Tháp: \textit{Lư Gia Hưng} (lớp $11$T$1$; P$672$, P$673$), \textit{Đỗ Duy Quang} (lớp $11$T$1$; P$671$).
+	\vskip 0.05cm
+	$\bullet$  Trường \textbf{THPT Chi Lăng}, Tỉnh Gia Lai: \textit{Phan Trịnh Nguyên} (lớp $10$A$1$; P$676$).
+	\vskip 0.05cm
+	$\bullet$  Trường \textbf{THPT chuyên Hà Nội -- Amsterdam}, Thành phố Hà Nội: \textit{Đoàn Quang Khải} (lớp $10$T$2$; P$671$), \textit{Phạm Hoàng Lâm} (lớp $10$T$2$; P$672$).
+	\vskip 0.05cm
+	$\bullet$  Trường \textbf{THPT chuyên Hà Tĩnh}, Tỉnh Hà Tĩnh: \textit{Trần Minh Hoàng} (lớp $10$T$1$; P$676$, P$677$, P$679$).
+	\vskip 0.05cm
+	$\bullet$  Trường \textbf{THPT chuyên Lê Hồng Phong}, Tỉnh Nam Định: \textit{Nguyễn Đức Khải} (lớp $11$ Toán $2$; P$672$, P$677$).
+	\vskip 0.05cm
+	$\bullet$  Trường \textbf{THPT chuyên Lương Văn Chánh}, Tỉnh Phú Yên: \textit{Nguyễn Thị Bảo Tiên} (lớp $11$ Toán $1$; P$676$).
+	\vskip 0.05cm
+	$\bullet$  Trường \textbf{THPT chuyên Nguyễn Thị Minh Khai}, Tỉnh Sóc Trăng: \textit{Tiết Trọng Khiêm} (lớp $11$A$2$; P$676$).
+	\vskip 0.05cm
+	$\bullet$  Trường \textbf{THPT chuyên Quốc học Huế}, Tỉnh Thừa Thiên -- Huế: \textit{Đặng Quỳnh Bảo Uyên} (lớp $11$ Toán $2$; P$671$).
+	\vskip 0.05cm
+	$\bullet$  Trường \textbf{THPT chuyên Sư phạm}, ĐH Sư phạm Hà Nội: \textit{Hồ Trần Khánh Linh} (lớp $12$ Toán $2$; P$677$, P$679$).
+\end{multicols}
