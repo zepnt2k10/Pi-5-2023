@@ -5,195 +5,132 @@
 \graphicspath{{../toancuabi/pic/}}
 \begingroup
 \AddToShipoutPicture*{\put(0,616){\includegraphics[width=19.3cm]{../bannertoancuabi}}}  
-\AddToShipoutPicture*{\put(128,555){\includegraphics[scale=1]{../tieude1.pdf}}} 
+\AddToShipoutPicture*{\put(78,555){\includegraphics[scale=1]{../tieude.pdf}}}  
 \centering
 \endgroup
-\vspace*{155pt} 
+\vspace*{150pt} 
 
-\begin{multicols}{2}
-	Trò chơi ``Tháp Hà Nội", xếp những miếng gỗ trên ba chiếc cọc, đã rất quen thuộc với các bạn nhỏ Việt Nam cũng như nhiều bạn nhỏ trên thế giới. Thật là tuyệt vời khi một trò chơi nổi tiếng trên thế giới lại có tên liên quan đến thủ đô của nước ta đúng không. Các bạn đã biết về xuất xứ cùng với nhiều điều thú vị xung quanh bài toán ``Tháp Hà Nội" chưa? Chúng ta hãy cùng ngược dòng thời gian để tìm hiểu qua bài viết dưới đây nhé.
-	\vskip 0.1cm
-	Năm $1883$, Eduard Lucas (Claus) công bố  bức tranh quảng cáo ``Tháp Hà Nội --  trò chơi thực sự nát óc xứ Annnam":
-	\begin{figure}[H]
-		\centering
-		\vspace*{-5pt}
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{1.1}
-		%	\caption{\textit{\color{toancuabi}Hình $1$.}}
-		\vspace*{-15pt}
-	\end{figure}
-	Một năm sau, Lucas viết bài ``Tháp Hà Nội , trò chơi toán học" đăng ở tạp chí ``Science et Nature", số $1$ ($1884$) tr. $127-128$. Có thể xem đó ngày khai sinh của ``Bài toán Tháp Hà Nội", một trong những bài toán nổi tiếng của toán học. Cho đến ngày nay, vẫn còn rất nhiều công trình nghiên cứu về bài toán tháp Hà Nội và những mở rộng của nó, vẫn còn nhiều giả thuyết đang chờ câu trả lời.
-	\vskip 0.1cm
-	Hình sau đây là bức ảnh chụp từ hiện vật trưng bày trong ``Musée des arts et métiers--Cnam Paris" (Bảo tàng nghệ thuật và thủ công Paris). 
-	\begin{figure}[H]
-		\centering
-		\vspace*{-5pt}
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{2.1}
-		%	\caption{\textit{\color{toancuabi}Hình $1$.}}
-		\vspace*{-15pt} 
-	\end{figure}
-	Ta có ba cái cọc, và  $8$ cái đĩa với kích thước khác nhau đôi một. Bài toán đặt ra là di chuyển toàn bộ $8$ cái đĩa sang một cọc khác, sao cho vẫn giữ được thứ tự các đĩa với bán kính lớn dần từ trên xuống dưới. Quy tắc di chuyển: mỗi lần chỉ được chuyển một đĩa, và không bao giờ được đặt một đĩa lên đĩa khác có bán kính nhỏ hơn. Điều này có thể làm được nhờ sử dụng cọc ``trung gian".
-	\vskip 0.1cm
-	Các bạn thử hình dung xem ta sẽ cần làm bao nhiêu phép chuyển đĩa?
-	\vskip 0.1cm
-	Trước hết, ta thử làm bài toán dễ hơn: trên cọc chỉ có $2$ đĩa. Rõ ràng chỉ cần chuyển đĩa nhỏ sang cọc trung gian, đĩa lớn sang cọc còn lại, rồi chuyển đĩa nhỏ lên cọc đó. Số bước chuyển là $3$.
-	\vskip 0.1cm
-	Nếu có $3$ đĩa trên cọc thì sao? Giả sử các đĩa đang ở cọc $A$, và ta cần chuyển sang cọc $C$. Ta chuyển hai đĩa trên cùng sang cọc  trung gian $B$, rồi chuyển đĩa to nhất sang cọc $C$. Sau đó chỉ cần chuyển hai đĩa từ cọc $B$ sang cọc $C$. Phương pháp chuyển $2$ đĩa từ cọc này sang cọc khác thì ta đã biết. Như vậy, số phép chuyển phải làm khi có $3$ đĩa bằng $2$ lần số phép chuyên khi có $2$ đĩa, cộng thêm $1$ phép chuyển (đĩa to nhất). 
-	\vskip 0.1cm
-	Như vậy, số bước chuyển cần thiết của $3$ đĩa là: $2\times 3 + 1 = 7$. Bằng quy nạp, dễ chứng minh nếu $N$ là số phép chuyển khi có $n$ đĩa thì với $(n+1)$ đĩa, ta có thể thực hiện nhiệm vụ với $(2N+1)$ phép chuyển. Từ đó, dễ suy ra, nhiệm vụ đặt ra trong bài toán Tháp Hà Nội với $n$ đĩa có thể thực hiện với $2^n- 1$  phép chuyển.
-	\vskip 0.1cm
-	Có thể chứng minh $2^n - 1$  là số phép dịch chuyển tối thiểu cần thiết, nghĩa là không có cách gì thực hiện nhiệm vụ với số phép dịch chuyển ít hơn.
-	\vskip 0.1cm
-	Người ta cho rằng, bài toán Tháp Hà Nội lấy ý tưởng từ câu chuyển cổ Ấn Độ sau đây.
-	\vskip 0.1cm
-	``Trong ngôi đền vĩ đại ở Benares, bên dưới mái vòm đánh dấu trung tâm thế giới, người ta đặt một chiếc đĩa bằng đồng, trên đó gắn cố định ba chiếc cọc kim cương, mỗi chiếc cao một mét và dày như thân của một con ong. Trên một trong những chiếc cọc  kim cương đó, vào buổi sáng tạo, Thượng Đế đặt $64$ chiếc đĩa bằng vàng nguyên chất, theo thứ tự to dần từ trên xuống dưới.  Ngày đêm không ngừng, những con quỷ chuyển các đĩa từ cọc kim cương này sang cọc kim cương khác theo nguyên tắc không được di chuyển nhiều hơn một đĩa cùng một lúc, và không được đặt đĩa nào lên trên cái nhỏ hơn nó. Khi $64$ chiếc  đĩa  được chuyển xong thì tiếng sét sẽ nổ ra, và thế giới tan biến".
-	\vskip 0.1cm
-	Những suy luận trên đây chỉ ra rằng, số phép dịch chuyển mà lũ quỷ phải làm ít nhất là
-	\begin{align*}
-		2^{64} - 1= 18{.}446{.}744{.}073{.}709{.}551{.}615.
-	\end{align*}
-	Giả sử lũ quỷ rất thạo ``thuật toán dịch chuyển", và mỗi giây chúng chuyển được một đĩa, thì phải mất khoảng $585$ tỷ năm. Có lẽ dù không có lũ quỷ, trái đất của chúng ta cũng không tồn tại được lâu đến thế!
-	\vskip 0.1cm
-	Từ sau khi ra đời, bài toán Tháp Hà Nội nhận được sự quan tâm lớn của các nhà toán học và những người làm ... đồ chơi. Rất nhiều phiên bản của bài toán Tháp Hà Nội xuất hiện, chẳng hạn như số cọc lớn hơn $3$, hoặc cách chơi có thay đổi. Cho đến ngày nay, Tháp Hà Nội và những biến thể của nó vẫn là bài toán quan trọng trong toán học rời rạc, lý thuyết đồ thị, khoa học máy tính, và tô pô (chẳng hạn, bài toán về đường cong tự cắt tại mọi điểm của nó!). Thậm chí, Tháp Hà Nội còn có ứng dụng rộng rãi trong nghiên cứu tâm lý học!
-	\vskip 0.1cm
-	Người ta cho rằng, sở dĩ bài toán Tháp Hà Nội lôi cuốn được nhiều thế hệ các nhà toán học vì nó chứa đựng những yếu tố làm nên sức hấp dẫn của Toán học: đẹp, thú vị, hữu ích, và bất ngờ.
-\end{multicols}
-\newpage
-\begingroup
-\AddToShipoutPicture*{\put(56,678){\includegraphics[scale=0.95]{../tieude10.pdf}}} 
-\centering
-\endgroup
-\vspace*{30pt}
-
-\begin{multicols}{2}
-	\textbf{\color{toancuabi}Ayatori} (hay trò chơi dây) là một trò chơi mà khi nhắc đến chắc chắn những người hâm mộ bộ truyện tranh Doraemon đều biết đến và nhớ ngay tới nhân vật Nobita. Trò chơi Ayatori là một trò chơi rất thú vị, người chơi sẽ sử dụng một sợi dây được buộc thành hình tròn, sau đó dùng những ngón tay của mình đan xen các sợi dây để tạo ra nhiều hình dạng khác nhau từ đơn giản đến phức tạp. Hôm nay, em hãy thử xếp hình ngôi sao thông qua trò chơi Ayatori nhé!
-	\vskip 0.1cm
-	\textit{Bước} $1$: Cách cầm dây khi mới bắt đầu chơi trò chơi Ayatori là giữ sợi dây trong ngón cái và ngón út bằng hai tay, rồi kéo ngang để chuẩn bị chơi.
-	\begin{figure}[H]
-		\vspace*{-10pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=0.85\linewidth]{1a}
-		
-		\vspace*{1.8pt}
-		\includegraphics[width=0.85\linewidth]{1b}
-		
-		\vspace*{1.5pt}
-		\hspace*{3pt}\includegraphics[width=0.85\linewidth]{1c}
-		\vspace*{-10pt}
-	\end{figure}
-	\textit{Bước} $2$: Thả dây ở hai ngón tay út. Sau đó dùng hai ngón tay út luồn phía dưới sợi dây ở hai ngón cái để kéo sợi dây ra như hình vẽ.
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=0.85\linewidth]{2a}
+%\begin{multicols}{2}
+%	\textbf{\color{toancuabi}Ayatori} (hay trò chơi dây) là một trò chơi mà khi nhắc đến chắc chắn những người hâm mộ bộ truyện tranh Doraemon đều biết đến và nhớ ngay tới nhân vật Nobita. Trò chơi Ayatori là một trò chơi rất thú vị, người chơi sẽ sử dụng một sợi dây được buộc thành hình tròn, sau đó dùng những ngón tay của mình đan xen các sợi dây để tạo ra nhiều hình dạng khác nhau từ đơn giản đến phức tạp. Hôm nay, em hãy thử xếp hình ngôi sao thông qua trò chơi Ayatori nhé!
+%	\vskip 0.1cm
+%	\textit{Bước} $1$: Cách cầm dây khi mới bắt đầu chơi trò chơi Ayatori là giữ sợi dây trong ngón cái và ngón út bằng hai tay, rồi kéo ngang để chuẩn bị chơi.
+%	\begin{figure}[H]
+%		\vspace*{-10pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width=0.85\linewidth]{1a}
+%		
+%		\vspace*{1.8pt}
+%		\includegraphics[width=0.85\linewidth]{1b}
+%		
+%		\vspace*{1.5pt}
+%		\hspace*{3pt}\includegraphics[width=0.85\linewidth]{1c}
+%		\vspace*{-10pt}
+%	\end{figure}
+%	\textit{Bước} $2$: Thả dây ở hai ngón tay út. Sau đó dùng hai ngón tay út luồn phía dưới sợi dây ở hai ngón cái để kéo sợi dây ra như hình vẽ.
+%	\begin{figure}[H]
 %		\vspace*{-5pt}
-	\end{figure}
-	\begin{figure}[H]
-		\vspace*{5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=0.85\linewidth]{2b}
-		\vspace*{-5pt}
-	\end{figure}
-	\textit{Bước} $3$: Lấy ngón trỏ tay phải móc vào phần dây giữa ngón cái và ngón út của tay trái. Thực hiện tương tự với ngón trỏ tay trái.
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=0.85\linewidth]{3a}
-		
-		\vspace*{1.8pt}
-		\includegraphics[width=0.85\linewidth]{3b}
-		
-		\vspace*{2pt}
-		\includegraphics[width=0.85\linewidth]{3c}
-		
-		\vspace*{1.8pt}
-		\hspace*{2pt}\includegraphics[width=0.852\linewidth]{3d}
-		\vspace*{-10pt}
-	\end{figure}
-	\textit{Bước} $4$: Thả dây ở hai ngón tay út.
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.85\linewidth]{4}
-%		\caption{\small\textit{\color{}}}
-		\vspace*{-10pt}
-	\end{figure}
-	\textit{Bước} $5$: Dùng ngón út để kéo sợi dây ở dưới cùng lên và chúng ta sẽ hoàn hành ngôi sao năm cánh.
-	\begin{figure}[H]
-		\vspace*{5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.85\linewidth]{5}
-%		\caption{\small\textit{\color{}}}
-		\vspace*{-5pt}
-	\end{figure}
-	Hãy thử suy ngẫm xem hình ngôi sao năm cánh em vừa tạo ra có bao nhiêu trục đối xứng?
-	\vskip 0.1cm
-	\textbf{\color{toancuabi}Làm cây thông Noel}
-	\vskip 0.1cm
-	\textit{Bước} $1$: Xếp hai tờ giấy màu cứng chồng lên nhau rồi gấp đôi lại cho đều nhau. Sau đó lấy bút vẽ phác họa hình cây thông lên mặt ngoài của tờ giấy rồi dùng kéo cắt theo các đường đã vẽ sẵn. Lúc mở ra, em sẽ có hai cây thông với kích thước giống nhau.
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 1\linewidth]{6}
-%		\caption{\small\textit{\color{}}}
-		\vspace*{-15pt}
-	\end{figure}
-	\textit{Bước} $2$: Gấp đôi cây thông theo chiều ngang, gấp đầu nhọn xuống dưới để xác định tâm của mỗi cây thông. Tiếp đến dùng kéo cắt một đường từ đỉnh cây thông xuống điểm vừa đánh dấu. Cây thông còn lại thì cắt từ đáy lên điểm vừa đánh dấu.
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 1\linewidth]{7}
-%		\caption{\small\textit{\color{}}}
-		\vspace*{-15pt}
-	\end{figure}
-	\textit{Bước} $3$: Sau khi đã hoàn thành việc cắt hai cây thông, em hãy ghép chúng lại với nhau theo các khe đã cắt, chú ý để các góc không bị cong. Nếu sau khi ráp cây thông bị lung lay các em có thể cố định lại bằng keo dán.
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 1\linewidth]{8}
-%		\caption{\small\textit{\color{}}}
-		\vspace*{-15pt}
-	\end{figure}
-	\textit{Bước} $4$: Cuối cùng các em chỉ cần điều chỉnh sao cho cây thông đứng vững, trang trí thêm các dây ruy băng hay rắc kim tuyến,… hoặc vẽ họa tiết lên cây thông Noel để nhìn đẹp hơn.
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[height= 0.31\linewidth]{9a}
-		\includegraphics[height= 0.31\linewidth]{9b}
-		\includegraphics[height= 0.31\linewidth]{9c}
-		\caption{\small\textit{\color{toancuabi}Ảnh: Internet.}}
-		\vspace*{-10pt}
-	\end{figure}
-	\textbf{\color{toancuabi}Bài tập}
-	\vskip 0.1cm
-	Còn gì tuyệt vời hơn khi được thả diều dưới bầu trời xanh và trong làn gió mát của những buổi chiều mùa hè oi ả. Bằng những kiến thức của bài ``Hình có trục đối xứng" và trí tưởng tượng phong phú của mình, em hãy tự làm ra cho mình một con diều đẹp đẽ với màu sắc rực rỡ nhé. Chúc em thành công!
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 1\linewidth]{10}
-		\caption{\small\textit{\color{toancuabi}Hình ảnh con diều (Ảnh: Internet)}}
-		\vspace*{-10pt}
-	\end{figure}
-\end{multicols}
-
-\newpage
-\begingroup
-\AddToShipoutPicture*{\put(78,675){\includegraphics[scale=1]{../tieude.pdf}}} 
-\centering
-\endgroup
-\vspace*{30pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width=0.85\linewidth]{2a}
+%%		\vspace*{-5pt}
+%	\end{figure}
+%	\begin{figure}[H]
+%		\vspace*{5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width=0.85\linewidth]{2b}
+%		\vspace*{-5pt}
+%	\end{figure}
+%	\textit{Bước} $3$: Lấy ngón trỏ tay phải móc vào phần dây giữa ngón cái và ngón út của tay trái. Thực hiện tương tự với ngón trỏ tay trái.
+%	\begin{figure}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width=0.85\linewidth]{3a}
+%		
+%		\vspace*{1.8pt}
+%		\includegraphics[width=0.85\linewidth]{3b}
+%		
+%		\vspace*{2pt}
+%		\includegraphics[width=0.85\linewidth]{3c}
+%		
+%		\vspace*{1.8pt}
+%		\hspace*{2pt}\includegraphics[width=0.852\linewidth]{3d}
+%		\vspace*{-10pt}
+%	\end{figure}
+%	\textit{Bước} $4$: Thả dây ở hai ngón tay út.
+%	\begin{figure}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 0.85\linewidth]{4}
+%%		\caption{\small\textit{\color{}}}
+%		\vspace*{-10pt}
+%	\end{figure}
+%	\textit{Bước} $5$: Dùng ngón út để kéo sợi dây ở dưới cùng lên và chúng ta sẽ hoàn hành ngôi sao năm cánh.
+%	\begin{figure}[H]
+%		\vspace*{5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 0.85\linewidth]{5}
+%%		\caption{\small\textit{\color{}}}
+%		\vspace*{-5pt}
+%	\end{figure}
+%	Hãy thử suy ngẫm xem hình ngôi sao năm cánh em vừa tạo ra có bao nhiêu trục đối xứng?
+%	\vskip 0.1cm
+%	\textbf{\color{toancuabi}Làm cây thông Noel}
+%	\vskip 0.1cm
+%	\textit{Bước} $1$: Xếp hai tờ giấy màu cứng chồng lên nhau rồi gấp đôi lại cho đều nhau. Sau đó lấy bút vẽ phác họa hình cây thông lên mặt ngoài của tờ giấy rồi dùng kéo cắt theo các đường đã vẽ sẵn. Lúc mở ra, em sẽ có hai cây thông với kích thước giống nhau.
+%	\begin{figure}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 1\linewidth]{6}
+%%		\caption{\small\textit{\color{}}}
+%		\vspace*{-15pt}
+%	\end{figure}
+%	\textit{Bước} $2$: Gấp đôi cây thông theo chiều ngang, gấp đầu nhọn xuống dưới để xác định tâm của mỗi cây thông. Tiếp đến dùng kéo cắt một đường từ đỉnh cây thông xuống điểm vừa đánh dấu. Cây thông còn lại thì cắt từ đáy lên điểm vừa đánh dấu.
+%	\begin{figure}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 1\linewidth]{7}
+%%		\caption{\small\textit{\color{}}}
+%		\vspace*{-15pt}
+%	\end{figure}
+%	\textit{Bước} $3$: Sau khi đã hoàn thành việc cắt hai cây thông, em hãy ghép chúng lại với nhau theo các khe đã cắt, chú ý để các góc không bị cong. Nếu sau khi ráp cây thông bị lung lay các em có thể cố định lại bằng keo dán.
+%	\begin{figure}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 1\linewidth]{8}
+%%		\caption{\small\textit{\color{}}}
+%		\vspace*{-15pt}
+%	\end{figure}
+%	\textit{Bước} $4$: Cuối cùng các em chỉ cần điều chỉnh sao cho cây thông đứng vững, trang trí thêm các dây ruy băng hay rắc kim tuyến,… hoặc vẽ họa tiết lên cây thông Noel để nhìn đẹp hơn.
+%	\begin{figure}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[height= 0.31\linewidth]{9a}
+%		\includegraphics[height= 0.31\linewidth]{9b}
+%		\includegraphics[height= 0.31\linewidth]{9c}
+%		\caption{\small\textit{\color{toancuabi}Ảnh: Internet.}}
+%		\vspace*{-10pt}
+%	\end{figure}
+%	\textbf{\color{toancuabi}Bài tập}
+%	\vskip 0.1cm
+%	Còn gì tuyệt vời hơn khi được thả diều dưới bầu trời xanh và trong làn gió mát của những buổi chiều mùa hè oi ả. Bằng những kiến thức của bài ``Hình có trục đối xứng" và trí tưởng tượng phong phú của mình, em hãy tự làm ra cho mình một con diều đẹp đẽ với màu sắc rực rỡ nhé. Chúc em thành công!
+%	\begin{figure}[H]
+%		\vspace*{-5pt}
+%		\centering
+%		\captionsetup{labelformat= empty, justification=centering}
+%		\includegraphics[width= 1\linewidth]{10}
+%		\caption{\small\textit{\color{toancuabi}Hình ảnh con diều (Ảnh: Internet)}}
+%		\vspace*{-10pt}
+%	\end{figure}
+%\end{multicols}
 
 \begin{multicols}{2}
 	Thám tử Xuân Phong cùng thanh tra Lê Kính tham gia một buổi giới thiệu sản phẩm của hai công ty là Tae Yeon và TeaYon tại triển lãm Điện tử Expo -- New Vision của khu vực. Công ty  Tae Yeon có uy tín từ lâu đời, với những sản phẩm tinh tế có chất lượng tốt nổi tiếng,  các nhân viên của công ty luôn nói thật. Còn công ty TeaYon chuyên sản xuất đồ rẻ, kém chất lượng, bắt chước kiểu dáng của công ty Tae Yeon nên Ban giám đốc dặn các nhân viên của mình chỉ được nói dối trong buổi triển lãm. 
@@ -210,24 +147,14 @@
 		\includegraphics[width=1\linewidth]{xuanphong}
 		\vspace*{-5pt}
 	\end{figure}
-	%	
-	%	Người của công ty Tae Yeon không thể trả lời ``Không có ai cả" vì như vậy người đó sẽ nói dối. Vì vậy, người đầu tiên đến từ công ty TeaYon. 
-	%	\vskip 0.1cm
-	%	Hai người tiếp theo trả lời giống nhau, vì thế họ phải cùng nói thật hoặc cùng nói dối, tức là đến từ cùng một công ty.
-	%	\vskip 0.1cm
-	%	Nếu cả hai người này cùng đến từ công ty Tae Yeon, suy ra số người của công ty Tae Yeon trong số họ không ít hơn $2$ người. Suy ra câu trả lời của họ là sai. Vì vậy cả hai người thứ hai và thứ ba đều nói dối, tức là đến từ công ty TeaYon.
-	%	\vskip 0.1cm
-	%	Do vậy, trong số $5$ người này, có ít nhất $3$ người của công ty TeaYon và không quá $2$ người đến từ công ty Tae Yeon.
-	%	\vskip 0.1cm
-	%	Nhưng vì cả $3$ người đầu tiên đều nói dối, suy ra số người của công ty Tae Yeon trong số họ không thể là $0$ hoặc $1$. Vì vậy, cả hai người còn lại đều là nhân viên của công ty Tae Yeon. Và họ đều sẽ trả lời là ``Có hai người".
 \end{multicols}
 \vspace*{-10pt}
 {\color{toancuabi}\rule{1\linewidth}{0.1pt}}
 \begingroup
-\AddToShipoutPicture*{\put(115,305){\includegraphics[scale=1]{../tieude11.pdf}}} 
+\AddToShipoutPicture*{\put(115,190){\includegraphics[scale=1]{../tieude11.pdf}}} 
 \centering
 \endgroup
-\vspace*{53pt}
+\vspace*{50pt}
 
 \begin{multicols}{2}
 	$\pmb{1.}$	Trong một cuộc thi thể thao, ban tổ chức chọn ra một số bạn học sinh ở lớp $5A$ và một số bạn ở lớp $5B$ thi đấu trực tiếp. Mỗi bạn ở lớp $5A$ được chọn ra sẽ thi đấu duy nhất một trận với một bạn ở lớp $5B$, và ngược lại, mỗi bạn ở lớp $5B$ được chọn ra chỉ đấu đúng một trận với một bạn ở lớp $5A$.
@@ -243,9 +170,9 @@
 	$\pmb{2.}$ Công ty vận tải được thông báo ngắn gọn là có một số kiện hàng có tổng trọng lượng là $10$ tấn cần được vận chuyển, hơn nữa mỗi kiện hàng nặng không quá $1$ tấn. Hỏi công ty  cần điều động ít nhất bao nhiêu xe tải có trọng tải là $3$ tấn mỗi xe để luôn chắc chắn chở được hết được số hàng hoá đó?
 	\begin{figure}[H]
 		\centering
-		%			\vspace*{-1pt}
+		\vspace*{-10pt}
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{Pi5_bai2}
+		\includegraphics[width=0.8\linewidth]{Pi5_bai2}
 		\vspace*{-15pt}
 	\end{figure}
 	$\pmb{3.}$ Sau khi được sạc đầy pin, điện thoại di động của bạn An dùng đúng $6$ tiếng ở chế độ trò chuyện hoặc đúng $210$ tiếng ở chế độ chờ. Khi bạn An lên tàu hoả để đi du lịch, pin của bạn được sạc đầy $100\%$, và trên tàu không có ổ cắm sạc nên khi xuống ga, pin của bạn cũng vừa hết sạch. Biết rằng An đã nói chuyện với bạn bè đúng một nửa thời gian khi ngồi trên tàu, còn nửa thời gian còn lại đặt điện thoại ở chế độ chờ. Hỏi thời gian An đi trên tàu hoả là bao nhiêu lâu?
@@ -253,15 +180,15 @@
 		\centering
 		\vspace*{-5pt}
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{Pi5_bai3}
-		\vspace*{-15pt}
+		\includegraphics[width=0.85\linewidth]{Pi5_bai3}
+		\vspace*{-10pt}
 	\end{figure}
 	$\pmb{4.}$ Một nhóm học sinh đi bộ từ điểm hẹn tới bến xe buýt để kịp đón chuyến xe vào lúc $8$ giờ. Cũng vào thời điểm này, từ điểm thăm quan, một chiếc xe buýt cũng xuất phát để tới kịp bến xe đón nhóm học sinh đó. Tuy  nhiên nhóm học sinh tới bến xe buýt khá sớm, vào lúc $6$ giờ $10$ phút, nên họ quyết định đi bộ tiếp tới điểm thăm quan. Trên đường, các bạn đã gặp được xe buýt và lên xe đi tiếp.  Cuối cùng cả nhóm đến được điểm thăm quan sớm hơn $20$ phút so với thời gian ấn định. Biết rằng vận tốc của xe buýt là $60$ km/h và vận tốc đi bộ của các em học sinh luôn không đổi. Hãy tìm vận tốc đi bộ của nhóm học sinh trước khi gặp xe buýt.
 	\begin{figure}[H]
 		\centering
-		%			\vspace*{-5pt}
+		\vspace*{-10pt}
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{Pi5_bai4}
+		\includegraphics[width=0.85\linewidth]{Pi5_bai4}
 		\vspace*{-10pt}
 	\end{figure}
 	$\pmb{5.}$ 	Có $100$ chiếc xe ô tô đỗ liền nhau thành một hàng dọc bên lề đường, trong đó có $70$ chiếc xe hiệu Mercedes, còn lại là những xe nhãn hiệu khác. Trong các xe nhãn hiệu Mercedes có $30$ chiếc màu đỏ, $20$ chiếc màu vàng và $20$ chiếc màu hồng. Biết rằng không có hai xe Mercedes nào khác màu lại đỗ cạnh nhau. Em hãy chỉ ra rằng luôn tìm ra $3$ chiếc xe Mercedes cùng màu đỗ liên tiếp nhau.
@@ -269,16 +196,16 @@
 		\centering
 		\vspace*{-5pt}
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{Pi5_bai5}
-		\vspace*{-15pt}
+		\includegraphics[width=0.85\linewidth]{Pi5_bai5}
+		\vspace*{-10pt}
 	\end{figure}
 	$\pmb{6.}$ Một lớp học có $20$ em học sinh. Cô giáo chủ nhiệm của lớp tổ chức một số buổi thăm quan vào mỗi ngày cuối tuần trong suốt năm học, mỗi buổi tham quan có ít nhất $4$ em học sinh tham gia. Em hãy chứng minh rằng có một buổi thăm quan mà mỗi em học sinh tham gia buổi đó đều tham gia ít nhất $1/17$ tổng số tất cả các buổi tham quan của cả năm học.
 	\begin{figure}[H]
 		\centering
-		\vspace*{-5pt}
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{Pi5_bai6}
 		\vspace*{-15pt}
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width=0.8\linewidth]{Pi5_bai6}
+%		\vspace*{-5pt}
 	\end{figure}
 \end{multicols}
 \newpage
